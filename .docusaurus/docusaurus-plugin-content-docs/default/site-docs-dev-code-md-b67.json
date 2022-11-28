@@ -1,0 +1,31 @@
+{
+  "unversionedId": "dev/code",
+  "id": "dev/code",
+  "title": "源码阅读指引",
+  "description": "Higress 源码阅读指引.",
+  "source": "@site/docs/dev/code.md",
+  "sourceDirName": "dev",
+  "slug": "/dev/code",
+  "permalink": "/docs/dev/code",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/dev/code.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "源码阅读指引",
+    "keywords": [
+      "higress",
+      "coding"
+    ],
+    "description": "Higress 源码阅读指引."
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "组件编译说明",
+    "permalink": "/docs/dev/architecture"
+  },
+  "next": {
+    "title": "安装部署",
+    "permalink": "/docs/ops/deploy-by-helm"
+  }
+}

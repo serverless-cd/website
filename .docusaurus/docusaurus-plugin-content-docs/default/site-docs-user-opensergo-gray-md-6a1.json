@@ -1,0 +1,31 @@
+{
+  "unversionedId": "user/opensergo-gray",
+  "id": "user/opensergo-gray",
+  "title": "对接 OpenSergo 实现全链路灰度",
+  "description": "对接 OpenSergo 实现全链路灰度",
+  "source": "@site/docs/user/opensergo-gray.md",
+  "sourceDirName": "user",
+  "slug": "/user/opensergo-gray",
+  "permalink": "/docs/user/opensergo-gray",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/user/opensergo-gray.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "对接 OpenSergo 实现全链路灰度",
+    "keywords": [
+      "opensergo",
+      "gray"
+    ],
+    "description": "对接 OpenSergo 实现全链路灰度"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Nginx Ingress 兼容说明",
+    "permalink": "/docs/user/nginx-ingress"
+  },
+  "next": {
+    "title": "基于 Prometheus 实现入口流量观测",
+    "permalink": "/docs/user/prometheus"
+  }
+}

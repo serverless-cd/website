@@ -1,0 +1,30 @@
+{
+  "unversionedId": "ops/upgrade",
+  "id": "ops/upgrade",
+  "title": "版本升级",
+  "description": "Higress 版本升级.",
+  "source": "@site/docs/ops/upgrade.md",
+  "sourceDirName": "ops",
+  "slug": "/ops/upgrade",
+  "permalink": "/docs/ops/upgrade",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ops/upgrade.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "版本升级",
+    "keywords": [
+      "Upgrade"
+    ],
+    "description": "Higress 版本升级."
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "日志说明",
+    "permalink": "/docs/ops/log"
+  },
+  "next": {
+    "title": "Higress FAQ",
+    "permalink": "/docs/overview/faq"
+  }
+}

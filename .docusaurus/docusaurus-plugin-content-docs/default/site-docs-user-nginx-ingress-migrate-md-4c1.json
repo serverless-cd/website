@@ -1,0 +1,30 @@
+{
+  "unversionedId": "user/nginx-ingress-migrate",
+  "id": "user/nginx-ingress-migrate",
+  "title": "从 Nginx Ingress Controller 平滑迁移",
+  "description": "从 Nginx Ingress Controller 平滑迁移",
+  "source": "@site/docs/user/nginx-ingress-migrate.md",
+  "sourceDirName": "user",
+  "slug": "/user/nginx-ingress-migrate",
+  "permalink": "/docs/user/nginx-ingress-migrate",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/user/nginx-ingress-migrate.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "从 Nginx Ingress Controller 平滑迁移",
+    "keywords": [
+      "Ingress"
+    ],
+    "description": "从 Nginx Ingress Controller 平滑迁移"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "配置 Ingress 转发给注册在 Nacos 的服务",
+    "permalink": "/docs/user/nacos-route"
+  },
+  "next": {
+    "title": "Nginx Ingress 兼容说明",
+    "permalink": "/docs/user/nginx-ingress"
+  }
+}

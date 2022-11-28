@@ -1,0 +1,30 @@
+{
+  "unversionedId": "overview/faq",
+  "id": "overview/faq",
+  "title": "Higress FAQ",
+  "description": "Higress FAQ.",
+  "source": "@site/docs/overview/faq.md",
+  "sourceDirName": "overview",
+  "slug": "/overview/faq",
+  "permalink": "/docs/overview/faq",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/overview/faq.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Higress FAQ",
+    "keywords": [
+      "Higress"
+    ],
+    "description": "Higress FAQ."
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "版本升级",
+    "permalink": "/docs/ops/upgrade"
+  },
+  "next": {
+    "title": "Higress Roadmap",
+    "permalink": "/docs/overview/roadmap"
+  }
+}

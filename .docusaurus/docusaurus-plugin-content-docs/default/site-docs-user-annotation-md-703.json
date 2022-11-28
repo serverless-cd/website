@@ -1,0 +1,30 @@
+{
+  "unversionedId": "user/annotation",
+  "id": "user/annotation",
+  "title": "Ingress Annotaion 配置说明",
+  "description": "Higress Ingress Annotaion 配置说明。",
+  "source": "@site/docs/user/annotation.md",
+  "sourceDirName": "user",
+  "slug": "/user/annotation",
+  "permalink": "/docs/user/annotation",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/user/annotation.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Ingress Annotaion 配置说明",
+    "keywords": [
+      "Ingress"
+    ],
+    "description": "Higress Ingress Annotaion 配置说明。"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Higress是什么",
+    "permalink": "/docs/"
+  },
+  "next": {
+    "title": "Higress 参数配置",
+    "permalink": "/docs/user/configurations"
+  }
+}

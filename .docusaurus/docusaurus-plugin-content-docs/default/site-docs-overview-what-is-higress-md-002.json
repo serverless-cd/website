@@ -1,0 +1,31 @@
+{
+  "unversionedId": "overview/what-is-higress",
+  "id": "overview/what-is-higress",
+  "title": "Higress是什么",
+  "description": "Higress是什么",
+  "source": "@site/docs/overview/what-is-higress.md",
+  "sourceDirName": "overview",
+  "slug": "/",
+  "permalink": "/docs/",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/overview/what-is-higress.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Higress是什么",
+    "keywords": [
+      "Higress"
+    ],
+    "description": "Higress是什么",
+    "slug": "/"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Higress Terminology",
+    "permalink": "/docs/overview/terminology"
+  },
+  "next": {
+    "title": "Ingress Annotaion 配置说明",
+    "permalink": "/docs/user/annotation"
+  }
+}

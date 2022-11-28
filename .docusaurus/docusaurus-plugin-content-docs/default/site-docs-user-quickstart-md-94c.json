@@ -1,0 +1,30 @@
+{
+  "unversionedId": "user/quickstart",
+  "id": "user/quickstart",
+  "title": "Higress 快速开始",
+  "description": "Higress 快速开始.",
+  "source": "@site/docs/user/quickstart.md",
+  "sourceDirName": "user",
+  "slug": "/user/quickstart",
+  "permalink": "/docs/user/quickstart",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/user/quickstart.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Higress 快速开始",
+    "keywords": [
+      "Higress"
+    ],
+    "description": "Higress 快速开始."
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "基于 Prometheus 实现入口流量观测",
+    "permalink": "/docs/user/prometheus"
+  },
+  "next": {
+    "title": "基于 Sentinel 实现入口熔断限流",
+    "permalink": "/docs/user/sentinel"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "unversionedId": "user/mcp-bridge",
+  "id": "user/mcp-bridge",
+  "title": "Mcp Bridge 配置说明",
+  "description": "Higress Mcp Bridge 配置说明。",
+  "source": "@site/docs/user/mcp-bridge.md",
+  "sourceDirName": "user",
+  "slug": "/user/mcp-bridge",
+  "permalink": "/docs/user/mcp-bridge",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/user/mcp-bridge.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Mcp Bridge 配置说明",
+    "keywords": [
+      "discovery"
+    ],
+    "description": "Higress Mcp Bridge 配置说明。"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "通过 OpenKruise Rollout 实现灰度发布",
+    "permalink": "/docs/user/kruise-rollout"
+  },
+  "next": {
+    "title": "配置 Ingress 转发给注册在 Nacos 的服务",
+    "permalink": "/docs/user/nacos-route"
+  }
+}
