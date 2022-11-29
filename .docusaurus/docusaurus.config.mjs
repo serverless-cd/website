@@ -5,7 +5,7 @@
  */
 export default {
   "title": "Serverless-cd",
-  "tagline": "Dinosaurs are cool",
+  "tagline": "基于Serverless架构的强大而灵活，安全，低成本的CI/CD开源框架",
   "url": "https://your-docusaurus-test-site.com",
   "baseUrl": "/",
   "onBrokenLinks": "throw",
@@ -14,9 +14,9 @@ export default {
   "organizationName": "facebook",
   "projectName": "docusaurus",
   "i18n": {
-    "defaultLocale": "en",
+    "defaultLocale": "zh-Hans",
     "locales": [
-      "en"
+      "zh-Hans"
     ],
     "path": "i18n",
     "localeConfigs": {}
@@ -27,7 +27,7 @@ export default {
       {
         "docs": {
           "sidebarPath": "/Users/mamba/serverless-cd/website/sidebars.js",
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
+          "editUrl": "https://github.com/serverless-cd/website/tree/main/"
         },
         "blog": {
           "showReadingTime": true,
@@ -51,7 +51,7 @@ export default {
           "type": "doc",
           "docId": "intro",
           "position": "left",
-          "label": "Tutorial"
+          "label": "文档"
         },
         {
           "to": "/blog",
@@ -60,7 +60,7 @@ export default {
         },
         {
           "href": "https://github.com/facebook/docusaurus",
-          "label": "GitHub",
+          "label": "博客",
           "position": "right"
         }
       ],

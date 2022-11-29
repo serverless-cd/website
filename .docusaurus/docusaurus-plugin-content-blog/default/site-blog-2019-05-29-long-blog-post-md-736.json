@@ -5,7 +5,7 @@
   "title": "Long Blog Post",
   "description": "This is the summary of a very long blog post,",
   "date": "2019-05-29T00:00:00.000Z",
-  "formattedDate": "May 29, 2019",
+  "formattedDate": "2019年5月29日",
   "tags": [
     {
       "label": "hello",
