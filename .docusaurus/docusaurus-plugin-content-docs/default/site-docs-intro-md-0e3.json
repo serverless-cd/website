@@ -1,8 +1,8 @@
 {
   "unversionedId": "intro",
   "id": "intro",
-  "title": "Tutorial Intro",
-  "description": "Let's discover Docusaurus in less than 5 minutes.",
+  "title": "Serverless-cd是什么",
+  "description": "Serverless-cd 是一款运行在 Serverless 架构上的功能强大而灵活，安全，低成本的CI/CD开源框架。该框架基于 Serverless Devs 开发者工具打造，通过 Serverless-cd开发者可以快速构建企业内部应用管理PaaS平台。",
   "source": "@site/docs/intro.md",
   "sourceDirName": ".",
   "slug": "/intro",
@@ -13,11 +13,12 @@
   "version": "current",
   "sidebarPosition": 1,
   "frontMatter": {
-    "sidebar_position": 1
+    "sidebar_position": 1,
+    "title": "Serverless-cd是什么"
   },
   "sidebar": "tutorialSidebar",
   "next": {
-    "title": "Tutorial - Basics",
-    "permalink": "/docs/category/tutorial---basics"
+    "title": "用户手册",
+    "permalink": "/docs/category/用户手册"
   }
 }

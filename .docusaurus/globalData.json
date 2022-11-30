@@ -11,58 +11,123 @@
           "mainDocId": "intro",
           "docs": [
             {
+              "id": "dev-guide/Admin数据表",
+              "path": "/docs/dev-guide/Admin数据表",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "dev-guide/develop/open-api",
+              "path": "/docs/dev-guide/develop/open-api",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "dev-guide/develop/plugin",
+              "path": "/docs/dev-guide/develop/plugin",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "dev-guide/toolkit/core",
+              "path": "/docs/dev-guide/toolkit/core",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "dev-guide/toolkit/engine",
+              "path": "/docs/dev-guide/toolkit/engine",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "dev-guide/toolkit/git",
+              "path": "/docs/dev-guide/toolkit/git",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "dev-guide/toolkit/git-provider",
+              "path": "/docs/dev-guide/toolkit/git-provider",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "dev-guide/toolkit/trigger",
+              "path": "/docs/dev-guide/toolkit/trigger",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "intro",
               "path": "/docs/intro",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/congratulations",
-              "path": "/docs/tutorial-basics/congratulations",
+              "id": "user-guide/ops/ding-talk",
+              "path": "/docs/user-guide/ops/ding-talk",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/create-a-blog-post",
-              "path": "/docs/tutorial-basics/create-a-blog-post",
+              "id": "user-guide/plugins/ding-talk",
+              "path": "/docs/user-guide/plugins/ding-talk",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/create-a-document",
-              "path": "/docs/tutorial-basics/create-a-document",
+              "id": "user-guide/plugins/npm-publish",
+              "path": "/docs/user-guide/plugins/npm-publish",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/create-a-page",
-              "path": "/docs/tutorial-basics/create-a-page",
+              "id": "user-guide/plugins/send-email",
+              "path": "/docs/user-guide/plugins/send-email",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/deploy-your-site",
-              "path": "/docs/tutorial-basics/deploy-your-site",
+              "id": "user-guide/quick_start",
+              "path": "/docs/user-guide/quick_start",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/markdown-features",
-              "path": "/docs/tutorial-basics/markdown-features",
+              "id": "user-guide/usage/context",
+              "path": "/docs/user-guide/usage/context",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-extras/manage-docs-versions",
-              "path": "/docs/tutorial-extras/manage-docs-versions",
+              "id": "user-guide/usage/custom-steps",
+              "path": "/docs/user-guide/usage/custom-steps",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-extras/translate-your-site",
-              "path": "/docs/tutorial-extras/translate-your-site",
+              "id": "user-guide/usage/expressions",
+              "path": "/docs/user-guide/usage/expressions",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "/category/tutorial---basics",
-              "path": "/docs/category/tutorial---basics",
+              "id": "/category/用户手册",
+              "path": "/docs/category/用户手册",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "/category/tutorial---extras",
-              "path": "/docs/category/tutorial---extras",
+              "id": "/category/使用serverless-cd",
+              "path": "/docs/category/使用serverless-cd",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/插件",
+              "path": "/docs/category/插件",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/运维",
+              "path": "/docs/category/运维",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/开发者指南",
+              "path": "/docs/category/开发者指南",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/集成开发",
+              "path": "/docs/category/集成开发",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/核心工具包",
+              "path": "/docs/category/核心工具包",
               "sidebar": "tutorialSidebar"
             }
           ],

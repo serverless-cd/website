@@ -31,7 +31,7 @@ export default {
         },
         "blog": {
           "showReadingTime": true,
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
+          "editUrl": "https://github.com/serverless-cd/website/tree/main/"
         },
         "theme": {
           "customCss": "/Users/mamba/serverless-cd/website/src/css/custom.css"
@@ -55,13 +55,8 @@ export default {
         },
         {
           "to": "/blog",
-          "label": "Blog",
-          "position": "left"
-        },
-        {
-          "href": "https://github.com/facebook/docusaurus",
           "label": "博客",
-          "position": "right"
+          "position": "left"
         }
       ],
       "hideOnScroll": false

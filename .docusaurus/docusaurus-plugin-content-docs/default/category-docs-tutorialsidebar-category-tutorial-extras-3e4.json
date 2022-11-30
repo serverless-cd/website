@@ -5,11 +5,11 @@
   "navigation": {
     "previous": {
       "title": "Congratulations!",
-      "permalink": "/docs/tutorial-basics/congratulations"
+      "permalink": "/docs/user-guide/congratulations"
     },
     "next": {
-      "title": "Manage Docs Versions",
-      "permalink": "/docs/tutorial-extras/manage-docs-versions"
+      "title": "Admin table",
+      "permalink": "/docs/tutorial-extras/Admin数据表"
     }
   }
 }

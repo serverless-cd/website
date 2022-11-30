@@ -1,0 +1,8 @@
+{
+  "label": "核心工具包",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "serverless-cd核心工具包，提供了执行引擎的解析，webhook校验等最核心的工作"
+  }
+}

@@ -42,7 +42,7 @@
       "plugin": "plugin---docusaurus-debugb-76-73a"
     }
   },
-  "/blog-13e": {
+  "/blog-2d8": {
     "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
     "__context": {
       "plugin": "plugin---blog-556-a05"
@@ -50,16 +50,10 @@
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
       {
-        "content": "content---blog-766-e3c"
+        "content": "content---blog-782-fe5"
       },
       {
-        "content": "content---blogf-4-f-cd7"
-      },
-      {
-        "content": "content---blog-871-381"
-      },
-      {
-        "content": "content---blog-925-e00"
+        "content": "content---bloge-78-2ac"
       }
     ],
     "metadata": "metadata---blogb-2-b-df1"
@@ -71,29 +65,21 @@
     },
     "archive": "archive---blog-archiveb-2-f-393"
   },
-  "/blog/first-blog-post-ebe": {
+  "/blog/deep-devs-proxy-da6": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
       "plugin": "plugin---blog-556-a05"
     },
     "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-first-blog-poste-27-4a1"
+    "content": "content---blog-fe-2-serverless-nodejs-frameworkeb-3-00d"
   },
-  "/blog/long-blog-post-b17": {
+  "/blog/fe2serverless-nodejs-framework-ccb": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
       "plugin": "plugin---blog-556-a05"
     },
     "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-long-blog-post-736-bc7"
-  },
-  "/blog/mdx-blog-post-d64": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
-    "__context": {
-      "plugin": "plugin---blog-556-a05"
-    },
-    "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-mdx-blog-post-593-37b"
+    "content": "content---blog-fe-2-serverless-nodejs-framework-4-c-0-39b"
   },
   "/blog/tags-42b": {
     "__comp": "__comp---theme-blog-tags-list-page-01-a-d0b",
@@ -103,7 +89,7 @@
     "sidebar": "sidebar---blog-814-8ac",
     "tags": "tags---blog-tagsa-70-da2"
   },
-  "/blog/tags/docusaurus-2a4": {
+  "/blog/tags/ci-cd-975": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
       "plugin": "plugin---blog-556-a05"
@@ -111,22 +97,16 @@
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
       {
-        "content": "content---blog-766-e3c"
+        "content": "content---blog-782-fe5"
       },
       {
-        "content": "content---blogf-4-f-cd7"
-      },
-      {
-        "content": "content---blog-871-381"
-      },
-      {
-        "content": "content---blog-925-e00"
+        "content": "content---bloge-78-2ac"
       }
     ],
-    "tag": "tag---blog-tags-docusaurusa-80-728",
-    "listMetadata": "listMetadata---blog-tags-docusaurus-608-c09"
+    "tag": "tag---blog-tags-ci-cdaba-b5a",
+    "listMetadata": "listMetadata---blog-tags-ci-cd-043-1d7"
   },
-  "/blog/tags/facebook-02d": {
+  "/blog/tags/serverless-devs-6af": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
       "plugin": "plugin---blog-556-a05"
@@ -134,50 +114,14 @@
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
       {
-        "content": "content---blog-766-e3c"
-      }
-    ],
-    "tag": "tag---blog-tags-facebook-031-c52",
-    "listMetadata": "listMetadata---blog-tags-facebook-096-d31"
-  },
-  "/blog/tags/hello-94a": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
-    "__context": {
-      "plugin": "plugin---blog-556-a05"
-    },
-    "sidebar": "sidebar---blog-814-8ac",
-    "items": [
-      {
-        "content": "content---blog-766-e3c"
+        "content": "content---blog-782-fe5"
       },
       {
-        "content": "content---blog-871-381"
+        "content": "content---bloge-78-2ac"
       }
     ],
-    "tag": "tag---blog-tags-hello-30-a-bed",
-    "listMetadata": "listMetadata---blog-tags-hello-664-70a"
-  },
-  "/blog/tags/hola-56c": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
-    "__context": {
-      "plugin": "plugin---blog-556-a05"
-    },
-    "sidebar": "sidebar---blog-814-8ac",
-    "items": [
-      {
-        "content": "content---blog-925-e00"
-      }
-    ],
-    "tag": "tag---blog-tags-holae-16-18a",
-    "listMetadata": "listMetadata---blog-tags-hola-4-c-9-a24"
-  },
-  "/blog/welcome-075": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
-    "__context": {
-      "plugin": "plugin---blog-556-a05"
-    },
-    "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-welcomed-9-f-ffb"
+    "tag": "tag---blog-tags-serverless-devs-0-b-9-2b1",
+    "listMetadata": "listMetadata---blog-tags-serverless-devs-191-3ac"
   },
   "/markdown-page-c42": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
@@ -186,56 +130,108 @@
     },
     "content": "content---markdown-page-393-028"
   },
-  "/docs-d0f": {
+  "/docs-f28": {
     "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {
       "plugin": "plugin---docs-20-b-90f"
     },
     "versionMetadata": "versionMetadata---docs-935-398"
   },
-  "/docs/category/tutorial---basics-d44": {
+  "/docs/category/插件-20c": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-tutorial-basicsea-8-8c8"
+    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-插件-5-a-0-b80"
   },
-  "/docs/category/tutorial---extras-f09": {
+  "/docs/category/核心工具包-2f4": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-tutorial-extrasc-84-abc"
+    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-核心工具包-520-461"
+  },
+  "/docs/category/集成开发-92d": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-集成开发-7-cb-d7e"
+  },
+  "/docs/category/开发者指南-1e9": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-开发者指南abb-c31"
+  },
+  "/docs/category/使用serverless-cd-580": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-使用serverless-cd-132-b01"
+  },
+  "/docs/category/用户手册-1b7": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-用户手册-945-4e7"
+  },
+  "/docs/category/运维-4d5": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-运维-79-e-d88"
+  },
+  "/docs/dev-guide/Admin数据表-885": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-dev-guide-admin数据表-532-8d0"
+  },
+  "/docs/dev-guide/develop/open-api-f49": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-dev-guide-develop-open-apic-3-b-f1a"
+  },
+  "/docs/dev-guide/develop/plugin-4b6": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-dev-guide-develop-plugin-7-d-0-2c7"
+  },
+  "/docs/dev-guide/toolkit/core-a70": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-dev-guide-toolkit-core-454-9f1"
+  },
+  "/docs/dev-guide/toolkit/engine-b44": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-dev-guide-toolkit-engine-7-d-3-f33"
+  },
+  "/docs/dev-guide/toolkit/git-cb5": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-dev-guide-toolkit-git-3-ee-194"
+  },
+  "/docs/dev-guide/toolkit/git-provider-c77": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-dev-guide-toolkit-git-provider-9-a-1-f52"
+  },
+  "/docs/dev-guide/toolkit/trigger-c96": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-dev-guide-toolkit-trigger-74-a-22d"
   },
   "/docs/intro-aed": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-intro-0-e-3-be1"
   },
-  "/docs/tutorial-basics/congratulations-793": {
+  "/docs/user-guide/ops/ding-talk-373": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-congratulations-822-958"
+    "content": "content---docs-user-guide-ops-ding-talk-27-b-b95"
   },
-  "/docs/tutorial-basics/create-a-blog-post-68e": {
+  "/docs/user-guide/plugins/ding-talk-950": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-create-a-blog-post-533-e85"
+    "content": "content---docs-user-guide-plugins-ding-talk-4-fc-50d"
   },
-  "/docs/tutorial-basics/create-a-document-c2d": {
+  "/docs/user-guide/plugins/npm-publish-b2c": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-create-a-document-1-e-4-078"
+    "content": "content---docs-user-guide-plugins-npm-publishe-9-d-954"
   },
-  "/docs/tutorial-basics/create-a-page-f44": {
+  "/docs/user-guide/plugins/send-email-3ec": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-create-a-page-5-c-8-e19"
+    "content": "content---docs-user-guide-plugins-send-emailece-eac"
   },
-  "/docs/tutorial-basics/deploy-your-site-e46": {
+  "/docs/user-guide/quick_start-637": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-deploy-your-sitef-55-a3f"
+    "content": "content---docs-user-guide-quick-start-426-6c3"
   },
-  "/docs/tutorial-basics/markdown-features-4b7": {
+  "/docs/user-guide/usage/context-259": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-markdown-features-18-c-a79"
+    "content": "content---docs-user-guide-usage-context-3-f-6-c5c"
   },
-  "/docs/tutorial-extras/manage-docs-versions-fdd": {
+  "/docs/user-guide/usage/custom-steps-0a9": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-extras-manage-docs-versionsdff-6d4"
+    "content": "content---docs-user-guide-usage-custom-steps-3-fd-f29"
   },
-  "/docs/tutorial-extras/translate-your-site-2d7": {
+  "/docs/user-guide/usage/expressions-b99": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-extras-translate-your-sitee-44-ddf"
+    "content": "content---docs-user-guide-usage-expressions-1-fc-9e3"
   },
   "/-a00": {
     "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",

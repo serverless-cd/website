@@ -44,7 +44,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/serverless-cd/website/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -69,12 +69,12 @@ const config = {
             position: 'left',
             label: '文档',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: '博客',
-            position: 'right',
-          },
+          {to: '/blog', label: '博客', position: 'left'},
+          // {
+          //   href: 'https://github.com/serverless-cd/website/tree/main/',
+          //   label: '博客',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {

@@ -11,131 +11,272 @@
     "tutorialSidebar": [
       {
         "type": "link",
-        "label": "Tutorial Intro",
+        "label": "Serverless-cd是什么",
         "href": "/docs/intro",
         "docId": "intro"
       },
       {
         "type": "category",
-        "label": "Tutorial - Basics",
+        "label": "用户手册",
         "collapsible": true,
         "collapsed": true,
         "items": [
           {
             "type": "link",
-            "label": "Create a Page",
-            "href": "/docs/tutorial-basics/create-a-page",
-            "docId": "tutorial-basics/create-a-page"
+            "label": "5分钟体验",
+            "href": "/docs/user-guide/quick_start",
+            "docId": "user-guide/quick_start"
           },
           {
-            "type": "link",
-            "label": "Create a Document",
-            "href": "/docs/tutorial-basics/create-a-document",
-            "docId": "tutorial-basics/create-a-document"
+            "type": "category",
+            "label": "使用Serverless-cd",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "上下文",
+                "href": "/docs/user-guide/usage/context",
+                "docId": "user-guide/usage/context"
+              },
+              {
+                "type": "link",
+                "label": "表达式",
+                "href": "/docs/user-guide/usage/expressions",
+                "docId": "user-guide/usage/expressions"
+              },
+              {
+                "type": "link",
+                "label": "支持三种脚本",
+                "href": "/docs/user-guide/usage/custom-steps",
+                "docId": "user-guide/usage/custom-steps"
+              }
+            ],
+            "href": "/docs/category/使用serverless-cd"
           },
           {
-            "type": "link",
-            "label": "Create a Blog Post",
-            "href": "/docs/tutorial-basics/create-a-blog-post",
-            "docId": "tutorial-basics/create-a-blog-post"
+            "type": "category",
+            "label": "插件",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "钉钉告警",
+                "href": "/docs/user-guide/plugins/ding-talk",
+                "docId": "user-guide/plugins/ding-talk"
+              },
+              {
+                "type": "link",
+                "label": "发送邮件",
+                "href": "/docs/user-guide/plugins/send-email",
+                "docId": "user-guide/plugins/send-email"
+              },
+              {
+                "type": "link",
+                "label": "发布npm包",
+                "href": "/docs/user-guide/plugins/npm-publish",
+                "docId": "user-guide/plugins/npm-publish"
+              }
+            ],
+            "href": "/docs/category/插件"
           },
           {
-            "type": "link",
-            "label": "Markdown Features",
-            "href": "/docs/tutorial-basics/markdown-features",
-            "docId": "tutorial-basics/markdown-features"
-          },
-          {
-            "type": "link",
-            "label": "Deploy your site",
-            "href": "/docs/tutorial-basics/deploy-your-site",
-            "docId": "tutorial-basics/deploy-your-site"
-          },
-          {
-            "type": "link",
-            "label": "Congratulations!",
-            "href": "/docs/tutorial-basics/congratulations",
-            "docId": "tutorial-basics/congratulations"
+            "type": "category",
+            "label": "运维",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "系统告警",
+                "href": "/docs/user-guide/ops/ding-talk",
+                "docId": "user-guide/ops/ding-talk"
+              }
+            ],
+            "href": "/docs/category/运维"
           }
         ],
-        "href": "/docs/category/tutorial---basics"
+        "href": "/docs/category/用户手册"
       },
       {
         "type": "category",
-        "label": "Tutorial - Extras",
+        "label": "开发者指南",
         "collapsible": true,
         "collapsed": true,
         "items": [
           {
             "type": "link",
-            "label": "Manage Docs Versions",
-            "href": "/docs/tutorial-extras/manage-docs-versions",
-            "docId": "tutorial-extras/manage-docs-versions"
+            "label": "Admin表设计",
+            "href": "/docs/dev-guide/Admin数据表",
+            "docId": "dev-guide/Admin数据表"
           },
           {
-            "type": "link",
-            "label": "Translate your site",
-            "href": "/docs/tutorial-extras/translate-your-site",
-            "docId": "tutorial-extras/translate-your-site"
+            "type": "category",
+            "label": "集成&开发",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "开放API",
+                "href": "/docs/dev-guide/develop/open-api",
+                "docId": "dev-guide/develop/open-api"
+              },
+              {
+                "type": "link",
+                "label": "插件开发",
+                "href": "/docs/dev-guide/develop/plugin",
+                "docId": "dev-guide/develop/plugin"
+              }
+            ],
+            "href": "/docs/category/集成开发"
+          },
+          {
+            "type": "category",
+            "label": "核心工具包",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "核心core",
+                "href": "/docs/dev-guide/toolkit/core",
+                "docId": "dev-guide/toolkit/core"
+              },
+              {
+                "type": "link",
+                "label": "执行引擎Engine",
+                "href": "/docs/dev-guide/toolkit/engine",
+                "docId": "dev-guide/toolkit/engine"
+              },
+              {
+                "type": "link",
+                "label": "git相关能力",
+                "href": "/docs/dev-guide/toolkit/git",
+                "docId": "dev-guide/toolkit/git"
+              },
+              {
+                "type": "link",
+                "label": "git代码托管平台能力",
+                "href": "/docs/dev-guide/toolkit/git-provider",
+                "docId": "dev-guide/toolkit/git-provider"
+              },
+              {
+                "type": "link",
+                "label": "webhook触发校验工具",
+                "href": "/docs/dev-guide/toolkit/trigger",
+                "docId": "dev-guide/toolkit/trigger"
+              }
+            ],
+            "href": "/docs/category/核心工具包"
           }
         ],
-        "href": "/docs/category/tutorial---extras"
+        "href": "/docs/category/开发者指南"
       }
     ]
   },
   "docs": {
+    "dev-guide/Admin数据表": {
+      "id": "dev-guide/Admin数据表",
+      "title": "Admin表设计",
+      "description": "- user:  登录用户",
+      "sidebar": "tutorialSidebar"
+    },
+    "dev-guide/develop/open-api": {
+      "id": "dev-guide/develop/open-api",
+      "title": "开放API",
+      "description": "开放API接口，方便三方系统进行集成。在使用API前，需要到 settings > Tokens 创建Token",
+      "sidebar": "tutorialSidebar"
+    },
+    "dev-guide/develop/plugin": {
+      "id": "dev-guide/develop/plugin",
+      "title": "插件开发",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "dev-guide/toolkit/core": {
+      "id": "dev-guide/toolkit/core",
+      "title": "核心core",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "dev-guide/toolkit/engine": {
+      "id": "dev-guide/toolkit/engine",
+      "title": "执行引擎Engine",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "dev-guide/toolkit/git": {
+      "id": "dev-guide/toolkit/git",
+      "title": "git相关能力",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "dev-guide/toolkit/git-provider": {
+      "id": "dev-guide/toolkit/git-provider",
+      "title": "git代码托管平台能力",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "dev-guide/toolkit/trigger": {
+      "id": "dev-guide/toolkit/trigger",
+      "title": "webhook触发校验工具",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
     "intro": {
       "id": "intro",
-      "title": "Tutorial Intro",
-      "description": "Let's discover Docusaurus in less than 5 minutes.",
+      "title": "Serverless-cd是什么",
+      "description": "Serverless-cd 是一款运行在 Serverless 架构上的功能强大而灵活，安全，低成本的CI/CD开源框架。该框架基于 Serverless Devs 开发者工具打造，通过 Serverless-cd开发者可以快速构建企业内部应用管理PaaS平台。",
       "sidebar": "tutorialSidebar"
     },
-    "tutorial-basics/congratulations": {
-      "id": "tutorial-basics/congratulations",
-      "title": "Congratulations!",
-      "description": "You have just learned the basics of Docusaurus and made some changes to the initial template.",
+    "user-guide/ops/ding-talk": {
+      "id": "user-guide/ops/ding-talk",
+      "title": "系统告警",
+      "description": "",
       "sidebar": "tutorialSidebar"
     },
-    "tutorial-basics/create-a-blog-post": {
-      "id": "tutorial-basics/create-a-blog-post",
-      "title": "Create a Blog Post",
-      "description": "Docusaurus creates a page for each blog post, but also a blog index page, a tag system, an RSS feed...",
+    "user-guide/plugins/ding-talk": {
+      "id": "user-guide/plugins/ding-talk",
+      "title": "钉钉告警",
+      "description": "发送钉钉通知插件",
       "sidebar": "tutorialSidebar"
     },
-    "tutorial-basics/create-a-document": {
-      "id": "tutorial-basics/create-a-document",
-      "title": "Create a Document",
-      "description": "Documents are groups of pages connected through:",
+    "user-guide/plugins/npm-publish": {
+      "id": "user-guide/plugins/npm-publish",
+      "title": "发布npm包",
+      "description": "快速体验",
       "sidebar": "tutorialSidebar"
     },
-    "tutorial-basics/create-a-page": {
-      "id": "tutorial-basics/create-a-page",
-      "title": "Create a Page",
-      "description": "Add Markdown or React files to src/pages to create a standalone page:",
+    "user-guide/plugins/send-email": {
+      "id": "user-guide/plugins/send-email",
+      "title": "发送邮件",
+      "description": "发送邮件",
       "sidebar": "tutorialSidebar"
     },
-    "tutorial-basics/deploy-your-site": {
-      "id": "tutorial-basics/deploy-your-site",
-      "title": "Deploy your site",
-      "description": "Docusaurus is a static-site-generator (also called Jamstack).",
+    "user-guide/quick_start": {
+      "id": "user-guide/quick_start",
+      "title": "5分钟体验",
+      "description": "前期准备",
       "sidebar": "tutorialSidebar"
     },
-    "tutorial-basics/markdown-features": {
-      "id": "tutorial-basics/markdown-features",
-      "title": "Markdown Features",
-      "description": "Docusaurus supports Markdown and a few additional features.",
+    "user-guide/usage/context": {
+      "id": "user-guide/usage/context",
+      "title": "上下文",
+      "description": "serverless-cd执行过程中的全局上下文，可以在yaml任何地方进行引用",
       "sidebar": "tutorialSidebar"
     },
-    "tutorial-extras/manage-docs-versions": {
-      "id": "tutorial-extras/manage-docs-versions",
-      "title": "Manage Docs Versions",
-      "description": "Docusaurus can manage multiple versions of your docs.",
+    "user-guide/usage/custom-steps": {
+      "id": "user-guide/usage/custom-steps",
+      "title": "支持三种脚本",
+      "description": "自定义step支持三种类型：",
       "sidebar": "tutorialSidebar"
     },
-    "tutorial-extras/translate-your-site": {
-      "id": "tutorial-extras/translate-your-site",
-      "title": "Translate your site",
-      "description": "Let's translate docs/intro.md to French.",
+    "user-guide/usage/expressions": {
+      "id": "user-guide/usage/expressions",
+      "title": "表达式",
+      "description": "表达式可以设置环境变量和访问上下文。 表达式可以是文字值、上下文引用或函数的任意组合。 您可以使用运算符组合文字、上下文引用和函数。请参考 上下文context",
       "sidebar": "tutorialSidebar"
     }
   }

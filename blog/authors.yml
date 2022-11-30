@@ -1,17 +1,11 @@
-endi:
-  name: Endilie Yacop Sucipto
-  title: Maintainer of Docusaurus
-  url: https://github.com/endiliey
-  image_url: https://github.com/endiliey.png
+mamba:
+  name: 丹坤
+  title: Founder of serverless-cd
+  url: https://github.com/heimanba
+  image_url: https://avatars.githubusercontent.com/u/5129967?s=400&u=170b840efc18ce9d054062c85baec21ad29cc39c&v=4
 
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
-
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
+wss:
+  name: 首帅
+  title: Maintainer of serverless-cd
+  url: https://github.com/wss-git
+  image_url: https://avatars.githubusercontent.com/u/56686088?v=4

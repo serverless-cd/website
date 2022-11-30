@@ -20,10 +20,230 @@
           "contentPathLocalized": "/Users/mamba/serverless-cd/website/i18n/zh-Hans/docusaurus-plugin-content-docs/current",
           "docs": [
             {
+              "unversionedId": "dev-guide/Admin数据表",
+              "id": "dev-guide/Admin数据表",
+              "title": "Admin表设计",
+              "description": "- user:  登录用户",
+              "source": "@site/docs/dev-guide/Admin数据表.md",
+              "sourceDirName": "dev-guide",
+              "slug": "/dev-guide/Admin数据表",
+              "permalink": "/docs/dev-guide/Admin数据表",
+              "draft": false,
+              "editUrl": "https://github.com/serverless-cd/website/tree/main/docs/dev-guide/Admin数据表.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "title": "Admin表设计"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "开发者指南",
+                "permalink": "/docs/category/开发者指南"
+              },
+              "next": {
+                "title": "集成&开发",
+                "permalink": "/docs/category/集成开发"
+              }
+            },
+            {
+              "unversionedId": "dev-guide/develop/open-api",
+              "id": "dev-guide/develop/open-api",
+              "title": "开放API",
+              "description": "开放API接口，方便三方系统进行集成。在使用API前，需要到 settings > Tokens 创建Token",
+              "source": "@site/docs/dev-guide/develop/open-api.md",
+              "sourceDirName": "dev-guide/develop",
+              "slug": "/dev-guide/develop/open-api",
+              "permalink": "/docs/dev-guide/develop/open-api",
+              "draft": false,
+              "editUrl": "https://github.com/serverless-cd/website/tree/main/docs/dev-guide/develop/open-api.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "title": "开放API"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "集成&开发",
+                "permalink": "/docs/category/集成开发"
+              },
+              "next": {
+                "title": "插件开发",
+                "permalink": "/docs/dev-guide/develop/plugin"
+              }
+            },
+            {
+              "unversionedId": "dev-guide/develop/plugin",
+              "id": "dev-guide/develop/plugin",
+              "title": "插件开发",
+              "description": "",
+              "source": "@site/docs/dev-guide/develop/plugin.md",
+              "sourceDirName": "dev-guide/develop",
+              "slug": "/dev-guide/develop/plugin",
+              "permalink": "/docs/dev-guide/develop/plugin",
+              "draft": false,
+              "editUrl": "https://github.com/serverless-cd/website/tree/main/docs/dev-guide/develop/plugin.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2,
+                "title": "插件开发"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "开放API",
+                "permalink": "/docs/dev-guide/develop/open-api"
+              },
+              "next": {
+                "title": "核心工具包",
+                "permalink": "/docs/category/核心工具包"
+              }
+            },
+            {
+              "unversionedId": "dev-guide/toolkit/core",
+              "id": "dev-guide/toolkit/core",
+              "title": "核心core",
+              "description": "",
+              "source": "@site/docs/dev-guide/toolkit/core.md",
+              "sourceDirName": "dev-guide/toolkit",
+              "slug": "/dev-guide/toolkit/core",
+              "permalink": "/docs/dev-guide/toolkit/core",
+              "draft": false,
+              "editUrl": "https://github.com/serverless-cd/website/tree/main/docs/dev-guide/toolkit/core.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "title": "核心core"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "核心工具包",
+                "permalink": "/docs/category/核心工具包"
+              },
+              "next": {
+                "title": "执行引擎Engine",
+                "permalink": "/docs/dev-guide/toolkit/engine"
+              }
+            },
+            {
+              "unversionedId": "dev-guide/toolkit/engine",
+              "id": "dev-guide/toolkit/engine",
+              "title": "执行引擎Engine",
+              "description": "",
+              "source": "@site/docs/dev-guide/toolkit/engine.md",
+              "sourceDirName": "dev-guide/toolkit",
+              "slug": "/dev-guide/toolkit/engine",
+              "permalink": "/docs/dev-guide/toolkit/engine",
+              "draft": false,
+              "editUrl": "https://github.com/serverless-cd/website/tree/main/docs/dev-guide/toolkit/engine.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2,
+                "title": "执行引擎Engine"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "核心core",
+                "permalink": "/docs/dev-guide/toolkit/core"
+              },
+              "next": {
+                "title": "git相关能力",
+                "permalink": "/docs/dev-guide/toolkit/git"
+              }
+            },
+            {
+              "unversionedId": "dev-guide/toolkit/git",
+              "id": "dev-guide/toolkit/git",
+              "title": "git相关能力",
+              "description": "",
+              "source": "@site/docs/dev-guide/toolkit/git.md",
+              "sourceDirName": "dev-guide/toolkit",
+              "slug": "/dev-guide/toolkit/git",
+              "permalink": "/docs/dev-guide/toolkit/git",
+              "draft": false,
+              "editUrl": "https://github.com/serverless-cd/website/tree/main/docs/dev-guide/toolkit/git.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3,
+                "title": "git相关能力"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "执行引擎Engine",
+                "permalink": "/docs/dev-guide/toolkit/engine"
+              },
+              "next": {
+                "title": "git代码托管平台能力",
+                "permalink": "/docs/dev-guide/toolkit/git-provider"
+              }
+            },
+            {
+              "unversionedId": "dev-guide/toolkit/git-provider",
+              "id": "dev-guide/toolkit/git-provider",
+              "title": "git代码托管平台能力",
+              "description": "",
+              "source": "@site/docs/dev-guide/toolkit/git-provider.md",
+              "sourceDirName": "dev-guide/toolkit",
+              "slug": "/dev-guide/toolkit/git-provider",
+              "permalink": "/docs/dev-guide/toolkit/git-provider",
+              "draft": false,
+              "editUrl": "https://github.com/serverless-cd/website/tree/main/docs/dev-guide/toolkit/git-provider.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "sidebar_position": 4,
+                "title": "git代码托管平台能力"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "git相关能力",
+                "permalink": "/docs/dev-guide/toolkit/git"
+              },
+              "next": {
+                "title": "webhook触发校验工具",
+                "permalink": "/docs/dev-guide/toolkit/trigger"
+              }
+            },
+            {
+              "unversionedId": "dev-guide/toolkit/trigger",
+              "id": "dev-guide/toolkit/trigger",
+              "title": "webhook触发校验工具",
+              "description": "",
+              "source": "@site/docs/dev-guide/toolkit/trigger.md",
+              "sourceDirName": "dev-guide/toolkit",
+              "slug": "/dev-guide/toolkit/trigger",
+              "permalink": "/docs/dev-guide/toolkit/trigger",
+              "draft": false,
+              "editUrl": "https://github.com/serverless-cd/website/tree/main/docs/dev-guide/toolkit/trigger.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "sidebar_position": 5,
+                "title": "webhook触发校验工具"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "git代码托管平台能力",
+                "permalink": "/docs/dev-guide/toolkit/git-provider"
+              }
+            },
+            {
               "unversionedId": "intro",
               "id": "intro",
-              "title": "Tutorial Intro",
-              "description": "Let's discover Docusaurus in less than 5 minutes.",
+              "title": "Serverless-cd是什么",
+              "description": "Serverless-cd 是一款运行在 Serverless 架构上的功能强大而灵活，安全，低成本的CI/CD开源框架。该框架基于 Serverless Devs 开发者工具打造，通过 Serverless-cd开发者可以快速构建企业内部应用管理PaaS平台。",
               "source": "@site/docs/intro.md",
               "sourceDirName": ".",
               "slug": "/intro",
@@ -34,224 +254,237 @@
               "version": "current",
               "sidebarPosition": 1,
               "frontMatter": {
-                "sidebar_position": 1
+                "sidebar_position": 1,
+                "title": "Serverless-cd是什么"
               },
               "sidebar": "tutorialSidebar",
               "next": {
-                "title": "Tutorial - Basics",
-                "permalink": "/docs/category/tutorial---basics"
+                "title": "用户手册",
+                "permalink": "/docs/category/用户手册"
               }
             },
             {
-              "unversionedId": "tutorial-basics/congratulations",
-              "id": "tutorial-basics/congratulations",
-              "title": "Congratulations!",
-              "description": "You have just learned the basics of Docusaurus and made some changes to the initial template.",
-              "source": "@site/docs/tutorial-basics/congratulations.md",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/congratulations",
-              "permalink": "/docs/tutorial-basics/congratulations",
+              "unversionedId": "user-guide/ops/ding-talk",
+              "id": "user-guide/ops/ding-talk",
+              "title": "系统告警",
+              "description": "",
+              "source": "@site/docs/user-guide/ops/ding-talk.md",
+              "sourceDirName": "user-guide/ops",
+              "slug": "/user-guide/ops/ding-talk",
+              "permalink": "/docs/user-guide/ops/ding-talk",
               "draft": false,
-              "editUrl": "https://github.com/serverless-cd/website/tree/main/docs/tutorial-basics/congratulations.md",
+              "editUrl": "https://github.com/serverless-cd/website/tree/main/docs/user-guide/ops/ding-talk.md",
               "tags": [],
               "version": "current",
-              "sidebarPosition": 6,
+              "sidebarPosition": 1,
               "frontMatter": {
-                "sidebar_position": 6
+                "sidebar_position": 1,
+                "title": "系统告警"
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Deploy your site",
-                "permalink": "/docs/tutorial-basics/deploy-your-site"
+                "title": "运维",
+                "permalink": "/docs/category/运维"
               },
               "next": {
-                "title": "Tutorial - Extras",
-                "permalink": "/docs/category/tutorial---extras"
+                "title": "开发者指南",
+                "permalink": "/docs/category/开发者指南"
               }
             },
             {
-              "unversionedId": "tutorial-basics/create-a-blog-post",
-              "id": "tutorial-basics/create-a-blog-post",
-              "title": "Create a Blog Post",
-              "description": "Docusaurus creates a page for each blog post, but also a blog index page, a tag system, an RSS feed...",
-              "source": "@site/docs/tutorial-basics/create-a-blog-post.md",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/create-a-blog-post",
-              "permalink": "/docs/tutorial-basics/create-a-blog-post",
+              "unversionedId": "user-guide/plugins/ding-talk",
+              "id": "user-guide/plugins/ding-talk",
+              "title": "钉钉告警",
+              "description": "发送钉钉通知插件",
+              "source": "@site/docs/user-guide/plugins/ding-talk.md",
+              "sourceDirName": "user-guide/plugins",
+              "slug": "/user-guide/plugins/ding-talk",
+              "permalink": "/docs/user-guide/plugins/ding-talk",
               "draft": false,
-              "editUrl": "https://github.com/serverless-cd/website/tree/main/docs/tutorial-basics/create-a-blog-post.md",
+              "editUrl": "https://github.com/serverless-cd/website/tree/main/docs/user-guide/plugins/ding-talk.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "title": "钉钉告警"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "插件",
+                "permalink": "/docs/category/插件"
+              },
+              "next": {
+                "title": "发送邮件",
+                "permalink": "/docs/user-guide/plugins/send-email"
+              }
+            },
+            {
+              "unversionedId": "user-guide/plugins/npm-publish",
+              "id": "user-guide/plugins/npm-publish",
+              "title": "发布npm包",
+              "description": "快速体验",
+              "source": "@site/docs/user-guide/plugins/npm-publish.md",
+              "sourceDirName": "user-guide/plugins",
+              "slug": "/user-guide/plugins/npm-publish",
+              "permalink": "/docs/user-guide/plugins/npm-publish",
+              "draft": false,
+              "editUrl": "https://github.com/serverless-cd/website/tree/main/docs/user-guide/plugins/npm-publish.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 3,
               "frontMatter": {
-                "sidebar_position": 3
+                "sidebar_position": 3,
+                "title": "发布npm包"
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Create a Document",
-                "permalink": "/docs/tutorial-basics/create-a-document"
+                "title": "发送邮件",
+                "permalink": "/docs/user-guide/plugins/send-email"
               },
               "next": {
-                "title": "Markdown Features",
-                "permalink": "/docs/tutorial-basics/markdown-features"
+                "title": "运维",
+                "permalink": "/docs/category/运维"
               }
             },
             {
-              "unversionedId": "tutorial-basics/create-a-document",
-              "id": "tutorial-basics/create-a-document",
-              "title": "Create a Document",
-              "description": "Documents are groups of pages connected through:",
-              "source": "@site/docs/tutorial-basics/create-a-document.md",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/create-a-document",
-              "permalink": "/docs/tutorial-basics/create-a-document",
+              "unversionedId": "user-guide/plugins/send-email",
+              "id": "user-guide/plugins/send-email",
+              "title": "发送邮件",
+              "description": "发送邮件",
+              "source": "@site/docs/user-guide/plugins/send-email.md",
+              "sourceDirName": "user-guide/plugins",
+              "slug": "/user-guide/plugins/send-email",
+              "permalink": "/docs/user-guide/plugins/send-email",
               "draft": false,
-              "editUrl": "https://github.com/serverless-cd/website/tree/main/docs/tutorial-basics/create-a-document.md",
+              "editUrl": "https://github.com/serverless-cd/website/tree/main/docs/user-guide/plugins/send-email.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 2,
               "frontMatter": {
-                "sidebar_position": 2
+                "sidebar_position": 2,
+                "title": "发送邮件"
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Create a Page",
-                "permalink": "/docs/tutorial-basics/create-a-page"
+                "title": "钉钉告警",
+                "permalink": "/docs/user-guide/plugins/ding-talk"
               },
               "next": {
-                "title": "Create a Blog Post",
-                "permalink": "/docs/tutorial-basics/create-a-blog-post"
+                "title": "发布npm包",
+                "permalink": "/docs/user-guide/plugins/npm-publish"
               }
             },
             {
-              "unversionedId": "tutorial-basics/create-a-page",
-              "id": "tutorial-basics/create-a-page",
-              "title": "Create a Page",
-              "description": "Add Markdown or React files to src/pages to create a standalone page:",
-              "source": "@site/docs/tutorial-basics/create-a-page.md",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/create-a-page",
-              "permalink": "/docs/tutorial-basics/create-a-page",
+              "unversionedId": "user-guide/quick_start",
+              "id": "user-guide/quick_start",
+              "title": "5分钟体验",
+              "description": "前期准备",
+              "source": "@site/docs/user-guide/quick_start.md",
+              "sourceDirName": "user-guide",
+              "slug": "/user-guide/quick_start",
+              "permalink": "/docs/user-guide/quick_start",
               "draft": false,
-              "editUrl": "https://github.com/serverless-cd/website/tree/main/docs/tutorial-basics/create-a-page.md",
+              "editUrl": "https://github.com/serverless-cd/website/tree/main/docs/user-guide/quick_start.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 1,
               "frontMatter": {
-                "sidebar_position": 1
+                "sidebar_position": 1,
+                "title": "5分钟体验"
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Tutorial - Basics",
-                "permalink": "/docs/category/tutorial---basics"
+                "title": "用户手册",
+                "permalink": "/docs/category/用户手册"
               },
               "next": {
-                "title": "Create a Document",
-                "permalink": "/docs/tutorial-basics/create-a-document"
+                "title": "使用Serverless-cd",
+                "permalink": "/docs/category/使用serverless-cd"
               }
             },
             {
-              "unversionedId": "tutorial-basics/deploy-your-site",
-              "id": "tutorial-basics/deploy-your-site",
-              "title": "Deploy your site",
-              "description": "Docusaurus is a static-site-generator (also called Jamstack).",
-              "source": "@site/docs/tutorial-basics/deploy-your-site.md",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/deploy-your-site",
-              "permalink": "/docs/tutorial-basics/deploy-your-site",
+              "unversionedId": "user-guide/usage/context",
+              "id": "user-guide/usage/context",
+              "title": "上下文",
+              "description": "serverless-cd执行过程中的全局上下文，可以在yaml任何地方进行引用",
+              "source": "@site/docs/user-guide/usage/context.md",
+              "sourceDirName": "user-guide/usage",
+              "slug": "/user-guide/usage/context",
+              "permalink": "/docs/user-guide/usage/context",
               "draft": false,
-              "editUrl": "https://github.com/serverless-cd/website/tree/main/docs/tutorial-basics/deploy-your-site.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 5,
-              "frontMatter": {
-                "sidebar_position": 5
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Markdown Features",
-                "permalink": "/docs/tutorial-basics/markdown-features"
-              },
-              "next": {
-                "title": "Congratulations!",
-                "permalink": "/docs/tutorial-basics/congratulations"
-              }
-            },
-            {
-              "unversionedId": "tutorial-basics/markdown-features",
-              "id": "tutorial-basics/markdown-features",
-              "title": "Markdown Features",
-              "description": "Docusaurus supports Markdown and a few additional features.",
-              "source": "@site/docs/tutorial-basics/markdown-features.mdx",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/markdown-features",
-              "permalink": "/docs/tutorial-basics/markdown-features",
-              "draft": false,
-              "editUrl": "https://github.com/serverless-cd/website/tree/main/docs/tutorial-basics/markdown-features.mdx",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 4,
-              "frontMatter": {
-                "sidebar_position": 4
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Create a Blog Post",
-                "permalink": "/docs/tutorial-basics/create-a-blog-post"
-              },
-              "next": {
-                "title": "Deploy your site",
-                "permalink": "/docs/tutorial-basics/deploy-your-site"
-              }
-            },
-            {
-              "unversionedId": "tutorial-extras/manage-docs-versions",
-              "id": "tutorial-extras/manage-docs-versions",
-              "title": "Manage Docs Versions",
-              "description": "Docusaurus can manage multiple versions of your docs.",
-              "source": "@site/docs/tutorial-extras/manage-docs-versions.md",
-              "sourceDirName": "tutorial-extras",
-              "slug": "/tutorial-extras/manage-docs-versions",
-              "permalink": "/docs/tutorial-extras/manage-docs-versions",
-              "draft": false,
-              "editUrl": "https://github.com/serverless-cd/website/tree/main/docs/tutorial-extras/manage-docs-versions.md",
+              "editUrl": "https://github.com/serverless-cd/website/tree/main/docs/user-guide/usage/context.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 1,
               "frontMatter": {
-                "sidebar_position": 1
+                "sidebar_position": 1,
+                "title": "上下文"
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Tutorial - Extras",
-                "permalink": "/docs/category/tutorial---extras"
+                "title": "使用Serverless-cd",
+                "permalink": "/docs/category/使用serverless-cd"
               },
               "next": {
-                "title": "Translate your site",
-                "permalink": "/docs/tutorial-extras/translate-your-site"
+                "title": "表达式",
+                "permalink": "/docs/user-guide/usage/expressions"
               }
             },
             {
-              "unversionedId": "tutorial-extras/translate-your-site",
-              "id": "tutorial-extras/translate-your-site",
-              "title": "Translate your site",
-              "description": "Let's translate docs/intro.md to French.",
-              "source": "@site/docs/tutorial-extras/translate-your-site.md",
-              "sourceDirName": "tutorial-extras",
-              "slug": "/tutorial-extras/translate-your-site",
-              "permalink": "/docs/tutorial-extras/translate-your-site",
+              "unversionedId": "user-guide/usage/custom-steps",
+              "id": "user-guide/usage/custom-steps",
+              "title": "支持三种脚本",
+              "description": "自定义step支持三种类型：",
+              "source": "@site/docs/user-guide/usage/custom-steps.md",
+              "sourceDirName": "user-guide/usage",
+              "slug": "/user-guide/usage/custom-steps",
+              "permalink": "/docs/user-guide/usage/custom-steps",
               "draft": false,
-              "editUrl": "https://github.com/serverless-cd/website/tree/main/docs/tutorial-extras/translate-your-site.md",
+              "editUrl": "https://github.com/serverless-cd/website/tree/main/docs/user-guide/usage/custom-steps.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3,
+                "title": "支持三种脚本"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "表达式",
+                "permalink": "/docs/user-guide/usage/expressions"
+              },
+              "next": {
+                "title": "插件",
+                "permalink": "/docs/category/插件"
+              }
+            },
+            {
+              "unversionedId": "user-guide/usage/expressions",
+              "id": "user-guide/usage/expressions",
+              "title": "表达式",
+              "description": "表达式可以设置环境变量和访问上下文。 表达式可以是文字值、上下文引用或函数的任意组合。 您可以使用运算符组合文字、上下文引用和函数。请参考 上下文context",
+              "source": "@site/docs/user-guide/usage/expressions.md",
+              "sourceDirName": "user-guide/usage",
+              "slug": "/user-guide/usage/expressions",
+              "permalink": "/docs/user-guide/usage/expressions",
+              "draft": false,
+              "editUrl": "https://github.com/serverless-cd/website/tree/main/docs/user-guide/usage/expressions.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 2,
               "frontMatter": {
-                "sidebar_position": 2
+                "sidebar_position": 2,
+                "title": "表达式"
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Manage Docs Versions",
-                "permalink": "/docs/tutorial-extras/manage-docs-versions"
+                "title": "上下文",
+                "permalink": "/docs/user-guide/usage/context"
+              },
+              "next": {
+                "title": "支持三种脚本",
+                "permalink": "/docs/user-guide/usage/custom-steps"
               }
             }
           ],
@@ -264,61 +497,163 @@
               },
               {
                 "type": "category",
-                "label": "Tutorial - Basics",
+                "label": "用户手册",
                 "collapsible": true,
                 "collapsed": true,
                 "items": [
                   {
                     "type": "doc",
-                    "id": "tutorial-basics/create-a-page"
+                    "id": "user-guide/quick_start"
                   },
                   {
-                    "type": "doc",
-                    "id": "tutorial-basics/create-a-document"
+                    "type": "category",
+                    "label": "使用Serverless-cd",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "user-guide/usage/context"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "user-guide/usage/expressions"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "user-guide/usage/custom-steps"
+                      }
+                    ],
+                    "link": {
+                      "type": "generated-index",
+                      "description": "5 minutes to learn the most important Docusaurus concepts.",
+                      "slug": "/category/使用serverless-cd",
+                      "permalink": "/docs/category/使用serverless-cd"
+                    }
                   },
                   {
-                    "type": "doc",
-                    "id": "tutorial-basics/create-a-blog-post"
+                    "type": "category",
+                    "label": "插件",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "user-guide/plugins/ding-talk"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "user-guide/plugins/send-email"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "user-guide/plugins/npm-publish"
+                      }
+                    ],
+                    "link": {
+                      "type": "generated-index",
+                      "description": "5 minutes to learn the most important Docusaurus concepts.",
+                      "slug": "/category/插件",
+                      "permalink": "/docs/category/插件"
+                    }
                   },
                   {
-                    "type": "doc",
-                    "id": "tutorial-basics/markdown-features"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "tutorial-basics/deploy-your-site"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "tutorial-basics/congratulations"
+                    "type": "category",
+                    "label": "运维",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "user-guide/ops/ding-talk"
+                      }
+                    ],
+                    "link": {
+                      "type": "generated-index",
+                      "description": "5 minutes to learn the most important Docusaurus concepts.",
+                      "slug": "/category/运维",
+                      "permalink": "/docs/category/运维"
+                    }
                   }
                 ],
                 "link": {
                   "type": "generated-index",
                   "description": "5 minutes to learn the most important Docusaurus concepts.",
-                  "slug": "/category/tutorial---basics",
-                  "permalink": "/docs/category/tutorial---basics"
+                  "slug": "/category/用户手册",
+                  "permalink": "/docs/category/用户手册"
                 }
               },
               {
                 "type": "category",
-                "label": "Tutorial - Extras",
+                "label": "开发者指南",
                 "collapsible": true,
                 "collapsed": true,
                 "items": [
                   {
                     "type": "doc",
-                    "id": "tutorial-extras/manage-docs-versions"
+                    "id": "dev-guide/Admin数据表"
                   },
                   {
-                    "type": "doc",
-                    "id": "tutorial-extras/translate-your-site"
+                    "type": "category",
+                    "label": "集成&开发",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "dev-guide/develop/open-api"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "dev-guide/develop/plugin"
+                      }
+                    ],
+                    "link": {
+                      "type": "generated-index",
+                      "description": "5 minutes to learn the most important Docusaurus concepts.",
+                      "slug": "/category/集成开发",
+                      "permalink": "/docs/category/集成开发"
+                    }
+                  },
+                  {
+                    "type": "category",
+                    "label": "核心工具包",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "dev-guide/toolkit/core"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "dev-guide/toolkit/engine"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "dev-guide/toolkit/git"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "dev-guide/toolkit/git-provider"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "dev-guide/toolkit/trigger"
+                      }
+                    ],
+                    "link": {
+                      "type": "generated-index",
+                      "description": "serverless-cd核心工具包，提供了执行引擎的解析，webhook校验等最核心的工作",
+                      "slug": "/category/核心工具包",
+                      "permalink": "/docs/category/核心工具包"
+                    }
                   }
                 ],
                 "link": {
                   "type": "generated-index",
-                  "slug": "/category/tutorial---extras",
-                  "permalink": "/docs/category/tutorial---extras"
+                  "slug": "/category/开发者指南",
+                  "permalink": "/docs/category/开发者指南"
                 }
               }
             ]
@@ -332,278 +667,153 @@
       "blogSidebarTitle": "Recent posts",
       "blogPosts": [
         {
-          "id": "welcome",
+          "id": "deep-devs-proxy",
           "metadata": {
-            "permalink": "/blog/welcome",
-            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2021-08-26-welcome/index.md",
-            "source": "@site/blog/2021-08-26-welcome/index.md",
-            "title": "Welcome",
-            "description": "Docusaurus blogging features are powered by the blog plugin.",
-            "date": "2021-08-26T00:00:00.000Z",
-            "formattedDate": "2021年8月26日",
+            "permalink": "/blog/deep-devs-proxy",
+            "editUrl": "https://github.com/serverless-cd/website/tree/main/blog/2022-12-02-deep-devs-proxy.md",
+            "source": "@site/blog/2022-12-02-deep-devs-proxy.md",
+            "title": "Serverless-Devs 技术解析：全局proxy代理",
+            "description": "Serverless Devs是一款企业级的，帮助用户管理Serverless应用全生命周期的开发者工具。企业内部有着比较严格的网络管控，比如可以控制下载哪些应用，访问哪些网站，以及浏览记录审计等。这些一般是通过代理服务器来实现。image.pngServerless-Devs是一个组件（插件）化的工具。通过热加载的技术，所有的业务能力都是动态加载执行的。意味着所有的组件开发者可以自由的使用自己的喜欢的库和网络进行交互。如果需要实现上述的代理的能力，不太可能case by case 的去做处理，就需要全局的代理的能力。",
+            "date": "2022-12-02T00:00:00.000Z",
+            "formattedDate": "2022年12月2日",
             "tags": [
               {
-                "label": "facebook",
-                "permalink": "/blog/tags/facebook"
+                "label": "CI/CD",
+                "permalink": "/blog/tags/ci-cd"
               },
               {
-                "label": "hello",
-                "permalink": "/blog/tags/hello"
-              },
-              {
-                "label": "docusaurus",
-                "permalink": "/blog/tags/docusaurus"
+                "label": "Serverless-Devs",
+                "permalink": "/blog/tags/serverless-devs"
               }
             ],
-            "readingTime": 0.405,
+            "readingTime": 5.1,
             "hasTruncateMarker": false,
             "authors": [
               {
-                "name": "Sébastien Lorber",
-                "title": "Docusaurus maintainer",
-                "url": "https://sebastienlorber.com",
-                "imageURL": "https://github.com/slorber.png",
-                "key": "slorber"
+                "name": "丹坤",
+                "title": "Founder of serverless-cd",
+                "url": "https://github.com/heimanba",
+                "imageURL": "https://avatars.githubusercontent.com/u/5129967?s=400&u=170b840efc18ce9d054062c85baec21ad29cc39c&v=4",
+                "key": "mamba"
               },
               {
-                "name": "Yangshun Tay",
-                "title": "Front End Engineer @ Facebook",
-                "url": "https://github.com/yangshun",
-                "imageURL": "https://github.com/yangshun.png",
-                "key": "yangshun"
+                "name": "首帅",
+                "title": "Maintainer of serverless-cd",
+                "url": "https://github.com/wss-git",
+                "imageURL": "https://avatars.githubusercontent.com/u/56686088?v=4",
+                "key": "wss"
               }
             ],
             "frontMatter": {
-              "slug": "welcome",
-              "title": "Welcome",
+              "slug": "deep-devs-proxy",
+              "title": "Serverless-Devs 技术解析：全局proxy代理",
               "authors": [
-                "slorber",
-                "yangshun"
+                "mamba",
+                "wss"
               ],
               "tags": [
-                "facebook",
-                "hello",
-                "docusaurus"
+                "CI/CD",
+                "Serverless-Devs"
               ]
             },
             "nextItem": {
-              "title": "MDX Blog Post",
-              "permalink": "/blog/mdx-blog-post"
+              "title": "前端遇见Serverless：Nodejs 框架选型",
+              "permalink": "/blog/fe2serverless-nodejs-framework"
             }
           },
-          "content": "[Docusaurus blogging features](https://docusaurus.io/docs/blog) are powered by the [blog plugin](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).\n\nSimply add Markdown files (or folders) to the `blog` directory.\n\nRegular blog authors can be added to `authors.yml`.\n\nThe blog post date can be extracted from filenames, such as:\n\n- `2019-05-30-welcome.md`\n- `2019-05-30-welcome/index.md`\n\nA blog post folder can be convenient to co-locate blog post images:\n\n![Docusaurus Plushie](./docusaurus-plushie-banner.jpeg)\n\nThe blog supports tags as well!\n\n**And if you don't want a blog**: just delete this directory, and use `blog: false` in your Docusaurus config."
+          "content": "[Serverless Devs](https://github.com/Serverless-Devs/Serverless-Devs)是一款**企业级**的，帮助用户管理Serverless**应用全生命周期**的开发者工具。企业内部有着比较严格的网络管控，比如可以控制下载哪些应用，访问哪些网站，以及浏览记录审计等。这些一般是通过代理服务器来实现。<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/22111491/1666267127530-205ad311-1f04-4402-ac94-d5ee93384553.png#clientId=u59a6cfdc-6adb-4&crop=0&crop=0&crop=1&crop=1&errorMessage=unknown%20error&from=paste&height=343&id=uf9aa8de8&margin=%5Bobject%20Object%5D&name=image.png&originHeight=686&originWidth=1386&originalType=binary&ratio=1&rotation=0&showTitle=false&size=144926&status=error&style=none&taskId=u92f34c0e-9a6e-4ed9-b29f-542425072b0&title=&width=693)<br />Serverless-Devs是一个组件（插件）化的工具。通过热加载的技术，所有的业务能力都是动态加载执行的。意味着所有的组件开发者可以自由的使用自己的喜欢的库和网络进行交互。如果需要实现上述的代理的能力，不太可能case by case 的去做处理，就需要全局的代理的能力。\n\n\n# HTTP 代理服务器搭建\nSquid 是一款广泛用于Linux和Unix平台的代理软件，对于我们实验有几个好处\n\n- 搭建简单\n- 可以方便查看访问日志，易于观察和验证\n\n## 在CentOS7安装Squid\n```\nsudo yum install squid\n```\n安装完成后，启动并启用Squid服务\n```\nsystemctl start squid\nsystemctl enable squid\n```\n验证是否成功，通过status命令查看\n```\nsystemctl status squid\n```\n\n## 修改默认配置\n打开squid.conf文件\n```\n/etc/squid/squid.conf\n```\n\n### 允许所有的IP进行代理访问\n```\nhttp_access allow all\n```\n\n### 允许代理HTTPS请求\n\n#### 创建一个自签名的SSL证书\n\n1. 转至 Squid 服务文件夹车，并创建SSL证书\n```\n$ cd /etc/squid\n$ openssl req -new -newkey rsa:2048 -nodes -x509 -keyout bump.key -out bump.crt\n```\n\n2. 将证书文件转换为 DER 格式的受信任证书以便它可以被导入浏览器中\n```\nopenssl x509 -in bump.crt -outform DER -out bump.der\n```\n\n#### 配置ssl_bump (适用于3.5.x版本)\n```\nhttp_port 3128 tcpkeepalive=60,30,3 ssl-bump generate-host-certificates=on dynamic_cert_mem_cache_size=20MB cert=/etc/squid/bump.crt key=/etc/squid/bump.key cipher=HIGH:MEDIUM:!LOW:!RC4:!SEED:!IDEA:!3DES:!MD5:!EXP:!PSK:!DSS options=NO_TLSv1,NO_SSLv3,NO_SSLv2,SINGLE_DH_USE,SINGLE_ECDH_USE tls-dh=prime256v1:/etc/squid/bump_dhparam.pem\n\nsslcrtd_program /usr/lib64/squid/ssl_crtd -s /var/lib/squid/ssl_db -M 20MB\n\nsslproxy_cert_error allow all\n\nssl_bump stare all\n```\n\n# 全局HTTP代理方案调研\n\n## http_proxy环境变量\n很多软件都识别http_proxy, https_proxy两个环境变量，比如curl ,wget\n\n- Linux/Unix和macOS配置\n```\nexport http_proxy=http://192.168.1.2:3128\nexport https_proxy=http://192.168.1.2:3128\n```\n通过终端输入 `env` 指令验证是否生效<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/22111491/1666269333135-c1bc6a5b-6f20-49ad-8422-ec09634e00df.png#clientId=u59a6cfdc-6adb-4&crop=0&crop=0&crop=1&crop=1&errorMessage=unknown%20error&from=paste&height=110&id=u2e3f3ab4&margin=%5Bobject%20Object%5D&name=image.png&originHeight=220&originWidth=1142&originalType=binary&ratio=1&rotation=0&showTitle=false&size=47141&status=error&style=none&taskId=u6ffe1853-573a-4d16-93b7-ab24bb602a5&title=&width=571)\n\n- Windows\n```\nset http_proxy=http://192.168.1.2:3128\nset https_proxy=http://192.168.1.2:3128\n```\n\n#### 通过access.log 验证 是否生效\n\n# ![squid.gif](https://cdn.nlark.com/yuque/0/2022/gif/22111491/1666281165969-794d9967-7376-490f-862d-96f0d8e455ac.gif#clientId=u5032cb36-1756-4&crop=0&crop=0&crop=1&crop=1&errorMessage=unknown%20error&from=drop&id=u9e58ef55&margin=%5Bobject%20Object%5D&name=squid.gif&originHeight=500&originWidth=1192&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1373707&status=error&style=none&taskId=uaf24aec1-eade-4680-ac1f-51b817bcbb6&title=)\n我们可以看到配置了http_proxy  环境变量，在本地执行 `curl -i [http://www.aliyun.com/serverless](http://www.aliyun.com/serverless)` 能够自动代理到代理服务器中。<br />不过可惜的是Nodejs并不能自动识别这个环境变量\n\n\n## http.Agent\nhttp.Agent 主要是为 http.request, http.get 提供代理服务的，用于管理 http 连接的创建，销毁及复用工作。http.Agent默认使用 http.globalAgent 作为代理，每次请求都是“建立连接-数据传输-销毁连接”的过程，如果我们想让多个请求复用同一个 connection，则需要重新定义 agent 去覆盖默认的 http.globalAgent。基本所有Nodejs 生态的网络请求的库，都支持Agent模式\n\n### got\n[https://github.com/sindresorhus/got/blob/main/documentation/tips.md#proxying](https://github.com/sindresorhus/got/blob/main/documentation/tips.md#proxying)\n```\nimport got from 'got';\nimport {HttpsProxyAgent} from 'hpagent';\n\nawait got('https://sindresorhus.com', {\n\tagent: {\n\t\thttps: new HttpsProxyAgent({\n\t\t\tkeepAlive: true,\n\t\t\tkeepAliveMsecs: 1000,\n\t\t\tmaxSockets: 256,\n\t\t\tmaxFreeSockets: 256,\n\t\t\tscheduling: 'lifo',\n\t\t\tproxy: 'https://localhost:8080'\n\t\t})\n\t}\n});\n```\n\n### httpx\n[https://github.com/JacksonTian/httpx](https://github.com/JacksonTian/httpx)\n```\nconst proxy = require('proxy-agent');\nconst httpx = require('httpx');\n\nhttpx.request('http://www.baidu.com/', {\n  // pass a http proxy agent\n  agent: new ProxyAgent(\"https://yourproxy:123\")\n});\n```\n\n### axios\n[https://github.com/axios/axios](https://github.com/axios/axios)\n```\nproxy: {\n    protocol: 'https',\n    host: '127.0.0.1',\n    // hostname: '127.0.0.1' // Takes precedence over 'host' if both are defined\n    port: 9000,\n    auth: {\n      username: 'mikeymike',\n      password: 'rapunz3l'\n    }\n  }\n```\n\n但是很遗憾，在Serverless Devs生态中用到了基本上述的所有的库。不太可能逐一进行修改。\n\n## 全局代理\n本质上所有的请求都是使用下面几个原始的API\n```json\nconst httpGet = http.get;\nconst httpRequest = http.request;\nconst httpsGet = https.get;\nconst httpsRequest = https.request;\n```\n所以只需要在程序初始化之前，将`http.get` 替换为 `http.get({agent: proxyAgent})`，而这个这个其实就是 我们自己实现统一代理的Agent。[global-agent](https://www.npmjs.com/package/global-agent) 这个库已经帮我们做了相应的封装<br />下面是一个简单的Demo示例\n```\nconst httpx = require('httpx');\nconst globalAgent = require('global-agent');\n\nglobalAgent.bootstrap();\nglobal.GLOBAL_AGENT.HTTP_PROXY = \"http://192.168.1.2:3128\";\nglobal.GLOBAL_AGENT.HTTPS_PROXY = \"http://192.168.1.2:3128\";\n\nprocess.env[\"NODE_TLS_REJECT_UNAUTHORIZED\"] = 0;\n\n\nhttpx.request('http://www.aliyun.com/activity').then((response) => {\n  response.pipe(process.stdout);\n  response.on('end', () => {\n    process.stdout.write('end');\n  });\n}, (err) => {\n  console.log(err)\n  // on error\n});\n```\n通过观察Squid代理的 access.log，验证结果代理是生效的\n\n# 参考资料\n\n1. ssl bump 配置\n\n[https://support.kaspersky.com/KWTS/6.1/zh-Hans/166244.htm](https://support.kaspersky.com/KWTS/6.1/zh-Hans/166244.htm)<br />[https://foamzou.com/2017/09/23/squid-proxy-with-ssl-bump/](https://foamzou.com/2017/09/23/squid-proxy-with-ssl-bump/)\n\n2. nodejs全局代理\n\n[https://www.npmjs.com/package/global-agent](https://www.npmjs.com/package/global-agent)"
         },
         {
-          "id": "mdx-blog-post",
+          "id": "fe2serverless-nodejs-framework",
           "metadata": {
-            "permalink": "/blog/mdx-blog-post",
-            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2021-08-01-mdx-blog-post.mdx",
-            "source": "@site/blog/2021-08-01-mdx-blog-post.mdx",
-            "title": "MDX Blog Post",
-            "description": "Blog posts support Docusaurus Markdown features, such as MDX.",
-            "date": "2021-08-01T00:00:00.000Z",
-            "formattedDate": "2021年8月1日",
+            "permalink": "/blog/fe2serverless-nodejs-framework",
+            "editUrl": "https://github.com/serverless-cd/website/tree/main/blog/2022-12-01-fe2serverless-nodejs-framework.md",
+            "source": "@site/blog/2022-12-01-fe2serverless-nodejs-framework.md",
+            "title": "前端遇见Serverless：Nodejs 框架选型",
+            "description": "在FaaS 的世界中，Nodejs和Python是绝对的王者。Python在运维，AI以及数据处理方面有着非常广泛应用场景。而Nodejs备受前端开发者的青睐。前端的天职是专注于提供更好的用户体验，对服务器运维，高并发，弹性扩展等领域接触不多。有了FaaS后，前端同学只需要专注应用的开发。由于Nodejs应用一般应用在Api Server的web场景。根据网页打开3s打开原则，接口一般要求在1s之内返回，否则整体用户体验会比较糟糕。所以优化启动速度就成了重中之重。",
+            "date": "2022-12-01T00:00:00.000Z",
+            "formattedDate": "2022年12月1日",
             "tags": [
               {
-                "label": "docusaurus",
-                "permalink": "/blog/tags/docusaurus"
+                "label": "CI/CD",
+                "permalink": "/blog/tags/ci-cd"
+              },
+              {
+                "label": "Serverless-Devs",
+                "permalink": "/blog/tags/serverless-devs"
               }
             ],
-            "readingTime": 0.175,
+            "readingTime": 3.17,
             "hasTruncateMarker": false,
             "authors": [
               {
-                "name": "Sébastien Lorber",
-                "title": "Docusaurus maintainer",
-                "url": "https://sebastienlorber.com",
-                "imageURL": "https://github.com/slorber.png",
-                "key": "slorber"
+                "name": "丹坤",
+                "title": "Founder of serverless-cd",
+                "url": "https://github.com/heimanba",
+                "imageURL": "https://avatars.githubusercontent.com/u/5129967?s=400&u=170b840efc18ce9d054062c85baec21ad29cc39c&v=4",
+                "key": "mamba"
+              },
+              {
+                "name": "首帅",
+                "title": "Maintainer of serverless-cd",
+                "url": "https://github.com/wss-git",
+                "imageURL": "https://avatars.githubusercontent.com/u/56686088?v=4",
+                "key": "wss"
               }
             ],
             "frontMatter": {
-              "slug": "mdx-blog-post",
-              "title": "MDX Blog Post",
+              "slug": "fe2serverless-nodejs-framework",
+              "title": "前端遇见Serverless：Nodejs 框架选型",
               "authors": [
-                "slorber"
+                "mamba",
+                "wss"
               ],
               "tags": [
-                "docusaurus"
+                "CI/CD",
+                "Serverless-Devs"
               ]
             },
             "prevItem": {
-              "title": "Welcome",
-              "permalink": "/blog/welcome"
-            },
-            "nextItem": {
-              "title": "Long Blog Post",
-              "permalink": "/blog/long-blog-post"
+              "title": "Serverless-Devs 技术解析：全局proxy代理",
+              "permalink": "/blog/deep-devs-proxy"
             }
           },
-          "content": "Blog posts support [Docusaurus Markdown features](https://docusaurus.io/docs/markdown-features), such as [MDX](https://mdxjs.com/).\n\n:::tip\n\nUse the power of React to create interactive blog posts.\n\n```js\n<button onClick={() => alert('button clicked!')}>Click me!</button>\n```\n\n<button onClick={() => alert('button clicked!')}>Click me!</button>\n\n:::"
-        },
-        {
-          "id": "long-blog-post",
-          "metadata": {
-            "permalink": "/blog/long-blog-post",
-            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2019-05-29-long-blog-post.md",
-            "source": "@site/blog/2019-05-29-long-blog-post.md",
-            "title": "Long Blog Post",
-            "description": "This is the summary of a very long blog post,",
-            "date": "2019-05-29T00:00:00.000Z",
-            "formattedDate": "2019年5月29日",
-            "tags": [
-              {
-                "label": "hello",
-                "permalink": "/blog/tags/hello"
-              },
-              {
-                "label": "docusaurus",
-                "permalink": "/blog/tags/docusaurus"
-              }
-            ],
-            "readingTime": 2.05,
-            "hasTruncateMarker": true,
-            "authors": [
-              {
-                "name": "Endilie Yacop Sucipto",
-                "title": "Maintainer of Docusaurus",
-                "url": "https://github.com/endiliey",
-                "imageURL": "https://github.com/endiliey.png",
-                "key": "endi"
-              }
-            ],
-            "frontMatter": {
-              "slug": "long-blog-post",
-              "title": "Long Blog Post",
-              "authors": "endi",
-              "tags": [
-                "hello",
-                "docusaurus"
-              ]
-            },
-            "prevItem": {
-              "title": "MDX Blog Post",
-              "permalink": "/blog/mdx-blog-post"
-            },
-            "nextItem": {
-              "title": "First Blog Post",
-              "permalink": "/blog/first-blog-post"
-            }
-          },
-          "content": "This is the summary of a very long blog post,\n\nUse a `<!--` `truncate` `-->` comment to limit blog post size in the list view.\n\n<!--truncate-->\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet"
-        },
-        {
-          "id": "first-blog-post",
-          "metadata": {
-            "permalink": "/blog/first-blog-post",
-            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2019-05-28-first-blog-post.md",
-            "source": "@site/blog/2019-05-28-first-blog-post.md",
-            "title": "First Blog Post",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet",
-            "date": "2019-05-28T00:00:00.000Z",
-            "formattedDate": "2019年5月28日",
-            "tags": [
-              {
-                "label": "hola",
-                "permalink": "/blog/tags/hola"
-              },
-              {
-                "label": "docusaurus",
-                "permalink": "/blog/tags/docusaurus"
-              }
-            ],
-            "readingTime": 0.12,
-            "hasTruncateMarker": false,
-            "authors": [
-              {
-                "name": "Gao Wei",
-                "title": "Docusaurus Core Team",
-                "url": "https://github.com/wgao19",
-                "image_url": "https://github.com/wgao19.png",
-                "imageURL": "https://github.com/wgao19.png"
-              }
-            ],
-            "frontMatter": {
-              "slug": "first-blog-post",
-              "title": "First Blog Post",
-              "authors": {
-                "name": "Gao Wei",
-                "title": "Docusaurus Core Team",
-                "url": "https://github.com/wgao19",
-                "image_url": "https://github.com/wgao19.png",
-                "imageURL": "https://github.com/wgao19.png"
-              },
-              "tags": [
-                "hola",
-                "docusaurus"
-              ]
-            },
-            "prevItem": {
-              "title": "Long Blog Post",
-              "permalink": "/blog/long-blog-post"
-            }
-          },
-          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet"
+          "content": "在FaaS 的世界中，Nodejs和Python是绝对的王者。Python在运维，AI以及数据处理方面有着非常广泛应用场景。而Nodejs备受前端开发者的青睐。前端的天职是专注于提供更好的用户体验，对服务器运维，高并发，弹性扩展等领域接触不多。有了FaaS后，前端同学只需要专注应用的开发。由于Nodejs应用一般应用在Api Server的web场景。根据网页打开3s打开原则，接口一般要求在1s之内返回，否则整体用户体验会比较糟糕。所以优化启动速度就成了重中之重。\n\n# 什么是冷启动\n谈到FaaS,永远绕不开一个关键词 **冷启动**，冷启动犹如过街老鼠，各个Serverless的文章都在谈到如何优化冷启动。但是正是由于有了冷启动，我们才能享受FaaS的各种红利。\n\n## 冷启动带来的好处\n拿Nodejs举例，我们知道Nodejs是单线程的模型，这样的架构非常脆弱，一旦主线程有异常或者耗时操作，整个应用就崩溃了，同时也无法很好的利用操作系统的多核能力，提供更好的性能。Nodejs社区提供了[cluster](https://nodejs.org/api/cluster.html) 方案，实现了经典的master-worker的架构一方面更好的利用CPU多核能力，另一方面如果某个worker进程崩溃了，Master进程立即重新fork出新的Worker进程，保证服务的稳定性。很多Nodejs应用都会安装 [pm2](https://pm2.keymetrics.io/) 这样的进程管理工具，例如[egg.js](https://www.eggjs.org/) 框架通过[egg-cluster](egg-cluster)提供了进程管理的能力\n```\n+---------+                 +---------+\n   |  Worker |                 |  Master |\n   +---------+                 +----+----+\n        | uncaughtException         |\n        +------------+              |\n        |            |              |                   +---------+\n        | <----------+              |                   |  Worker |\n        |                           |                   +----+----+\n        |        disconnect         |   fork a new worker    |\n        +-------------------------> + ---------------------> |\n        |         wait...           |                        |\n        |          exit             |                        |\n        +-------------------------> |                        |\n        |                           |                        |\n       die                          |                        |\n                                    |                        |\n                                    |                        |\n```\n\n有了FaaS后，就不需要使用上面的**cluster**模型了。<br />我们可以看到，每个request请求，FaaS平台都会新建一个单独的**新的实例**(instance)进行处理<br />所以多个请求之间并不会发生任何共享和抢占的行为，当然不会因为上一个用户请求异常造成下个用户不可用的情况，也保证了服务的高可用。<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/22111491/1667390442726-8211f1de-c81a-488d-9e06-4bcb1bf2e273.png#clientId=u98dcae74-a366-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=454&id=u63a2ede7&margin=%5Bobject%20Object%5D&name=image.png&originHeight=908&originWidth=1044&originalType=binary&ratio=1&rotation=0&showTitle=false&size=280671&status=done&style=none&taskId=u155aff6d-934e-4d10-a0b3-2740424ba79&title=&width=522)\n\n\n## 冷启动带来的问题\n我们在来详细看下在FaaS平台，Nodejs应用是如何启动的"
         }
       ],
       "blogListPaginated": [
         {
           "items": [
-            "welcome",
-            "mdx-blog-post",
-            "long-blog-post",
-            "first-blog-post"
+            "deep-devs-proxy",
+            "fe2serverless-nodejs-framework"
           ],
           "metadata": {
             "permalink": "/blog",
             "page": 1,
             "postsPerPage": 10,
             "totalPages": 1,
-            "totalCount": 4,
+            "totalCount": 2,
             "blogDescription": "Blog",
             "blogTitle": "Blog"
           }
         }
       ],
       "blogTags": {
-        "/blog/tags/facebook": {
-          "label": "facebook",
+        "/blog/tags/ci-cd": {
+          "label": "CI/CD",
           "items": [
-            "welcome"
+            "deep-devs-proxy",
+            "fe2serverless-nodejs-framework"
           ],
-          "permalink": "/blog/tags/facebook",
+          "permalink": "/blog/tags/ci-cd",
           "pages": [
             {
               "items": [
-                "welcome"
+                "deep-devs-proxy",
+                "fe2serverless-nodejs-framework"
               ],
               "metadata": {
-                "permalink": "/blog/tags/facebook",
-                "page": 1,
-                "postsPerPage": 10,
-                "totalPages": 1,
-                "totalCount": 1,
-                "blogDescription": "Blog",
-                "blogTitle": "Blog"
-              }
-            }
-          ]
-        },
-        "/blog/tags/hello": {
-          "label": "hello",
-          "items": [
-            "welcome",
-            "long-blog-post"
-          ],
-          "permalink": "/blog/tags/hello",
-          "pages": [
-            {
-              "items": [
-                "welcome",
-                "long-blog-post"
-              ],
-              "metadata": {
-                "permalink": "/blog/tags/hello",
+                "permalink": "/blog/tags/ci-cd",
                 "page": 1,
                 "postsPerPage": 10,
                 "totalPages": 1,
@@ -614,52 +824,25 @@
             }
           ]
         },
-        "/blog/tags/docusaurus": {
-          "label": "docusaurus",
+        "/blog/tags/serverless-devs": {
+          "label": "Serverless-Devs",
           "items": [
-            "welcome",
-            "mdx-blog-post",
-            "long-blog-post",
-            "first-blog-post"
+            "deep-devs-proxy",
+            "fe2serverless-nodejs-framework"
           ],
-          "permalink": "/blog/tags/docusaurus",
+          "permalink": "/blog/tags/serverless-devs",
           "pages": [
             {
               "items": [
-                "welcome",
-                "mdx-blog-post",
-                "long-blog-post",
-                "first-blog-post"
+                "deep-devs-proxy",
+                "fe2serverless-nodejs-framework"
               ],
               "metadata": {
-                "permalink": "/blog/tags/docusaurus",
+                "permalink": "/blog/tags/serverless-devs",
                 "page": 1,
                 "postsPerPage": 10,
                 "totalPages": 1,
-                "totalCount": 4,
-                "blogDescription": "Blog",
-                "blogTitle": "Blog"
-              }
-            }
-          ]
-        },
-        "/blog/tags/hola": {
-          "label": "hola",
-          "items": [
-            "first-blog-post"
-          ],
-          "permalink": "/blog/tags/hola",
-          "pages": [
-            {
-              "items": [
-                "first-blog-post"
-              ],
-              "metadata": {
-                "permalink": "/blog/tags/hola",
-                "page": 1,
-                "postsPerPage": 10,
-                "totalPages": 1,
-                "totalCount": 1,
+                "totalCount": 2,
                 "blogDescription": "Blog",
                 "blogTitle": "Blog"
               }

@@ -1,6 +1,6 @@
 {
   "permalink": "/blog/welcome",
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2021-08-26-welcome/index.md",
+  "editUrl": "https://github.com/serverless-cd/website/tree/main/blog/2021-08-26-welcome/index.md",
   "source": "@site/blog/2021-08-26-welcome/index.md",
   "title": "Welcome",
   "description": "Docusaurus blogging features are powered by the blog plugin.",
@@ -8,51 +8,42 @@
   "formattedDate": "2021年8月26日",
   "tags": [
     {
-      "label": "facebook",
-      "permalink": "/blog/tags/facebook"
+      "label": "CI/CD",
+      "permalink": "/blog/tags/ci-cd"
     },
     {
-      "label": "hello",
-      "permalink": "/blog/tags/hello"
-    },
-    {
-      "label": "docusaurus",
-      "permalink": "/blog/tags/docusaurus"
+      "label": "Serverless-Devs",
+      "permalink": "/blog/tags/serverless-devs"
     }
   ],
-  "readingTime": 0.405,
+  "readingTime": 0.395,
   "hasTruncateMarker": false,
   "authors": [
     {
-      "name": "Sébastien Lorber",
-      "title": "Docusaurus maintainer",
-      "url": "https://sebastienlorber.com",
-      "imageURL": "https://github.com/slorber.png",
-      "key": "slorber"
+      "name": "丹坤",
+      "title": "Founder of serverless-cd",
+      "url": "https://github.com/heimanba",
+      "imageURL": "https://avatars.githubusercontent.com/u/5129967?s=400&u=170b840efc18ce9d054062c85baec21ad29cc39c&v=4",
+      "key": "mamba"
     },
     {
-      "name": "Yangshun Tay",
-      "title": "Front End Engineer @ Facebook",
-      "url": "https://github.com/yangshun",
-      "imageURL": "https://github.com/yangshun.png",
-      "key": "yangshun"
+      "name": "首帅",
+      "title": "Maintainer of serverless-cd",
+      "url": "https://github.com/wss-git",
+      "imageURL": "https://avatars.githubusercontent.com/u/56686088?v=4",
+      "key": "wss"
     }
   ],
   "frontMatter": {
     "slug": "welcome",
     "title": "Welcome",
     "authors": [
-      "slorber",
-      "yangshun"
+      "mamba",
+      "wss"
     ],
     "tags": [
-      "facebook",
-      "hello",
-      "docusaurus"
+      "CI/CD",
+      "Serverless-Devs"
     ]
-  },
-  "nextItem": {
-    "title": "MDX Blog Post",
-    "permalink": "/blog/mdx-blog-post"
   }
 }

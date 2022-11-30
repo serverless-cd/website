@@ -17,7 +17,7 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Manage Docs Versions",
-    "permalink": "/docs/tutorial-extras/manage-docs-versions"
+    "title": "插件开发",
+    "permalink": "/docs/tutorial-extras/develop/plugin"
   }
 }
