@@ -2,9 +2,9 @@ edition: 1.0.0
 name: deploy-oss
 access: default
 vars:
-  region: cn-hangzhou
+  region: cn-hongkong
   oss:
-    bucketName: 'serverless-cd-website-cn-hangzhou'
+    bucketName: 'serverless-cd-website-cn-hongkong'
 services:
   portal-www:
     component: oss
