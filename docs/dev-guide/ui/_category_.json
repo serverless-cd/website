@@ -1,0 +1,8 @@
+{
+  "label": "前端UI组件",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "基于React的前端UI公共组件"
+  }
+}
