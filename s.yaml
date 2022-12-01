@@ -8,12 +8,12 @@ vars:
 services:
   portal-www:
     component: oss
-    actions:
-      post-deploy:
-        - plugin: cdn-cache-plugin
-          args:
-            operateType: refresh
-            objectPath: http://serverless-cd.cn/
+    # actions:
+    #   post-deploy:
+    #     - plugin: cdn-cache-plugin
+    #       args:
+    #         operateType: refresh
+    #         objectPath: http://serverless-cd.cn/
     props:
       region: ${vars.region}
       bucket: ${vars.oss.bucketName}
