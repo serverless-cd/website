@@ -12,7 +12,7 @@ tags: [CI/CD, Serverless-Devs]
 谈到FaaS,永远绕不开一个关键词 **冷启动**，冷启动犹如过街老鼠，各个Serverless的文章都在谈到如何优化冷启动。但是正是由于有了冷启动，我们才能享受FaaS的各种红利。
 
 ## 冷启动带来的好处
-拿Nodejs举例，我们知道Nodejs是单线程的模型，这样的架构非常脆弱，一旦主线程有异常或者耗时操作，整个应用就崩溃了，同时也无法很好的利用操作系统的多核能力，提供更好的性能。Nodejs社区提供了[cluster](https://nodejs.org/api/cluster.html) 方案，实现了经典的master-worker的架构一方面更好的利用CPU多核能力，另一方面如果某个worker进程崩溃了，Master进程立即重新fork出新的Worker进程，保证服务的稳定性。很多Nodejs应用都会安装 [pm2](https://pm2.keymetrics.io/) 这样的进程管理工具，例如[egg.js](https://www.eggjs.org/) 框架通过[egg-cluster](egg-cluster)提供了进程管理的能力
+拿Nodejs举例，我们知道Nodejs是单线程的模型，这样的架构非常脆弱，一旦主线程有异常或者耗时操作，整个应用就崩溃了，同时也无法很好的利用操作系统的多核能力，提供更好的性能。Nodejs社区提供了[cluster](https://nodejs.org/api/cluster.html) 方案，实现了经典的master-worker的架构一方面更好的利用CPU多核能力，另一方面如果某个worker进程崩溃了，Master进程立即重新fork出新的Worker进程，保证服务的稳定性。很多Nodejs应用都会安装 [pm2](https://pm2.keymetrics.io/) 这样的进程管理工具，例如[egg.js](https://www.eggjs.org/) 框架通过`egg-cluster`提供了进程管理的能力
 ```
 +---------+                 +---------+
    |  Worker |                 |  Master |

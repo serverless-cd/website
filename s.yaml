@@ -1,0 +1,25 @@
+edition: 1.0.0
+name: deploy-oss
+access: default
+vars:
+  region: cn-hangzhou
+  oss:
+    bucketName: 'serverless-cd-website-cn-hangzhou'
+services:
+  portal-www:
+    component: oss
+    actions:
+      post-deploy:
+        - plugin: cdn-cache-plugin
+          args:
+            operateType: refresh
+            objectPath: http://serverless-cd.cn/
+    props:
+      region: ${vars.region}
+      bucket: ${vars.oss.bucketName}
+      acl: public-read
+      codeUri: ./deploy-dist
+      website:
+        index: index.html
+        error: 404.html
+        subDirType: redirect

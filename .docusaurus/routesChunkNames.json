@@ -1,243 +1,200 @@
 {
-  "/__docusaurus/debug-5ff": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-76-73a"
-    }
-  },
-  "/__docusaurus/debug/config-9e0": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-76-73a"
-    }
-  },
-  "/__docusaurus/debug/content-7df": {
-    "__comp": "__comp---theme-debug-contentba-8-ce7",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-76-73a"
-    },
-    "allContent": "allContent---docusaurus-debug-content-246-9aa"
-  },
-  "/__docusaurus/debug/globalData-027": {
-    "__comp": "__comp---theme-debug-global-dataede-0fa",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-76-73a"
-    }
-  },
-  "/__docusaurus/debug/metadata-881": {
-    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-76-73a"
-    }
-  },
-  "/__docusaurus/debug/registry-2a5": {
-    "__comp": "__comp---theme-debug-registry-679-501",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-76-73a"
-    }
-  },
-  "/__docusaurus/debug/routes-982": {
-    "__comp": "__comp---theme-debug-routes-946-699",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-76-73a"
-    }
-  },
   "/blog-2d8": {
-    "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
+    "__comp": "a6aa9e1f",
     "__context": {
-      "plugin": "plugin---blog-556-a05"
+      "plugin": "556b1940"
     },
-    "sidebar": "sidebar---blog-814-8ac",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---blog-782-fe5"
+        "content": "7826dd54"
       },
       {
-        "content": "content---bloge-78-2ac"
+        "content": "e78dbf6a"
       }
     ],
-    "metadata": "metadata---blogb-2-b-df1"
+    "metadata": "b2b675dd"
   },
   "/blog/archive-847": {
-    "__comp": "__comp---theme-blog-archive-page-9-e-4-1d8",
+    "__comp": "9e4087bc",
     "__context": {
-      "plugin": "plugin---blog-556-a05"
+      "plugin": "556b1940"
     },
-    "archive": "archive---blog-archiveb-2-f-393"
+    "archive": "b2f554cd"
   },
   "/blog/deep-devs-proxy-da6": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__comp": "ccc49370",
     "__context": {
-      "plugin": "plugin---blog-556-a05"
+      "plugin": "556b1940"
     },
-    "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-fe-2-serverless-nodejs-frameworkeb-3-00d"
+    "sidebar": "814f3328",
+    "content": "eb3d24db"
   },
   "/blog/fe2serverless-nodejs-framework-ccb": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__comp": "ccc49370",
     "__context": {
-      "plugin": "plugin---blog-556-a05"
+      "plugin": "556b1940"
     },
-    "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-fe-2-serverless-nodejs-framework-4-c-0-39b"
+    "sidebar": "814f3328",
+    "content": "4c0de305"
   },
   "/blog/tags-42b": {
-    "__comp": "__comp---theme-blog-tags-list-page-01-a-d0b",
+    "__comp": "01a85c17",
     "__context": {
-      "plugin": "plugin---blog-556-a05"
+      "plugin": "556b1940"
     },
-    "sidebar": "sidebar---blog-814-8ac",
-    "tags": "tags---blog-tagsa-70-da2"
+    "sidebar": "814f3328",
+    "tags": "a7023ddc"
   },
   "/blog/tags/ci-cd-975": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__comp": "6875c492",
     "__context": {
-      "plugin": "plugin---blog-556-a05"
+      "plugin": "556b1940"
     },
-    "sidebar": "sidebar---blog-814-8ac",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---blog-782-fe5"
+        "content": "7826dd54"
       },
       {
-        "content": "content---bloge-78-2ac"
+        "content": "e78dbf6a"
       }
     ],
-    "tag": "tag---blog-tags-ci-cdaba-b5a",
-    "listMetadata": "listMetadata---blog-tags-ci-cd-043-1d7"
+    "tag": "aba940a6",
+    "listMetadata": "04380a63"
   },
   "/blog/tags/serverless-devs-6af": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__comp": "6875c492",
     "__context": {
-      "plugin": "plugin---blog-556-a05"
+      "plugin": "556b1940"
     },
-    "sidebar": "sidebar---blog-814-8ac",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---blog-782-fe5"
+        "content": "7826dd54"
       },
       {
-        "content": "content---bloge-78-2ac"
+        "content": "e78dbf6a"
       }
     ],
-    "tag": "tag---blog-tags-serverless-devs-0-b-9-2b1",
-    "listMetadata": "listMetadata---blog-tags-serverless-devs-191-3ac"
+    "tag": "0b989fb7",
+    "listMetadata": "19119f5a"
   },
   "/markdown-page-c42": {
-    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__comp": "1f391b9e",
     "__context": {
-      "plugin": "plugin---markdown-page-52-c-015"
+      "plugin": "52ccd19b"
     },
-    "content": "content---markdown-page-393-028"
+    "content": "393be207"
   },
   "/docs-f28": {
-    "__comp": "__comp---theme-doc-page-1-be-9be",
+    "__comp": "1be78505",
     "__context": {
-      "plugin": "plugin---docs-20-b-90f"
+      "plugin": "20b6f991"
     },
-    "versionMetadata": "versionMetadata---docs-935-398"
+    "versionMetadata": "935f2afb"
   },
   "/docs/category/插件-20c": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-插件-5-a-0-b80"
+    "__comp": "14eb3368",
+    "categoryGeneratedIndex": "5a0226c7"
   },
   "/docs/category/核心工具包-2f4": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-核心工具包-520-461"
+    "__comp": "14eb3368",
+    "categoryGeneratedIndex": "520994c0"
   },
   "/docs/category/集成开发-92d": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-集成开发-7-cb-d7e"
+    "__comp": "14eb3368",
+    "categoryGeneratedIndex": "7cbbb7e3"
   },
   "/docs/category/开发者指南-1e9": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-开发者指南abb-c31"
+    "__comp": "14eb3368",
+    "categoryGeneratedIndex": "abb34ffe"
   },
   "/docs/category/使用serverless-cd-580": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-使用serverless-cd-132-b01"
+    "__comp": "14eb3368",
+    "categoryGeneratedIndex": "132c2daf"
   },
   "/docs/category/用户手册-1b7": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-用户手册-945-4e7"
+    "__comp": "14eb3368",
+    "categoryGeneratedIndex": "9453fc47"
   },
   "/docs/category/运维-4d5": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-运维-79-e-d88"
+    "__comp": "14eb3368",
+    "categoryGeneratedIndex": "79e3d5e6"
   },
   "/docs/dev-guide/Admin数据表-885": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-dev-guide-admin数据表-532-8d0"
+    "__comp": "17896441",
+    "content": "532b3680"
   },
   "/docs/dev-guide/develop/open-api-f49": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-dev-guide-develop-open-apic-3-b-f1a"
+    "__comp": "17896441",
+    "content": "c3bb7ed3"
   },
   "/docs/dev-guide/develop/plugin-4b6": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-dev-guide-develop-plugin-7-d-0-2c7"
+    "__comp": "17896441",
+    "content": "7d05edca"
   },
   "/docs/dev-guide/toolkit/core-a70": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-dev-guide-toolkit-core-454-9f1"
+    "__comp": "17896441",
+    "content": "454423d8"
   },
   "/docs/dev-guide/toolkit/engine-b44": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-dev-guide-toolkit-engine-7-d-3-f33"
+    "__comp": "17896441",
+    "content": "7d3b4ecf"
   },
   "/docs/dev-guide/toolkit/git-cb5": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-dev-guide-toolkit-git-3-ee-194"
+    "__comp": "17896441",
+    "content": "3ee652a9"
   },
   "/docs/dev-guide/toolkit/git-provider-c77": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-dev-guide-toolkit-git-provider-9-a-1-f52"
+    "__comp": "17896441",
+    "content": "9a184b22"
   },
   "/docs/dev-guide/toolkit/trigger-c96": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-dev-guide-toolkit-trigger-74-a-22d"
+    "__comp": "17896441",
+    "content": "74aa22f6"
   },
   "/docs/intro-aed": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-intro-0-e-3-be1"
+    "__comp": "17896441",
+    "content": "0e384e19"
   },
   "/docs/user-guide/ops/ding-talk-373": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-user-guide-ops-ding-talk-27-b-b95"
+    "__comp": "17896441",
+    "content": "27b1ee03"
   },
   "/docs/user-guide/plugins/ding-talk-950": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-user-guide-plugins-ding-talk-4-fc-50d"
+    "__comp": "17896441",
+    "content": "4fc132e7"
   },
   "/docs/user-guide/plugins/npm-publish-b2c": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-user-guide-plugins-npm-publishe-9-d-954"
+    "__comp": "17896441",
+    "content": "e9d0b4c1"
   },
   "/docs/user-guide/plugins/send-email-3ec": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-user-guide-plugins-send-emailece-eac"
+    "__comp": "17896441",
+    "content": "ece10da9"
   },
   "/docs/user-guide/quick_start-637": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-user-guide-quick-start-426-6c3"
+    "__comp": "17896441",
+    "content": "426e59fd"
   },
   "/docs/user-guide/usage/context-259": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-user-guide-usage-context-3-f-6-c5c"
+    "__comp": "17896441",
+    "content": "3f6998a2"
   },
   "/docs/user-guide/usage/custom-steps-0a9": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-user-guide-usage-custom-steps-3-fd-f29"
+    "__comp": "17896441",
+    "content": "3fd69405"
   },
   "/docs/user-guide/usage/expressions-b99": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-user-guide-usage-expressions-1-fc-9e3"
+    "__comp": "17896441",
+    "content": "1fc09dbc"
   },
   "/-a00": {
-    "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
+    "__comp": "c4f5d8e4",
     "__context": {
-      "plugin": "plugin---markdown-page-52-c-015"
+      "plugin": "52ccd19b"
     },
-    "config": "config---5-e-9-4f3"
+    "config": "5e9f5e1a"
   }
 }
