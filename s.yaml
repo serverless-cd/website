@@ -18,7 +18,7 @@ services:
       region: ${vars.region}
       bucket: ${vars.oss.bucketName}
       acl: public-read
-      codeUri: ./deploy-dist
+      codeUri: ./build
       website:
         index: index.html
         error: 404.html
