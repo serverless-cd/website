@@ -5,13 +5,13 @@ title: 核心core
 
 # 核心 core(@serverless-cd/core)
 
-# 安装
+## 安装
 
 ```bash
 $ npm install @serverless-cd/core --save
 ```
 
-# getRef(options)
+## getRef(options)
 
 通过 branch 或者 tag 获取到 ref
 
@@ -28,7 +28,7 @@ const res = getRef({ type: "tag", value: "v0.0.1" });
 console.log(res); // output: refs/tags/v0.0.1
 ```
 
-# parseRef(value)
+## parseRef(value)
 
 解析 ref 得到 branch 或者 tag 的值
 
