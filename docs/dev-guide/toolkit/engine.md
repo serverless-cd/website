@@ -152,7 +152,6 @@ const engine = new Engine(options);
 | --------- | -------- |
 | success   | 执行成功 |
 | failure   | 执行失败 |
-| skipped   | 忽略执行 |
 | cancelled | 取消执行 |
 
 ## 启动 engine
