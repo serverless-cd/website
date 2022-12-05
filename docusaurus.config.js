@@ -26,6 +26,9 @@ const config = {
     defaultLocale: 'zh-Hans',
     locales: ['zh-Hans'],
   },
+  plugins: ["docusaurus-plugin-less"],
+
+  // themes: ['@docusaurus/theme-live-codeblock'],
 
   presets: [
     [
@@ -47,12 +50,11 @@ const config = {
             'https://github.com/serverless-cd/website/tree/main/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: [require.resolve('./src/css/custom.css')],
         },
       }),
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
