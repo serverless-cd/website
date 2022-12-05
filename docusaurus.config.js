@@ -26,6 +26,9 @@ const config = {
     defaultLocale: 'zh-Hans',
     locales: ['zh-Hans'],
   },
+  plugins: ["docusaurus-plugin-less"],
+
+  // themes: ['@docusaurus/theme-live-codeblock'],
 
   presets: [
     [
@@ -47,12 +50,12 @@ const config = {
             'https://github.com/serverless-cd/website/tree/main/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          // wind.css: @alicloud/console-components 部分基础样式冲突，加载本地过滤后的css文件
+          customCss: [require.resolve('./src/css/custom.css'), require.resolve('./src/css/wind.css')],
         },
       }),
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
