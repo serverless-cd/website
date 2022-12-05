@@ -25,6 +25,21 @@
   src: url(/static/fonts/FiraCode-VF.woff2) format('woff2-variations'),
     url(/static/fonts/FiraCode-VF.woff) format('woff-variations');
 }
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.branch-radio{
+  line-height: 32px !important;
+}
+
+.branch-radio-pr {
+  line-height: 94px !important;
+}
+
+.trigger-matching-refresh-icon {
+  display: flex !important;
+}
 
 pre,
 code {
@@ -35,6 +50,14 @@ code {
 body {
   --dyte-colors-video-bg: 50 50 50;
 }
+
+/* a:link {
+  color: unset !important;
+}
+
+a:visited {
+  color: unset !important;
+} */
 
 /* Dyte Docs Tokens */
 :root {

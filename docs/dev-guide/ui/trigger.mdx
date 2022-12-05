@@ -1,0 +1,145 @@
+---
+sidebar_position: 1
+title: trigger
+---
+import tmpl from '!!raw-loader!@site/src/components/Trigger/index.js'
+import Fieldtmpl from '!!raw-loader!@site/src/components/Trigger/FieldTrigger.js'
+import StrictTmpl from '!!raw-loader!@site/src/components/Trigger/StrictTrigger.js'
+import DisabledTmpl from '!!raw-loader!@site/src/components/Trigger/DisabledTrigger.js'
+
+
+
+# Trigger   
+## 安装
+  Trigger组件是基于[@alicloud/console-components](https://csr632.gitee.io/alibabacloud-console-components/guides/quick-start) 二次开发的业务组件，请按照以下依赖项
+  ``` bash
+    npm install @serverless-cd/ui @alicloud/console-components
+  ```
+  导入组件样式：
+  ```
+    import '@alicloud/console-components/dist/wind.css'
+  ```
+
+## 使用注意
+  Trigger 组件接收 ```value``` ```onChange``` 两个参数来进行数据传输。也可通过[Felid](https://csr632.gitee.io/alibabacloud-console-components/base-components/field) 来接管Trigger
+
+## 基础用法
+默认情况下，Trigger组件为通用模式， 可以通过mode 来设置组件模式，通用模式（normal）、严格模式（strict）。
+
+<CodeBase codeSource={tmpl}>
+  <TriggerDemo />
+</CodeBase>
+
+## Apis
+| 参数 | 说明 | 类型 | 必填 |  可选值 | 默认值 |
+|:--------| :--------- | :-------- | :-------- | :--------| :---------|
+| value | 当前值 | Object: [value](#value) | 是 | |  |
+| onChange | 数据改变时触发onChange事件 | Function(value:Object) | 是 | | |
+| mode | Trigger组件模式 | String | 是 | 通用模式（normal）、严格模式（strict） | normal|
+| loading | 严格模式下分支列表 loading 状态 | Boolean | 否 | | false |
+| disabled | 禁用状态 | Boolean | 否 | | false |
+| isRefresh | 控制显现刷新操作 （仅严格模式（strict）支持） | Boolean | 否 | | false |
+| onRefresh | 点击刷新Icon触发的事件 |  Function | 否 |  | |
+| branchList | 分支列表 （仅严格模式（strict）支持） | Array[String] | 严格模式下是必填项 | | [] |
+| ref | 通过useRef()绑定组件，可调用组件内部validate | Element | 否 | |  |
+
+
+ ## 参数解析
+``` javascript
+{
+    "push": {
+        "branches": {
+            "precise": [
+                "master"
+            ],
+            "prefix": [
+                "master"
+            ],
+            "include": [
+                "master"
+            ],
+            "exclude": [
+                "master"
+            ]
+        }
+    },
+    "pull_request": {
+        "branches": {
+            "prefix": [
+                {
+                    "target": "",
+                    "source": ""
+                }
+            ]
+        },
+        "types": [
+            "merged"
+        ]
+    }
+}
+```
+
+ ### value
+  Trigger组件数据格式
+
+| 参数 | 说明 | 类型 |
+|:--------| :--------- | :-------- |
+| push | Push事件类型 | Object: [push](#pushpull_request) |
+| pull_request | Pull Request 事件类型 | Object: [pull_request](#pushpull_request) |
+
+### push/pull_request
+通用模式下 分支匹配/Tag 匹配 数据格式
+
+| 参数 | 说明 | 类型 |
+|:--------| :--------- | :-------- |
+| branches | 分支匹配 | Object: 通用模式: ([branches](#branchestags-通用模式)) |
+| tags | Tag 匹配 （pull_request 类型不支持） | Object: 通用模式: ([tags](#branchestags-严格模式)) |
+| types | 触发类型 （仅pull_request 类型支持） | Array[] |
+
+
+### branches/tags (通用模式)
+
+| 参数 | 说明 | 类型 |
+|:--------| :--------- | :-------- |
+| prefix | 前缀匹配 | Array[String] |
+| precise | 精确匹配 | Array[String]  |
+| include | 正则匹配| Array[String]  |
+| exclude | 精确排除 | Array[String]  |
+
+### branches/tags (严格模式)
+
+| 参数 | 说明 | 类型 |
+|:--------| :--------- | :-------- |
+| prefix | 前缀匹配 (仅Tag 匹配支持) | [prefix](#prefixprecise-严格模式) |
+| precise | 精确匹配 (仅分支匹配 支持) | [precise](#prefixprecise-严格模式) |
+
+### prefix/precise (严格模式)
+
+| 参数 | 说明 | 类型 |
+|:--------| :--------- | :-------- |
+| target | 分支名 | String |
+| source | 来源分支 | String |
+
+## 更多示例
+
+### (推荐使用) Field 接管组件
+Field 接管组件，将Trigger组件变为可受控的，便于表单的校验、数据传输。[自定义组件接入Field标准](https://csr632.gitee.io/alibabacloud-console-components/base-components/field#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6%E6%8E%A5%E5%85%A5field%E6%A0%87%E5%87%86)
+
+<CodeBase codeSource={Fieldtmpl}>
+  <FieldTrigger />
+</CodeBase>
+
+### 严格模式
+  通过mode 设置为 ``` strict ``` 切换组件模式，注意：Trigger 校验组件是通过ref来绑定组件。调用组件内部validate方法拿到校验结果。
+
+<CodeBase codeSource={StrictTmpl}>
+  <StrictTrigger />
+</CodeBase>
+
+### 禁用状态
+  通过disabled 来设置组件禁用状态
+
+<CodeBase codeSource={DisabledTmpl}>
+  <DisabledTrigger />
+</CodeBase>
+
