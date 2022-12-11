@@ -1,8 +1,8 @@
 import React from "react";
 import MseMap from "@serverless-cd/mse-arc-ui";
 
-const OpenSourceMap = () => {
+const MseArc = () => {
   return <MseMap />;
 };
 
-export default OpenSourceMap;
+export default MseArc;

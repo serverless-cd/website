@@ -1,7 +1,7 @@
 import React from "react";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 
-const OpenSourceMap = () => {
+const MseArc = () => {
   return (
     <BrowserOnly>
       {() => {
@@ -12,4 +12,4 @@ const OpenSourceMap = () => {
   );
 };
 
-export default OpenSourceMap;
+export default MseArc;
