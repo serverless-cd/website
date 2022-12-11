@@ -1,10 +1,15 @@
-import React, { useState, useEffect } from "react";
-import MseMap from '@serverless-cd/mse-arc-ui'
+import React from "react";
+import BrowserOnly from "@docusaurus/BrowserOnly";
 
 const OpenSourceMap = () => {
-  return <div>
-      <MseMap/>
-  </div>;
+  return (
+    <BrowserOnly>
+      {() => {
+        const MseMap = require("@serverless-cd/mse-arc-ui").default;
+        return <MseMap />;
+      }}
+    </BrowserOnly>
+  );
 };
 
 export default OpenSourceMap;
