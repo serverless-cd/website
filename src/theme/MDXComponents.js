@@ -5,6 +5,7 @@ import FieldTrigger from '@site/src/components/Trigger/FieldTrigger';
 import StrictTrigger from '@site/src/components/Trigger/StrictTrigger';
 import DisabledTrigger from '@site/src/components/Trigger/DisabledTrigger';
 import CodeBase from '@site/src/components/CodeBase';
+import OpenSourceMap from '@site/src/components/OpenSourceMap';
 
 
 export default {
@@ -16,5 +17,6 @@ export default {
   CodeBase: CodeBase,
   FieldTrigger: FieldTrigger,
   StrictTrigger: StrictTrigger,
-  DisabledTrigger: DisabledTrigger
+  DisabledTrigger: DisabledTrigger,
+  OpenSourceMap:OpenSourceMap
 };

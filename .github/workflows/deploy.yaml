@@ -16,7 +16,9 @@ jobs:
           node-version: 16.x
       - name: Build
         run: |
-          npm install && npm run build
+          npm config set legacy-peer-deps true
+          npm install
+          npm run build
       - run: npm i @serverless-devs/s -g  --registry=https://registry.npmmirror.com
       - run: s config add --AccessKeyID ${{secrets.ACCESS_KEYID}}  --AccessKeySecret ${{secrets.ACCESS_KEYSECRET}} -a default -f
       - name: Deploy
