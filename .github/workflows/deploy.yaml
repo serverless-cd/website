@@ -18,7 +18,7 @@ jobs:
         run: |
           npm install --force
           npm run build
-      # - run: npm i @serverless-devs/s -g  --registry=https://registry.npmmirror.com
-      # - run: s config add --AccessKeyID ${{secrets.ACCESS_KEYID}}  --AccessKeySecret ${{secrets.ACCESS_KEYSECRET}} -a default -f
-      # - name: Deploy
-      #   run: s deploy --use-local -y
+      - run: npm i @serverless-devs/s -g  --registry=https://registry.npmmirror.com
+      - run: s config add --AccessKeyID ${{secrets.ACCESS_KEYID}}  --AccessKeySecret ${{secrets.ACCESS_KEYSECRET}} -a default -f
+      - name: Deploy
+        run: s deploy --use-local -y
