@@ -671,3 +671,52 @@ await prioverd.listOrgRepos(org);
 | description    | string  | 仓库描述             |
 | default_branch | string  | 默认分之             |
 | source         | any     | 各自平台返回的数据源 |
+
+### 获取组织的仓库 createFork
+
+> [github 接口文档](https://docs.github.com/en/rest/repos/forks#create-a-fork)  
+> [gitee 接口文档](https://gitee.com/api/v5/swagger#/postV5ReposOwnerRepoForks)  
+> [gitlab 接口文档](https://docs.gitlab.com/ee/api/projects.html#fork-project)
+#### `github`、`gitee`、`gitlab` 示例
+
+```typescript
+await prioverd.createFork({
+  owner: "xxxxxx",
+  repo: "xxxxxx",
+});
+```
+
+参数解析
+
+| 参数 | 说明     | 类型   | 必填 | 默认值 |
+| ---- | -------- | ------ | ---- | :----: |
+| owner  | 仓库所属空间地址 | string | 是   |   -    |
+| repo  | 仓库名称 | string | 是   |   -    |
+
+#### `codeup` 暂未支持
+
+#### 返回值
+
+返回示例
+
+```json
+[
+  {
+    "id": 0000,
+    "full_name": "xxxx",
+    "url": "xxxx",
+  }
+]
+```
+
+详细描述
+
+返回类型为 Array<[IForkOutput](#IForkOutput)\>
+<div id="IForkOutput"/>
+
+
+| 参数           | 类型    | 说明                 |
+| -------------- | ------- | -------------------- |
+| id             | number  | 仓库唯一 id 值       |
+| full_name      | string  | 仓库名称             |
+| url            | string  | 仓库访问地址         |
