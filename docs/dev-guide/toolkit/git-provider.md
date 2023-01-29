@@ -729,11 +729,23 @@ await prioverd.createFork({
 > [gitlab 接口文档](https://docs.gitlab.com/ee/api/projects.html#create-project)  
 > [codeup 接口文档](https://help.aliyun.com/document_detail/215681.html)
 
-#### `github`、`gitee`、`gitlab` 示例
+#### `github`、`gitee` 示例
 
 ```typescript
 await prioverd.createRepo({
-  name: "xxxx"
+  name: "xxxx",
+  private: false,
+  description: "xxxx"
+});
+```
+
+#### `gitlab` 示例
+
+```typescript
+await prioverd.createRepo({
+  name: "xxxx",
+  visibility: ["Private", "Public"],
+  description: "xxxx"
 });
 ```
 
@@ -742,15 +754,22 @@ await prioverd.createRepo({
 ```typescript
 await prioverd.createRepo({
   name: "xxxx",
-  organization_id: "xxxx"
+  organization_id: "xxxx",
+  visibilityLevel: [0, 10],
+  description: "xxxx",
 });
 ```
+
 
 参数解析
 
 | 参数 | 说明     | 类型   | 必填 | 默认值 |
 | ---- | -------- | ------ | ---- | :----: |
 | name  | 仓库名称 | string | 是   |   -    |
+| private        | 是否私有 | boolean  | 否   |   false    |
+| description    | 仓库描述  | string  |   否  |     -      |
+| visibility    | 仓库可见  | Array<'Private' \| 'Public'>  |   否   |     'Private'      |
+| visibilityLevel    | 代码仓库可见性 0 - 私有，仅代码库成员可见 10 - 企业内公开，企业成员可见 | Array<0 \| 10>  |   否   |     0      |
 | organization_id  | 企业标识，也称企业 id。 | string | 是   |   -    |
 
 #### 返回值
