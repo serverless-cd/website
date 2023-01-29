@@ -726,7 +726,8 @@ await prioverd.createFork({
 
 > [github 接口文档](https://docs.github.com/en/rest/repos/forks#create-a-fork)  
 > [gitee 接口文档](https://gitee.com/api/v5/swagger#/postV5UserRepos)  
-> [gitlab 接口文档](https://docs.gitlab.com/ee/api/projects.html#create-project)
+> [gitlab 接口文档](https://docs.gitlab.com/ee/api/projects.html#create-project)  
+> [codeup 接口文档](https://help.aliyun.com/document_detail/215681.html)
 
 #### `github`、`gitee`、`gitlab` 示例
 
@@ -736,13 +737,21 @@ await prioverd.createRepo({
 });
 ```
 
+#### `codeup` 示例
+
+```typescript
+await prioverd.createRepo({
+  name: "xxxx",
+  organization_id: "xxxx"
+});
+```
+
 参数解析
 
 | 参数 | 说明     | 类型   | 必填 | 默认值 |
 | ---- | -------- | ------ | ---- | :----: |
 | name  | 仓库名称 | string | 是   |   -    |
-
-#### `codeup` 暂未支持
+| organization_id  | 企业标识，也称企业 id。 | string | 是   |   -    |
 
 #### 返回值
 
@@ -774,7 +783,8 @@ await prioverd.createRepo({
 
 > [github 接口文档](https://docs.github.com/zh/rest/repos/repos#get-a-repository)  
 > [gitee 接口文档](https://gitee.com/api/v5/swagger#/getV5ReposOwnerRepo)  
-> [gitlab 接口文档](https://docs.gitlab.com/ee/api/projects.html#get-single-project)
+> [gitlab 接口文档](https://docs.gitlab.com/ee/api/projects.html#get-single-project)  
+> [codeup 接口文档](https://help.aliyun.com/document_detail/460466.html)
 
 #### `github`、`gitee`、`gitlab` 示例
 
@@ -785,14 +795,24 @@ await prioverd.hasRepo({
 });
 ```
 
+#### `codeup` 示例
+
+```typescript
+await prioverd.hasRepo({
+  project_id: 00000,
+  organization_id: "xxxxxx",
+});
+```
+
 参数解析
 
 | 参数 | 说明     | 类型   | 必填 | 默认值 |
 | ---- | -------- | ------ | ---- | :----: |
 | owner  | 仓库所属空间地址 | string | 是   |   -    |
 | repo  | 仓库名称 | string | 是   |   -    |
+| organization_id | 企业标识，也称企业 id。 | string | 是   |   -    |
+| project_id      | 代码库 ID               | number | 是   |   -    |
 
-#### `codeup` 暂未支持
 
 #### 返回值
 
@@ -824,7 +844,8 @@ await prioverd.hasRepo({
 
 > [github 接口文档](https://docs.github.com/zh/rest/repos/repos#delete-a-repository)  
 > [gitee 接口文档](https://gitee.com/api/v5/swagger#/deleteV5ReposOwnerRepo)  
-> [gitlab 接口文档](https://docs.gitlab.com/ee/api/projects.html#delete-project)
+> [gitlab 接口文档](https://docs.gitlab.com/ee/api/projects.html#delete-project)  
+> [codeup 接口文档](https://help.aliyun.com/document_detail/460705.html)
 
 #### `github`、`gitee`、`gitlab` 示例
 
@@ -835,14 +856,26 @@ await prioverd.deleteRepo({
 });
 ```
 
+#### `codeup` 示例
+
+```typescript
+await prioverd.deleteRepo({
+  project_id: 00000,
+  organization_id: "xxxxxx",
+  reason: "xxxx"
+});
+```
+
 参数解析
 
 | 参数 | 说明     | 类型   | 必填 | 默认值 |
 | ---- | -------- | ------ | ---- | :----: |
 | owner  | 仓库所属空间地址 | string | 是   |   -    |
 | repo  | 仓库名称 | string | 是   |   -    |
+| organization_id | 企业标识，也称企业 id。 | string | 是   |   -    |
+| project_id      | 代码库 ID               | number | 是   |   -    |
+| reason      | 删除代码库原因             | string | 否   |   -    |
 
-#### `codeup` 暂未支持
 
 #### 返回值
 
