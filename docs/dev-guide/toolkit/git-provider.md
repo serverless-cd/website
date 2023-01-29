@@ -755,7 +755,7 @@ await prioverd.createRepo({
 await prioverd.createRepo({
   name: "xxxx",
   organization_id: "xxxx",
-  visibilityLevel: [0, 10],
+  visibility_level: [0, 10],
   description: "xxxx",
 });
 ```
@@ -769,7 +769,7 @@ await prioverd.createRepo({
 | private        | 是否私有 | boolean  | 否   |   false    |
 | description    | 仓库描述  | string  |   否  |     -      |
 | visibility    | 仓库可见  | Array<'Private' \| 'Public'>  |   否   |     'Private'      |
-| visibilityLevel    | 代码仓库可见性 0 - 私有，仅代码库成员可见 10 - 企业内公开，企业成员可见 | Array<0 \| 10>  |   否   |     0      |
+| visibility_level    | 代码仓库可见性 0 - 私有，仅代码库成员可见 10 - 企业内公开，企业成员可见 | Array<0 \| 10>  |   否   |     0      |
 | organization_id  | 企业标识，也称企业 id。 | string | 是   |   -    |
 
 #### 返回值
