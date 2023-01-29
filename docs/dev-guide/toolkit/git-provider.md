@@ -677,6 +677,7 @@ await prioverd.listOrgRepos(org);
 > [github 接口文档](https://docs.github.com/en/rest/repos/forks#create-a-fork)  
 > [gitee 接口文档](https://gitee.com/api/v5/swagger#/postV5ReposOwnerRepoForks)  
 > [gitlab 接口文档](https://docs.gitlab.com/ee/api/projects.html#fork-project)
+
 #### `github`、`gitee`、`gitlab` 示例
 
 ```typescript
@@ -720,3 +721,130 @@ await prioverd.createFork({
 | id             | number  | 仓库唯一 id 值       |
 | full_name      | string  | 仓库名称             |
 | url            | string  | 仓库访问地址         |
+
+### 创建一个仓库 createRepo
+
+> [github 接口文档](https://docs.github.com/en/rest/repos/forks#create-a-fork)  
+> [gitee 接口文档](https://gitee.com/api/v5/swagger#/postV5UserRepos)  
+> [gitlab 接口文档](https://docs.gitlab.com/ee/api/projects.html#create-project)
+
+#### `github`、`gitee`、`gitlab` 示例
+
+```typescript
+await prioverd.createRepo({
+  name: "xxxx"
+});
+```
+
+参数解析
+
+| 参数 | 说明     | 类型   | 必填 | 默认值 |
+| ---- | -------- | ------ | ---- | :----: |
+| name  | 仓库名称 | string | 是   |   -    |
+
+#### `codeup` 暂未支持
+
+#### 返回值
+
+返回示例
+
+```json
+[
+  {
+    "id": 0000,
+    "full_name": "xxxx",
+    "url": "xxxx",
+  }
+]
+```
+
+详细描述
+
+返回类型为 Array<[ICreateRepoOutput](#ICreateRepoOutput)\>
+<div id="ICreateRepoOutput"/>
+
+
+| 参数           | 类型    | 说明                 |
+| -------------- | ------- | -------------------- |
+| id             | number  | 仓库唯一 id 值       |
+| full_name      | string  | 仓库名称             |
+| url            | string  | 仓库访问地址         |
+
+### 获取一个仓库信息 hasRepo
+
+> [github 接口文档](https://docs.github.com/zh/rest/repos/repos#get-a-repository)  
+> [gitee 接口文档](https://gitee.com/api/v5/swagger#/getV5ReposOwnerRepo)  
+> [gitlab 接口文档](https://docs.gitlab.com/ee/api/projects.html#get-single-project)
+
+#### `github`、`gitee`、`gitlab` 示例
+
+```typescript
+await prioverd.hasRepo({
+  owner: "xxxxxx",
+  repo: "xxxxxx",
+});
+```
+
+参数解析
+
+| 参数 | 说明     | 类型   | 必填 | 默认值 |
+| ---- | -------- | ------ | ---- | :----: |
+| owner  | 仓库所属空间地址 | string | 是   |   -    |
+| repo  | 仓库名称 | string | 是   |   -    |
+
+#### `codeup` 暂未支持
+
+#### 返回值
+
+返回示例
+
+```json
+[
+  {
+    "id": 0000,
+    "full_name": "xxxx",
+    "url": "xxxx",
+  }
+]
+```
+
+详细描述
+
+返回类型为 Array<[IHasRepoOutput](#IHasRepoOutput)\>
+<div id="IHasRepoOutput"/>
+
+
+| 参数           | 类型    | 说明                 |
+| -------------- | ------- | -------------------- |
+| id             | number  | 仓库唯一 id 值       |
+| full_name      | string  | 仓库名称             |
+| url            | string  | 仓库访问地址         |
+
+### 删除一个仓库 deleteRepo
+
+> [github 接口文档](https://docs.github.com/zh/rest/repos/repos#delete-a-repository)  
+> [gitee 接口文档](https://gitee.com/api/v5/swagger#/deleteV5ReposOwnerRepo)  
+> [gitlab 接口文档](https://docs.gitlab.com/ee/api/projects.html#delete-project)
+
+#### `github`、`gitee`、`gitlab` 示例
+
+```typescript
+await prioverd.deleteRepo({
+  owner: "xxxxxx",
+  repo: "xxxxxx",
+});
+```
+
+参数解析
+
+| 参数 | 说明     | 类型   | 必填 | 默认值 |
+| ---- | -------- | ------ | ---- | :----: |
+| owner  | 仓库所属空间地址 | string | 是   |   -    |
+| repo  | 仓库名称 | string | 是   |   -    |
+
+#### `codeup` 暂未支持
+
+#### 返回值
+
+无
+
