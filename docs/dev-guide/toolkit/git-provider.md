@@ -768,8 +768,8 @@ await prioverd.createRepo({
 | name  | 仓库名称 | string | 是   |   -    |
 | private        | 是否私有 | boolean  | 否   |   false    |
 | description    | 仓库描述  | string  |   否  |     -      |
-| visibility    | 仓库可见  | Array<'Private' \| 'Public'>  |   否   |     'Private'      |
-| visibility_level    | 代码仓库可见性 0 - 私有，仅代码库成员可见 10 - 企业内公开，企业成员可见 | Array<0 \| 10>  |   否   |     0      |
+| visibility    | 仓库可见, 'Private'为私有,'Public'表示公开  | string  |   否   |     'Private'      |
+| visibility_level    | 代码仓库可见性 0 - 私有，仅代码库成员可见 10 - 企业内公开，企业成员可见 | string  |   否   |     0      |
 | organization_id  | 企业标识，也称企业 id。 | string | 是   |   -    |
 
 #### 返回值
