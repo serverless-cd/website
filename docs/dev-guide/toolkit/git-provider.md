@@ -671,3 +671,232 @@ await prioverd.listOrgRepos(org);
 | description    | string  | 仓库描述             |
 | default_branch | string  | 默认分之             |
 | source         | any     | 各自平台返回的数据源 |
+
+### 获取组织的仓库 createFork
+
+> [github 接口文档](https://docs.github.com/en/rest/repos/forks#create-a-fork)  
+> [gitee 接口文档](https://gitee.com/api/v5/swagger#/postV5ReposOwnerRepoForks)  
+> [gitlab 接口文档](https://docs.gitlab.com/ee/api/projects.html#fork-project)
+
+#### `github`、`gitee`、`gitlab` 示例
+
+```typescript
+await prioverd.createFork({
+  owner: "xxxxxx",
+  repo: "xxxxxx",
+});
+```
+
+参数解析
+
+| 参数 | 说明     | 类型   | 必填 | 默认值 |
+| ---- | -------- | ------ | ---- | :----: |
+| owner  | 仓库所属空间地址 | string | 是   |   -    |
+| repo  | 仓库名称 | string | 是   |   -    |
+
+#### `codeup` 暂未支持
+
+#### 返回值
+
+返回示例
+
+```json
+[
+  {
+    "id": 0000,
+    "full_name": "xxxx",
+    "url": "xxxx",
+  }
+]
+```
+
+详细描述
+
+返回类型为 Array<[IForkOutput](#IForkOutput)\>
+<div id="IForkOutput"/>
+
+
+| 参数           | 类型    | 说明                 |
+| -------------- | ------- | -------------------- |
+| id             | number  | 仓库唯一 id 值       |
+| full_name      | string  | 仓库名称             |
+| url            | string  | 仓库访问地址         |
+
+### 创建一个仓库 createRepo
+
+> [github 接口文档](https://docs.github.com/en/rest/repos/forks#create-a-fork)  
+> [gitee 接口文档](https://gitee.com/api/v5/swagger#/postV5UserRepos)  
+> [gitlab 接口文档](https://docs.gitlab.com/ee/api/projects.html#create-project)  
+> [codeup 接口文档](https://help.aliyun.com/document_detail/215681.html)
+
+#### `github`、`gitee` 示例
+
+```typescript
+await prioverd.createRepo({
+  name: "xxxx",
+  private: false,
+  description: "xxxx"
+});
+```
+
+#### `gitlab` 示例
+
+```typescript
+await prioverd.createRepo({
+  name: "xxxx",
+  visibility: ["Private", "Public"],
+  description: "xxxx"
+});
+```
+
+#### `codeup` 示例
+
+```typescript
+await prioverd.createRepo({
+  name: "xxxx",
+  organization_id: "xxxx",
+  visibility_level: [0, 10],
+  description: "xxxx",
+});
+```
+
+
+参数解析
+
+| 参数 | 说明     | 类型   | 必填 | 默认值 |
+| ---- | -------- | ------ | ---- | :----: |
+| name  | 仓库名称 | string | 是   |   -    |
+| private        | 是否私有 | boolean  | 否   |   false    |
+| description    | 仓库描述  | string  |   否  |     -      |
+| visibility    | 仓库可见, 'Private'为私有,'Public'表示公开  | string  |   否   |     'Private'      |
+| visibility_level    | 代码仓库可见性 0 - 私有，仅代码库成员可见 10 - 企业内公开，企业成员可见 | string  |   否   |     0      |
+| organization_id  | 企业标识，也称企业 id。 | string | 是   |   -    |
+
+#### 返回值
+
+返回示例
+
+```json
+[
+  {
+    "id": 0000,
+    "full_name": "xxxx",
+    "url": "xxxx",
+  }
+]
+```
+
+详细描述
+
+返回类型为 Array<[ICreateRepoOutput](#ICreateRepoOutput)\>
+<div id="ICreateRepoOutput"/>
+
+
+| 参数           | 类型    | 说明                 |
+| -------------- | ------- | -------------------- |
+| id             | number  | 仓库唯一 id 值       |
+| full_name      | string  | 仓库名称             |
+| url            | string  | 仓库访问地址         |
+
+### 获取一个仓库信息 hasRepo
+
+> [github 接口文档](https://docs.github.com/zh/rest/repos/repos#get-a-repository)  
+> [gitee 接口文档](https://gitee.com/api/v5/swagger#/getV5ReposOwnerRepo)  
+> [gitlab 接口文档](https://docs.gitlab.com/ee/api/projects.html#get-single-project)  
+> [codeup 接口文档](https://help.aliyun.com/document_detail/460466.html)
+
+#### `github`、`gitee`、`gitlab` 示例
+
+```typescript
+await prioverd.hasRepo({
+  owner: "xxxxxx",
+  repo: "xxxxxx",
+});
+```
+
+#### `codeup` 示例
+
+```typescript
+await prioverd.hasRepo({
+  project_id: 00000,
+  organization_id: "xxxxxx",
+});
+```
+
+参数解析
+
+| 参数 | 说明     | 类型   | 必填 | 默认值 |
+| ---- | -------- | ------ | ---- | :----: |
+| owner  | 仓库所属空间地址 | string | 是   |   -    |
+| repo  | 仓库名称 | string | 是   |   -    |
+| organization_id | 企业标识，也称企业 id。 | string | 是   |   -    |
+| project_id      | 代码库 ID               | number | 是   |   -    |
+
+
+#### 返回值
+
+返回示例
+
+```json
+[
+  {
+    "id": 0000,
+    "full_name": "xxxx",
+    "url": "xxxx",
+  }
+]
+```
+
+详细描述
+
+返回类型为 Array<[IHasRepoOutput](#IHasRepoOutput)\>
+<div id="IHasRepoOutput"/>
+
+
+| 参数           | 类型    | 说明                 |
+| -------------- | ------- | -------------------- |
+| id             | number  | 仓库唯一 id 值       |
+| full_name      | string  | 仓库名称             |
+| url            | string  | 仓库访问地址         |
+
+### 删除一个仓库 deleteRepo
+
+> [github 接口文档](https://docs.github.com/zh/rest/repos/repos#delete-a-repository)  
+> [gitee 接口文档](https://gitee.com/api/v5/swagger#/deleteV5ReposOwnerRepo)  
+> [gitlab 接口文档](https://docs.gitlab.com/ee/api/projects.html#delete-project)  
+> [codeup 接口文档](https://help.aliyun.com/document_detail/460705.html)
+
+#### `github`、`gitee`、`gitlab` 示例
+
+```typescript
+await prioverd.deleteRepo({
+  owner: "xxxxxx",
+  repo: "xxxxxx",
+});
+```
+
+#### `codeup` 示例
+
+```typescript
+await prioverd.deleteRepo({
+  project_id: 00000,
+  organization_id: "xxxxxx",
+  reason: "xxxx"
+});
+```
+
+参数解析
+
+| 参数 | 说明     | 类型   | 必填 | 默认值 |
+| ---- | -------- | ------ | ---- | :----: |
+| owner  | 仓库所属空间地址 | string | 是   |   -    |
+| repo  | 仓库名称 | string | 是   |   -    |
+| organization_id | 企业标识，也称企业 id。 | string | 是   |   -    |
+| project_id      | 代码库 ID               | number | 是   |   -    |
+| reason      | 删除代码库原因             | string | 否   |   -    |
+
+
+#### 返回值
+
+无
+

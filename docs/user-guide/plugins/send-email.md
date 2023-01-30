@@ -101,6 +101,14 @@ QQ邮箱示例：
 |  pass    | True |    授权码 ｜ 邮箱密码    |
 |  port    | True |    服务器端口号    |
 
+#### 支持公司邮箱
+支持知名Host服务简化配置，具体查看文档[查看文档](https://nodemailer.com/smtp/testing/)
+
+| 参数名   | 必填 |  参数描述   |
+| --------- | ---- | ------- | 
+|  host    | True |   服务器地址    |
+|  pass    | True |    授权码    |
+|  port    | True |    服务器端口号    |
 #### smtp 协议
 使用方式请[查看文档](https://nodemailer.com/smtp/)
 
