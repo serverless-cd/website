@@ -672,7 +672,7 @@ await prioverd.listOrgRepos(org);
 | default_branch | string  | 默认分之             |
 | source         | any     | 各自平台返回的数据源 |
 
-### 获取组织的仓库 createFork
+### fork一个仓库 createFork
 
 > [github 接口文档](https://docs.github.com/en/rest/repos/forks#create-a-fork)  
 > [gitee 接口文档](https://gitee.com/api/v5/swagger#/postV5ReposOwnerRepoForks)  
@@ -900,3 +900,106 @@ await prioverd.deleteRepo({
 
 无
 
+### 创建保护分支 setProtectionBranch
+
+> [github 接口文档](https://docs.github.com/zh/rest/branches/branch-protection#update-branch-protection)  
+> [gitee 接口文档](https://gitee.com/api/v5/swagger#/putV5ReposOwnerRepoBranchesBranchProtection)  
+> [gitlab 接口文档](https://docs.gitlab.com/ee/api/protected_branches.html#protect-repository-branches)  
+> [codeup 接口文档](https://help.aliyun.com/document_detail/463003.html)
+
+#### `github`、`gitee`、`gitlab` 示例
+
+```typescript
+await prioverd.setProtectionBranch({
+  owner: "xxxxxx",
+  repo: "xxxxxx",
+  branch: "xxxxx",
+});
+```
+
+#### `codeup` 示例
+
+```typescript
+await prioverd.hasRepo({
+  project_id: 00000,
+  organization_id: "xxxxxx",
+  branch: "xxxxx",
+});
+```
+
+参数解析
+
+| 参数 | 说明     | 类型   | 必填 | 默认值 |
+| ---- | -------- | ------ | ---- | :----: |
+| owner  | 仓库所属空间地址 | string | 是   |   -    |
+| repo  | 仓库名称 | string | 是   |   -    |
+| branch  | 分支名称 | string | 是   |   -    |
+| organization_id | 企业标识，也称企业 id。 | string | 是   |   -    |
+| project_id      | 代码库 ID               | number | 是   |   -    |
+
+
+#### 返回值
+
+返回示例
+
+无
+
+### 获取分支是否为保护分支 getProtectionBranch
+
+> [github 接口文档](https://docs.github.com/zh/rest/branches/branch-protection#get-branch-protection)  
+> [gitee 接口文档](https://gitee.com/api/v5/swagger#/getV5ReposOwnerRepoBranchesBranch)  
+> [gitlab 接口文档](https://docs.gitlab.com/ee/api/protected_branches.html#get-a-single-protected-branch-or-wildcard-protected-branch)  
+> [codeup 接口文档](https://help.aliyun.com/document_detail/215681.html)
+
+#### `github`、`gitee`、`gitlab` 示例
+
+```typescript
+await prioverd.getProtectionBranch({
+  owner: "xxxxxx",
+  repo: "xxxxxx",
+  branch: "xxxxx",
+});
+```
+
+#### `codeup` 示例
+
+```typescript
+await prioverd.hasRepo({
+  project_id: 00000,
+  organization_id: "xxxxxx",
+  branch: "xxxxxx",
+});
+```
+
+参数解析
+
+| 参数 | 说明     | 类型   | 必填 | 默认值 |
+| ---- | -------- | ------ | ---- | :----: |
+| owner  | 仓库所属空间地址 | string | 是   |   -    |
+| repo  | 仓库名称 | string | 是   |   -    |
+| branch  | 分支名称 | string | 是   |   -    |
+| organization_id | 企业标识，也称企业 id。 | string | 是   |   -    |
+| project_id      | 代码库 ID               | number | 是   |   -    |
+
+
+#### 返回值
+
+返回示例
+
+```json
+[
+  {
+    "protected": true,
+  }
+]
+```
+
+详细描述
+
+返回类型为 Array<[IGetProtectBranchOutput](#IGetProtectBranchOutput)\>
+<div id="IGetProtectBranchOutput"/>
+
+
+| 参数           | 类型    | 说明                 |
+| -------------- | ------- | -------------------- |
+| protected      | boolean  | 分支是否为保护分支     |
