@@ -38,11 +38,11 @@ const codeup = git("codeup", {
 
 ### 参数解析
 
-> const prioverd = git(priover, config);
+> const provider = git(git-provider, config);
 
 | 参数    | 说明                                                     | 类型                    | 必填 | 默认值 |
 | ------- | -------------------------------------------------------- | ----------------------- | ---- | :----: |
-| priover | 供应商。目前仅支持 `github`、`gitee`、`gitlab`、`codeup` | string                  | 是   |   -    |
+| git-provider | 供应商。目前仅支持 `github`、`gitee`、`gitlab`、`codeup` | string                  | 是   |   -    |
 | config  | 密钥信息配置                                             | [GitConfig](#GitConfig) | 是   |   -    |
 
 #### GitConfig
@@ -80,13 +80,13 @@ const codeup = git("codeup", {
 #### `gitee`、`github` 示例
 
 ```typescript
-await prioverd.listRepos();
+await provider.listRepos();
 ```
 
 #### `codeup` 示例
 
 ```typescript
-await prioverd.listRepos({ organization_id: "xxx" });
+await provider.listRepos({ organization_id: "xxx" });
 ```
 
 参数解析
@@ -132,7 +132,7 @@ await prioverd.listRepos({ organization_id: "xxx" });
 | owner          | string  | 仓库拥有者           |
 | private        | boolean | 是否私有             |
 | description    | string  | 仓库描述             |
-| default_branch | string  | 默认分之             |
+| default_branch | string  | 默认分支             |
 | source         | any     | 各自平台返回的数据源 |
 
 ### 获取用户的仓库 listBranches
@@ -145,7 +145,7 @@ await prioverd.listRepos({ organization_id: "xxx" });
 #### `gitee`、`github`、`gitlab` 示例
 
 ```typescript
-await prioverd.listBranches({
+await provider.listBranches({
   owner: "xxxxxxxx",
   repo: "xxxxxxxx",
 });
@@ -161,7 +161,7 @@ await prioverd.listBranches({
 #### `codeup` 示例
 
 ```typescript
-await prioverd.listBranches({
+await provider.listBranches({
   project_id: 00000,
   organization_id: "xxxxxxxx",
 });
@@ -196,7 +196,7 @@ await prioverd.listBranches({
 
 | 参数       | 类型   | 说明                 |
 | ---------- | ------ | -------------------- |
-| name       | string | 分之名称             |
+| name       | string | 分支名称             |
 | commit_sha | string | 最近一次提交 ID      |
 | source     | any    | 各自平台返回的数据源 |
 
@@ -211,7 +211,7 @@ await prioverd.listBranches({
 #### `gitee`、`github` 示例
 
 ```typescript
-await prioverd.getRefCommit({
+await provider.getRefCommit({
   owner: "xxxxxx",
   repo: "xxxxxx",
   ref: "refs/heads/xxx", // 'refs/tags/xxx'
@@ -244,7 +244,7 @@ await prioverd.getRefCommit({
 
 | 参数       | 类型   | 说明                 |
 | ---------- | ------ | -------------------- |
-| name       | string | 分之名称             |
+| name       | string | 分支名称             |
 | commit_sha | string | 最近一次提交 ID      |
 | source     | any    | 各自平台返回的数据源 |
 
@@ -259,7 +259,7 @@ await prioverd.getRefCommit({
 #### `gitee`、`github`、`gitlab` 示例
 
 ```typescript
-await prioverd.getCommitById({
+await provider.getCommitById({
   owner: "xxxxxx",
   repo: "xxxxxx",
   sha: "xxxxx",
@@ -277,7 +277,7 @@ await prioverd.getCommitById({
 #### `codeup` 示例
 
 ```typescript
-await prioverd.getCommitById({
+await provider.getCommitById({
   project_id: 00000,
   organization_id: "xxxxxxxx",
   sha: "xxxxx",
@@ -323,7 +323,7 @@ await prioverd.getCommitById({
 #### `gitee`、`github` 示例
 
 ```typescript
-await prioverd.listWebhook({
+await provider.listWebhook({
   owner: "xxxxxx",
   repo: "xxxxxx",
 });
@@ -375,7 +375,7 @@ await prioverd.listWebhook({
 #### `gitee`、`github` 示例
 
 ```typescript
-await prioverd.createWebhook({
+await provider.createWebhook({
   owner: "xxxx",
   repo: "xxxx",
   url: "xxxx",
@@ -425,7 +425,7 @@ await prioverd.createWebhook({
 #### `gitee`、`github` 示例
 
 ```typescript
-await prioverd.getWebhook({
+await provider.getWebhook({
   owner: "xxxx",
   repo: "xxxx",
   hook_id: 00000,
@@ -473,7 +473,7 @@ await prioverd.getWebhook({
 #### `gitee`、`github` 示例
 
 ```typescript
-await prioverd.updateWebhook({
+await provider.updateWebhook({
   owner: "xxxx",
   repo: "xxxx",
   url: "xxxx",
@@ -511,7 +511,7 @@ await prioverd.updateWebhook({
 #### `gitee`、`github` 示例
 
 ```typescript
-await prioverd.deleteWebhook({
+await provider.deleteWebhook({
   owner: "xxxx",
   repo: "xxxx",
   hook_id: 00000,
@@ -543,7 +543,7 @@ await prioverd.deleteWebhook({
 #### `github` 示例
 
 ```typescript
-await prioverd.putFile({
+await provider.putFile({
   owner: "xxxx",
   repo: "xxxx",
   path: "filename.txt",
@@ -580,7 +580,7 @@ await prioverd.putFile({
 #### `gitee`、`github` 示例
 
 ```typescript
-await prioverd.listOrgs();
+await provider.listOrgs();
 ```
 
 #### `codeup`、`gitlab` 暂未支持
@@ -623,7 +623,7 @@ await prioverd.listOrgs();
 
 ```typescript
 const org = "xxx";
-await prioverd.listOrgRepos(org);
+await provider.listOrgRepos(org);
 ```
 
 参数解析
@@ -669,7 +669,7 @@ await prioverd.listOrgRepos(org);
 | owner          | string  | 仓库拥有者           |
 | private        | boolean | 是否私有             |
 | description    | string  | 仓库描述             |
-| default_branch | string  | 默认分之             |
+| default_branch | string  | 默认分支             |
 | source         | any     | 各自平台返回的数据源 |
 
 ### fork一个仓库 createFork
@@ -681,7 +681,7 @@ await prioverd.listOrgRepos(org);
 #### `github`、`gitee`、`gitlab` 示例
 
 ```typescript
-await prioverd.createFork({
+await provider.createFork({
   owner: "xxxxxx",
   repo: "xxxxxx",
 });
@@ -701,20 +701,14 @@ await prioverd.createFork({
 返回示例
 
 ```json
-[
-  {
-    "id": 0000,
-    "full_name": "xxxx",
-    "url": "xxxx",
-  }
-]
+{
+  "id": 0000,
+  "full_name": "xxxx",
+  "url": "xxxx",
+}
 ```
 
 详细描述
-
-返回类型为 Array<[IForkOutput](#IForkOutput)\>
-<div id="IForkOutput"/>
-
 
 | 参数           | 类型    | 说明                 |
 | -------------- | ------- | -------------------- |
@@ -732,7 +726,7 @@ await prioverd.createFork({
 #### `github`、`gitee` 示例
 
 ```typescript
-await prioverd.createRepo({
+await provider.createRepo({
   name: "xxxx",
   private: false,
   description: "xxxx"
@@ -742,7 +736,7 @@ await prioverd.createRepo({
 #### `gitlab` 示例
 
 ```typescript
-await prioverd.createRepo({
+await provider.createRepo({
   name: "xxxx",
   visibility: ["Private", "Public"],
   description: "xxxx"
@@ -752,7 +746,7 @@ await prioverd.createRepo({
 #### `codeup` 示例
 
 ```typescript
-await prioverd.createRepo({
+await provider.createRepo({
   name: "xxxx",
   organization_id: "xxxx",
   visibility_level: [0, 10],
@@ -777,20 +771,14 @@ await prioverd.createRepo({
 返回示例
 
 ```json
-[
-  {
-    "id": 0000,
-    "full_name": "xxxx",
-    "url": "xxxx",
-  }
-]
+{
+  "id": 0000,
+  "full_name": "xxxx",
+  "url": "xxxx",
+}
 ```
 
 详细描述
-
-返回类型为 Array<[ICreateRepoOutput](#ICreateRepoOutput)\>
-<div id="ICreateRepoOutput"/>
-
 
 | 参数           | 类型    | 说明                 |
 | -------------- | ------- | -------------------- |
@@ -808,7 +796,7 @@ await prioverd.createRepo({
 #### `github`、`gitee`、`gitlab` 示例
 
 ```typescript
-await prioverd.hasRepo({
+await provider.hasRepo({
   owner: "xxxxxx",
   repo: "xxxxxx",
 });
@@ -817,7 +805,7 @@ await prioverd.hasRepo({
 #### `codeup` 示例
 
 ```typescript
-await prioverd.hasRepo({
+await provider.hasRepo({
   project_id: 00000,
   organization_id: "xxxxxx",
 });
@@ -838,20 +826,14 @@ await prioverd.hasRepo({
 返回示例
 
 ```json
-[
-  {
-    "id": 0000,
-    "full_name": "xxxx",
-    "url": "xxxx",
-  }
-]
+{
+  "id": 0000,
+  "full_name": "xxxx",
+  "url": "xxxx",
+}
 ```
 
 详细描述
-
-返回类型为 Array<[IHasRepoOutput](#IHasRepoOutput)\>
-<div id="IHasRepoOutput"/>
-
 
 | 参数           | 类型    | 说明                 |
 | -------------- | ------- | -------------------- |
@@ -869,7 +851,7 @@ await prioverd.hasRepo({
 #### `github`、`gitee`、`gitlab` 示例
 
 ```typescript
-await prioverd.deleteRepo({
+await provider.deleteRepo({
   owner: "xxxxxx",
   repo: "xxxxxx",
 });
@@ -878,7 +860,7 @@ await prioverd.deleteRepo({
 #### `codeup` 示例
 
 ```typescript
-await prioverd.deleteRepo({
+await provider.deleteRepo({
   project_id: 00000,
   organization_id: "xxxxxx",
   reason: "xxxx"
@@ -910,7 +892,7 @@ await prioverd.deleteRepo({
 #### `github`、`gitee`、`gitlab` 示例
 
 ```typescript
-await prioverd.setProtectionBranch({
+await provider.setProtectionBranch({
   owner: "xxxxxx",
   repo: "xxxxxx",
   branch: "xxxxx",
@@ -920,7 +902,7 @@ await prioverd.setProtectionBranch({
 #### `codeup` 示例
 
 ```typescript
-await prioverd.hasRepo({
+await provider.hasRepo({
   project_id: 00000,
   organization_id: "xxxxxx",
   branch: "xxxxx",
@@ -954,7 +936,7 @@ await prioverd.hasRepo({
 #### `github`、`gitee`、`gitlab` 示例
 
 ```typescript
-await prioverd.getProtectionBranch({
+await provider.getProtectionBranch({
   owner: "xxxxxx",
   repo: "xxxxxx",
   branch: "xxxxx",
@@ -964,7 +946,7 @@ await prioverd.getProtectionBranch({
 #### `codeup` 示例
 
 ```typescript
-await prioverd.hasRepo({
+await provider.hasRepo({
   project_id: 00000,
   organization_id: "xxxxxx",
   branch: "xxxxxx",
@@ -987,19 +969,14 @@ await prioverd.hasRepo({
 返回示例
 
 ```json
-[
-  {
-    "protected": true,
-  }
-]
+{
+  "protected": true,
+}
 ```
 
 详细描述
 
-返回类型为 Array<[IGetProtectBranchOutput](#IGetProtectBranchOutput)\>
-<div id="IGetProtectBranchOutput"/>
-
-
 | 参数           | 类型    | 说明                 |
 | -------------- | ------- | -------------------- |
 | protected      | boolean  | 分支是否为保护分支     |
+
