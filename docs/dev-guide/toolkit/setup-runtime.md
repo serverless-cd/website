@@ -1,9 +1,9 @@
 ---
 sidebar_position: 8
-title: 函数计算多环境切换
+title: 支持多runtime
 ---
 
-# 函数计算多环境切换(@serverless-cd/setup-runtime)
+# 支持多runtime(@serverless-cd/setup-runtime)
 
 ## 安装
 
