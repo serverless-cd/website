@@ -6,6 +6,11 @@ import StrictTrigger from '@site/src/components/Trigger/StrictTrigger';
 import DisabledTrigger from '@site/src/components/Trigger/DisabledTrigger';
 import CodeBase from '@site/src/components/CodeBase';
 import MseArc from '@site/src/components/MseArc';
+import Auth from '@site/src/components/Auth';
+import LoginAuth from '@site/src/components/Auth/LoginAuth';
+import RememberAuth from '@site/src/components/Auth/RememberAuth';
+import RegisterAuth from '@site/src/components/Auth/RegisterAuth';
+
 
 
 export default {
@@ -18,5 +23,9 @@ export default {
   FieldTrigger: FieldTrigger,
   StrictTrigger: StrictTrigger,
   DisabledTrigger: DisabledTrigger,
-  MseArc:MseArc
+  MseArc:MseArc,
+  Auth: Auth,
+  LoginAuth: LoginAuth,
+  RememberAuth: RememberAuth,
+  RegisterAuth: RegisterAuth,
 };

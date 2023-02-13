@@ -1,0 +1,66 @@
+---
+sidebar_position: 3
+title: 登录Auth
+---
+
+import LoginEmailTmpl from "!!raw-loader!@site/src/components/Auth/index.js";
+import LoginTmpl from "!!raw-loader!@site/src/components/Auth/LoginAuth.js";
+import RememberTmpl from "!!raw-loader!@site/src/components/Auth/RememberAuth.js";
+import RegisterTmpl from "!!raw-loader!@site/src/components/Auth/RegisterAuth.js";
+
+# Auth
+
+## 安装
+
+Auth 是开源登录组件，其中包含了登录、忘记密码、注册等功能，使用方式更加便捷。
+
+``` bash
+  npm install @serverless-cd/auth-ui @alicloud/console-components
+```
+导入组件样式：
+```
+  import '@alicloud/console-components/dist/wind.css'
+```
+
+## 基本信息
+
+Auth 组件 可通过 onSingIn 登录、onRememberMe 变更密码、onSignUp 注册等回调函数， 触发异步操作及拿取账号信息。
+
+## 邮箱登录
+
+默认 LOGINEMAIL 类型 为邮箱登录， 也可通过 type 进行类型 设置
+
+<CodeBase codeSource={LoginEmailTmpl}>
+  <Auth />
+</CodeBase>
+
+## Apis
+| 参数 | 说明 | 类型 | 必填 |  可选值 | 默认值 |
+|:--------| :--------- | :-------- | :-------- | :--------| :---------|
+| type | 类型 | String | 是 | LOGINEMAIL｜LOGIN｜REMEMBER｜REGISTER | LOGINEMAIL |
+| title | 标题 | String｜ReactNode| 否 |  |
+| titleStyle | titleStyle渲染title Css样式 | Object | 否 |  | |
+| onSingIn | 在点击登录时触发的回调函数 | Function | 否 | Function(req) => void | Function(req) => void |
+| onRememberMe | 在type为 REMEMBER 确认变更时触发的回调函数 | Function | 否 | Function(req) => void | Function(req) => void |
+| onSignUp | 在type为 REGISTER 注册时触发的回调函数 | Function | 否 | Function(req) => void | Function(req) => void |
+| githubUrl | 第三方登入github登录 |  String | 否 |  '' | '' |
+| giteeUrl | 第三方登入gitee登录 | String | 否 | '' | '' |
+
+
+## 用户名登录
+
+<CodeBase codeSource={LoginTmpl}>
+  <LoginAuth />
+</CodeBase>
+
+## 忘记密码
+
+<CodeBase codeSource={RememberTmpl}>
+  <RememberAuth />
+</CodeBase>
+
+## 注册
+
+<CodeBase codeSource={RegisterTmpl}>
+  <RegisterAuth />
+</CodeBase>
