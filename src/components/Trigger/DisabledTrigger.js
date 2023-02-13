@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Field, Button } from '@alicloud/console-components';
-import { Trigger } from '@serverless-cd/ui';
+import Trigger from '@serverless-cd/trigger-ui';
 
 export default function TriggerDemo() {
   const field = new Field();

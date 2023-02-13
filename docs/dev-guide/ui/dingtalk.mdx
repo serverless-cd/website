@@ -1,0 +1,64 @@
+---
+sidebar_position: 2
+title: 钉钉通知
+---
+
+import tmpl from "!!raw-loader!@site/src/components/DingTalk/index.js";
+import PreviewDingTalkTmpl from "!!raw-loader!@site/src/components/DingTalk/PreviewDingTalk.js";
+import FieldDingTalkTmpl from "!!raw-loader!@site/src/components/DingTalk/FieldDingTalk.js";
+
+# 钉钉通知
+
+## 安装
+
+```bash
+  npm install @serverless-cd/dingtalk-ui
+```
+
+## 基础用法
+
+钉钉通知组件接收 `value` `onChange` 两个参数来进行数据传输。也可通过[Felid](https://csr632.gitee.io/alibabacloud-console-components/base-components/field) 来接管组件
+
+<CodeBase codeSource={tmpl}>
+  <DingTalk />
+</CodeBase>
+
+## Apis
+
+| 参数      | 说明                   | 类型                                                                                                            | 必填 | 可选值 | 默认值 |
+| :-------- | :--------------------- | :-------------------------------------------------------------------------------------------------------------- | :--- | :----- | :----- |
+| value     | 组件接收的值           | Object: [value](<#[value](https://csr632.gitee.io/alibabacloud-console-components/base-components/field#apis)>) | 是   |        |        |
+| onChange  | 组件编辑时触发的事件   | Function                                                                                                        | 是   |        |        |
+| isPreview | 只读模式               | Boolean                                                                                                         | 否   |        | false  |
+| className | 外部可以设置表单 class | Object                                                                                                          | 否   |        | false  |
+
+## 参数解析
+
+### Value
+
+value 的数据格式
+
+| 参数           | 说明                     | 类型    |
+| :------------- | :----------------------- | :------ |
+| webhook        | webhook 地址字段名       | String  |
+| enable         | 钉钉机器人通知配置字段名 | Boolean |
+| secret         | 加签秘钥字段名           | String  |
+| skipOnSuccess  | 仅失败时通知字段名       | Boolean |
+| atMobiles      | @手机号字段名            | String  |
+| atUserIds      | @用户名字段名            | String  |
+| messageContent | 自定义消息字段名         | String  |
+| remindType     | 是否@指定用户字段名      | Boolean |
+
+## 更多用法
+
+### Field 接管
+
+<CodeBase codeSource={FieldDingTalkTmpl}>
+  <FieldDingTalk />
+</CodeBase>
+
+### 预览状态
+
+<CodeBase codeSource={PreviewDingTalkTmpl}>
+  <PreviewDingTalk />
+</CodeBase>

@@ -12,6 +12,7 @@ import RememberAuth from '@site/src/components/Auth/RememberAuth';
 import RegisterAuth from '@site/src/components/Auth/RegisterAuth';
 
 
+import CodeBase from "@site/src/components/CodeBase";
 
 export default {
   // 复用默认的映射
