@@ -20,6 +20,7 @@
     "@mdx-js/react": "^1.6.22",
     "@serverless-cd/dingtalk-ui": "^0.0.12",
     "@serverless-cd/trigger-ui": "^0.0.14",
+    "@serverless-cd/variable-ui": "^0.0.2",
     "clsx": "^1.2.1",
     "docusaurus-plugin-less": "^2.0.2",
     "moment": "^2.29.4",
