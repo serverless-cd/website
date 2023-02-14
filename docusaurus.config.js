@@ -26,7 +26,7 @@ const config = {
     defaultLocale: 'zh-Hans',
     locales: ['zh-Hans'],
   },
-  plugins: ["docusaurus-plugin-less"],
+  plugins: ['docusaurus-plugin-less'],
 
   // themes: ['@docusaurus/theme-live-codeblock'],
 
@@ -34,31 +34,33 @@ const config = {
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/serverless-cd/website/tree/main/',
+          editUrl: 'https://github.com/serverless-cd/website/tree/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/serverless-cd/website/tree/main/',
+          editUrl: 'https://github.com/serverless-cd/website/tree/main/',
         },
         theme: {
           // wind.css: @alicloud/console-components 部分基础样式冲突，加载本地过滤后的css文件
-          customCss: [require.resolve('./src/css/custom.css'), require.resolve('./src/css/wind.css')],
+          customCss: [
+            require.resolve('./src/css/custom.css'),
+            require.resolve('./src/css/wind.css'),
+            require.resolve('./src/css/fix.css'),
+          ],
         },
-      }),
+      },
     ],
   ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+    {
       navbar: {
         title: '',
         logo: {
@@ -72,7 +74,7 @@ const config = {
             position: 'left',
             label: '文档',
           },
-          {to: '/blog', label: '博客', position: 'left'},
+          { to: '/blog', label: '博客', position: 'left' },
           // {
           //   href: 'https://github.com/serverless-cd/website/tree/main/',
           //   label: '博客',
@@ -129,7 +131,7 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-    }),
+    },
 };
 
 module.exports = config;

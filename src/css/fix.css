@@ -1,0 +1,4 @@
+.wind-slide-panel-wrapper.wind-slide-panel-wrapper.wind-slide-panel-wrapper
+  > *:not(.placeBottom) {
+  z-index: 200 !important;
+}

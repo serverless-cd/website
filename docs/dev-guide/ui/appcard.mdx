@@ -1,0 +1,85 @@
+---
+sidebar_position: 4
+title: AppCard
+---
+
+import tmpl from "!!raw-loader!@site/src/components/AppCard/index.js";
+import AppCardManyTml from "!!raw-loader!@site/src/components/AppCard/Many.js";
+import AppCardReadMeTml from "!!raw-loader!@site/src/components/AppCard/ReadMe.js";
+import ReadmeWithActiveTabTml from "!!raw-loader!@site/src/components/AppCard/ReadmeWithActiveTab.js";
+import AppCardReadmeWithApiTypeTml from "!!raw-loader!@site/src/components/AppCard/ApiType.js";
+import AppCardReadmeWithFetchReadmeTml from "!!raw-loader!@site/src/components/AppCard/FetchReadme.js";
+
+# AppCard
+
+## 安装
+
+AppCard 组件是基于[@alicloud/console-components](https://csr632.gitee.io/alibabacloud-console-components/guides/quick-start) 二次开发的业务组件。
+
+```bash
+  npm install @serverless-cd/app-card-ui
+```
+
+## 基础用法
+
+<CodeBase codeSource={tmpl}>
+  <AppCard />
+</CodeBase>
+
+## Apis
+
+| 参数        | 说明                   | 类型                        | 必填 | 可选值      | 默认值 |
+| :---------- | :--------------------- | :-------------------------- | :--- | :---------- | :----- |
+| dataSouce   | 数据源                 | [IDataSource](#idatasource) | 是   |             |        |
+| apiType     | 项目类型:fc or fcweb   | enum                        | 否   | fc \| fcweb | fc     |
+| column      | 一行显示几个           | number                      | 否   |             |        |
+| fetchReadme | 自定义请求 readme 数据 | ()=> Promise<string\>       | 否   |             |        |
+
+## IDataSource
+
+| 参数        | 说明                   | 类型     | 必填 |
+| :---------- | :--------------------- | :------- | :--- |
+| package     | 项目名称               | string   | 是   |
+| description | 项目描述               | string   | 否   |
+| logo        | 项目 logo              | string   | 否   |
+| title       | 项目分类               | string   | 否   |
+| tags        | 项目分类               | string[] | 否   |
+| user        | 1 代表官方，否则为社区 | number   | 否   |
+| download    | 项目下载量             | number   | 否   |
+| demo        | 项目预览地址           | string   | 否   |
+
+## 更多示例
+
+### apiType
+
+> apiType 为枚举类型：fc，fcweb（默认为 fc）
+
+<CodeBase codeSource={AppCardReadmeWithApiTypeTml}>
+  <AppCardReadmeWithApiType />
+</CodeBase>
+
+### fetchReadme
+
+<CodeBase codeSource={AppCardReadmeWithFetchReadmeTml}>
+  <AppCardReadmeWithFetchReadme />
+</CodeBase>
+
+### 多个 AppCard
+
+> 设置 column 属性为 3 时，可以一行展示 3 列
+
+<CodeBase codeSource={AppCardManyTml}>
+  <AppCardMany />
+</CodeBase>
+
+### AppCard.Readme
+
+<CodeBase codeSource={AppCardReadMeTml}>
+  <AppCardReadMe />
+</CodeBase>
+
+### AppCard.Readme with activeTab
+
+<CodeBase codeSource={ReadmeWithActiveTabTml}>
+  <AppCardReadMe />
+</CodeBase>

@@ -1,14 +1,20 @@
 // 导入原映射
-import MDXComponents from "@theme-original/MDXComponents";
-import Trigger from "@site/src/components/Trigger";
-import FieldTrigger from "@site/src/components/Trigger/FieldTrigger";
-import StrictTrigger from "@site/src/components/Trigger/StrictTrigger";
-import DisabledTrigger from "@site/src/components/Trigger/DisabledTrigger";
-import DingTalkDemo from "@site/src/components/DingTalk";
-import PreviewDingTalk from "@site/src/components/DingTalk/PreviewDingTalk";
-import FieldDingTalk from "@site/src/components/DingTalk/FieldDingTalk";
-import Variable from "@site/src/components/Variable/index";
-import CodeBase from "@site/src/components/CodeBase";
+import MDXComponents from '@theme-original/MDXComponents';
+import Trigger from '@site/src/components/Trigger';
+import FieldTrigger from '@site/src/components/Trigger/FieldTrigger';
+import StrictTrigger from '@site/src/components/Trigger/StrictTrigger';
+import DisabledTrigger from '@site/src/components/Trigger/DisabledTrigger';
+import DingTalkDemo from '@site/src/components/DingTalk';
+import PreviewDingTalk from '@site/src/components/DingTalk/PreviewDingTalk';
+import FieldDingTalk from '@site/src/components/DingTalk/FieldDingTalk';
+import Variable from '@site/src/components/Variable/index';
+import CodeBase from '@site/src/components/CodeBase';
+import AppCard from '@site/src/components/AppCard';
+import AppCardMany from '@site/src/components/AppCard/Many';
+import AppCardReadMe from '@site/src/components/AppCard/Readme';
+import AppCardReadmeWithActiveTab from '@site/src/components/AppCard/ReadmeWithActiveTab';
+import AppCardReadmeWithApiType from '@site/src/components/AppCard/ApiType';
+import AppCardReadmeWithFetchReadme from '@site/src/components/AppCard/FetchReadme';
 
 export default {
   // 复用默认的映射
@@ -26,4 +32,10 @@ export default {
   VariableUi: Variable.VariableDemo,
   FieldVariable: Variable.FieldVariable,
   TextVariable: Variable.TextVariable,
+  AppCard,
+  AppCardMany,
+  AppCardReadMe,
+  AppCardReadmeWithActiveTab,
+  AppCardReadmeWithApiType,
+  AppCardReadmeWithFetchReadme,
 };
