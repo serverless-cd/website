@@ -1,0 +1,47 @@
+---
+sidebar_position: 3
+title: Variable 组件
+---
+
+import tmpl from "!!raw-loader!@site/src/components/Variable/index.js";
+import FieldVariableTmpl from "!!raw-loader!@site/src/components/Variable/FieldVariable.js";
+import TextVariableTmpl from "!!raw-loader!@site/src/components/Variable/TextVariable.js";
+
+# Variable
+
+## 安装
+
+```bash
+  npm install @serverless-cd/variable-ui
+```
+
+## 基础用法
+
+Variable 组件接收 `value` `onChange` 两个参数来进行数据传输。也可通过[Felid](https://csr632.gitee.io/alibabacloud-console-components/base-components/field) 来接管组件
+
+<CodeBase codeSource={tmpl}>
+  <VariableUi />
+</CodeBase>
+
+## Apis
+
+| 参数     | 说明                 | 类型                                    | 必填 | 可选值                                             | 默认值 |
+| :------- | :------------------- | :-------------------------------------- | :--- | :------------------------------------------------- | :----- |
+| value    | 组件接收的值         | Object                                  | 是   |                                                    | {}     |
+| onChange | 组件编辑时触发的事件 | Function: (value: { key: value }) => {} | 是   |                                                    |        |
+| hintText | 组件提示文案         | String                                  | 否   |                                                    | ''     |
+| mode     | 编辑类型             | String                                  | 否   | （表单编辑类型 ：form） / （JSON 编辑类型： json） | 'form' |
+
+## 更多用法
+
+### Field 接管
+
+<CodeBase codeSource={FieldVariableTmpl}>
+  <FieldVariable />
+</CodeBase>
+
+### 添加提示文案
+
+<CodeBase codeSource={TextVariableTmpl}>
+  <TextVariable />
+</CodeBase>

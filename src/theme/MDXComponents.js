@@ -7,7 +7,9 @@ import DisabledTrigger from "@site/src/components/Trigger/DisabledTrigger";
 import DingTalkDemo from "@site/src/components/DingTalk";
 import PreviewDingTalk from "@site/src/components/DingTalk/PreviewDingTalk";
 import FieldDingTalk from "@site/src/components/DingTalk/FieldDingTalk";
-
+import VariableUiDemo from "@site/src/components/Variable";
+import FieldVariable from "@site/src/components/Variable/FieldVariable";
+import TextVariable from "@site/src/components/Variable/TextVariable";
 import CodeBase from "@site/src/components/CodeBase";
 
 export default {
@@ -23,4 +25,7 @@ export default {
   DingTalk: DingTalkDemo,
   PreviewDingTalk,
   FieldDingTalk,
+  VariableUi: VariableUiDemo,
+  FieldVariable,
+  TextVariable,
 };
