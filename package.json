@@ -22,7 +22,7 @@
     "@serverless-cd/mse-arc-ui": "^0.0.8",
     "@serverless-cd/ui": "^0.0.16",
     "@serverless-cd/dingtalk-ui": "^0.0.12",
-    "@serverless-cd/trigger-ui": "^0.0.14",
+    "@serverless-cd/trigger-ui": "^0.0.20",
     "@serverless-cd/variable-ui": "^0.0.2",
     "clsx": "^1.2.1",
     "docusaurus-plugin-less": "^2.0.2",
@@ -52,5 +52,6 @@
   },
   "engines": {
     "node": ">=16.14"
-  }
+  },
+  "repository": "git@github.com:g-fengchen/website.git"
 }

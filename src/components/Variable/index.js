@@ -1,12 +1,41 @@
-import React, { useEffect, useState } from "react";
-import VariableUI from "@serverless-cd/variable-ui";
+import React from "react";
+import BrowserOnly from "@docusaurus/BrowserOnly";
 
-export default function VariableUiDemo() {
-  const [value, onChange] = useState({});
-
-  useEffect(() => {
-    console.log("value:", value);
-  }, [value]);
-
-  return <VariableUI value={{ aa: "", bb: "" }} onChange={onChange} />;
+function VariableDemo() {
+  return (
+    <BrowserOnly>
+      {() => {
+        const VariableUI = require("./VariableDemo").default;
+        return <VariableUI />;
+      }}
+    </BrowserOnly>
+  );
 }
+
+function FieldVariable() {
+  return (
+    <BrowserOnly>
+      {() => {
+        const VariableUI = require("./FieldVariable").default;
+        return <VariableUI />;
+      }}
+    </BrowserOnly>
+  );
+}
+
+function TextVariable() {
+  return (
+    <BrowserOnly>
+      {() => {
+        const VariableUI = require("./TextVariable").default;
+        return <VariableUI />;
+      }}
+    </BrowserOnly>
+  );
+}
+
+export default {
+  VariableDemo,
+  FieldVariable,
+  TextVariable,
+};

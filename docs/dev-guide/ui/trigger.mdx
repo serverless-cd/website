@@ -7,6 +7,7 @@ import tmpl from "!!raw-loader!@site/src/components/Trigger/index.js";
 import Fieldtmpl from "!!raw-loader!@site/src/components/Trigger/FieldTrigger.js";
 import StrictTmpl from "!!raw-loader!@site/src/components/Trigger/StrictTrigger.js";
 import DisabledTmpl from "!!raw-loader!@site/src/components/Trigger/DisabledTrigger.js";
+import PreViewTml from "!!raw-loader!@site/src/components/Trigger/Preview.js";
 
 # Trigger
 
@@ -51,6 +52,23 @@ Trigger 组件接收 `value` `onChange` 两个参数来进行数据传输。也�
 | onRefresh          | 点击刷新 Icon 触发的事件                              | Function                | 否                 |                                        |        |
 | branchList         | 分支列表 （仅严格模式（strict）支持）                 | Array[String]           | 严格模式下是必填项 |                                        | []     |
 | ref                | 通过 useRef()绑定组件，可调用组件内部 validate        | Element                 | 否                 |                                        |        |
+
+## Trigger.Preview
+
+| 参数       | 说明           | 类型                                                                                                        | 必填 | 可选值 | 默认值 |
+| :--------- | :------------- | :---------------------------------------------------------------------------------------------------------- | :--- | :----- | :----- |
+| dataSource | 预览显示的数据 | 支持数据类型 object: [格式一 推荐格式](#通用模式支持的数据格式) / [PreviewData](#triggerpreview-参数解析)[] | 是   |        | []     |
+
+### Trigger.Preview 参数解析
+
+| 参数         | 说明                            | 类型     | 必填 | 可选值 | 默认值 |
+| :----------- | :------------------------------ | :------- | :--- | :----- | :----- |
+| eventType    | 事件类型                        | string   | 是   |        |        |
+| matchType    | 匹配类型                        | string   | 是   |        |        |
+| matchRule    | 匹配规则                        | string   | 是   |        |        |
+| targetBranch | 目标分支                        | string   | 是   |        |        |
+| sourceBranch | 来源分支（仅 pr 事件类型存在）  | string   | 否   |        |        |
+| triggerType  | 触发类型 （仅 pr 事件类型存在） | string[] | 否   |        |        |
 
 ## 参数解析
 
@@ -272,4 +290,10 @@ Field 接管组件，将 Trigger 组件变为可受控的，便于表单的校�
 
 <CodeBase codeSource={DisabledTmpl}>
   <DisabledTrigger />
+</CodeBase>
+
+### 预览组件
+
+<CodeBase codeSource={PreViewTml}>
+  <PreViewTrigger />
 </CodeBase>
