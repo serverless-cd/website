@@ -4,6 +4,7 @@ import Trigger from "@site/src/components/Trigger";
 import FieldTrigger from "@site/src/components/Trigger/FieldTrigger";
 import StrictTrigger from "@site/src/components/Trigger/StrictTrigger";
 import DisabledTrigger from "@site/src/components/Trigger/DisabledTrigger";
+import PreViewTrigger from "@site/src/components/Trigger/PreView";
 import DingTalkDemo from "@site/src/components/DingTalk";
 import PreviewDingTalk from "@site/src/components/DingTalk/PreviewDingTalk";
 import FieldDingTalk from "@site/src/components/DingTalk/FieldDingTalk";
@@ -20,6 +21,7 @@ export default {
   FieldTrigger,
   StrictTrigger,
   DisabledTrigger,
+  PreViewTrigger,
   DingTalk: DingTalkDemo,
   PreviewDingTalk,
   FieldDingTalk,
