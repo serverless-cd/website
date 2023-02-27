@@ -9,6 +9,13 @@ import DingTalkDemo from "@site/src/components/DingTalk";
 import PreviewDingTalk from "@site/src/components/DingTalk/PreviewDingTalk";
 import FieldDingTalk from "@site/src/components/DingTalk/FieldDingTalk";
 import Variable from "@site/src/components/Variable/index";
+import CreatingDemo from "@site/src/components/Creating/index";
+import CreatingTasks from "@site/src/components/Creating/CreatingTasks";
+import CreatingSuccess from "@site/src/components/Creating/CreatingSuccess";
+import CreatingError from "@site/src/components/Creating/CreatingError";
+import CreatingError2 from "@site/src/components/Creating/CreatingError2";
+import CreatingDown from "@site/src/components/Creating/CreatingDown";
+
 import CodeBase from "@site/src/components/CodeBase";
 
 export default {
@@ -28,4 +35,10 @@ export default {
   VariableUi: Variable.VariableDemo,
   FieldVariable: Variable.FieldVariable,
   TextVariable: Variable.TextVariable,
+  CreatingDemo,
+  CreatingTasks,
+  CreatingSuccess,
+  CreatingError,
+  CreatingError2,
+  CreatingDown,
 };
