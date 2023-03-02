@@ -41,9 +41,10 @@ const engine = new Engine(options);
 | 参数      | 说明         | 类型                          | 必填 | 默认值        |
 | --------- | ------------ | ----------------------------- | ---- | ------------- |
 | cwd       | 当前工作目录 | string                        | 否   | process.cwd() |
-| steps     | 执行的步骤   | [StepOptions[]](#stepoptions) | 否   |               |
+| steps     | 执行的步骤  | [StepOptions[]](#stepoptions) | 否   |               |
 | logConfig | 日志配置     | [LogConfig](#logconfig)       | 否   |               |
 | events    | 事件配置     | [Event](#event)               | 否   |               |
+| inputs    | inputs里的参数可作为魔法变量在steps里使用 | Record<string, any> | 否   |               |
 
 ## StepOptions
 
@@ -59,16 +60,6 @@ const engine = new Engine(options);
 | working-directory | 执行当前步骤命令的路径，默认为 process.cwd() | string  | 否   | process.cwd() |
 | continue-on-error | 如果为 true，允许步骤执行失败时通过          | boolean | 否   |               |
 
-- ScriptOptions（[zx](https://github.com/google/zx) 类型）
-
-| 参数              | 说明                                      | 类型    | 必填 | 默认值          |
-| ----------------- | ----------------------------------------- | ------- | ---- | --------------- |
-| name              | 当前步骤名称                              | string  | 否   | `Run ${script}` |
-| script            | 当前步骤运行的命令                        | string  | 是   |                 |
-| id                | 当前步骤的 id(唯一标识)                   | string  | 否   |                 |
-| env               | 当前步骤环境变量                          | object  | 否   |                 |
-| if                | 如果为 true，则执行当前步骤，否则就不执行 | string  | 否   |                 |
-| continue-on-error | 如果为 true，允许步骤执行失败时通过       | boolean | 否   |                 |
 
 - PluginOptions（npm 类型）
 
@@ -105,13 +96,13 @@ const engine = new Engine(options);
 
 | 参数        | 说明                    | 类型                                                                                                                 | 必填 | 默认值 |
 | ----------- | ----------------------- | -------------------------------------------------------------------------------------------------------------------- | ---- | ------ |
-| onInit      | engine 初始化的执行事件 | (context: [Context](#context), logger: [Logger](https://github.com/eggjs/egg-logger)) => Promise<any\>               | 否   |        |
-| onPreRun    | 每个步骤执行之前的事件  | (data: object, context:[Context](#context), logger: [Logger](https://github.com/eggjs/egg-logger)) => Promise<void/> | 否   |        |
-| onPostRun   | 每个步骤执行之后的事件  | (data: object, context:[Context](#context), logger: [Logger](https://github.com/eggjs/egg-logger)) => Promise<void/> | 否   |        |
-| onSuccess   | engine 执行成功的事件   | (context:[Context](#context), logger: [Logger](https://github.com/eggjs/egg-logger)) => Promise<void\>               | 否   |        |
-| onFailure   | engine 执行失败的事件   | (context:[Context](#context), logger: [Logger](https://github.com/eggjs/egg-logger)) => Promise<void\>               | 否   |        |
-| onCompleted | engine 执行完成的事件   | (context:[Context](#context), logger: [Logger](https://github.com/eggjs/egg-logger)) => Promise<void\>               | 否   |        |
-| onCancelled | engine 取消执行的事件   | (context:[Context](#context), logger: [Logger](https://github.com/eggjs/egg-logger)) => Promise<void\>               | 否   |        |
+| onInit      | engine 初始化的执行事件 | (context: [Context](#context), logger: [Logger](https://github.com/eggjs/egg-logger)) => Promise<any>               | 否   |        |
+| onPreRun    | 每个步骤执行之前的事件  | (data: object, context:[Context](#context), logger: [Logger](https://github.com/eggjs/egg-logger)) => Promise<void> | 否   |        |
+| onPostRun   | 每个步骤执行之后的事件  | (data: object, context:[Context](#context), logger: [Logger](https://github.com/eggjs/egg-logger)) => Promise<void> | 否   |        |
+| onSuccess   | engine 执行成功的事件   | (context:[Context](#context), logger: [Logger](https://github.com/eggjs/egg-logger)) => Promise<void>               | 否   |        |
+| onFailure   | engine 执行失败的事件   | (context:[Context](#context), logger: [Logger](https://github.com/eggjs/egg-logger)) => Promise<void>               | 否   |        |
+| onCompleted | engine 执行完成的事件   | (context:[Context](#context), logger: [Logger](https://github.com/eggjs/egg-logger)) => Promise<void>               | 否   |        |
+| onCancelled | engine 取消执行的事件   | (context:[Context](#context), logger: [Logger](https://github.com/eggjs/egg-logger)) => Promise<void>               | 否   |        |
 
 > 注意：onInit 可以返回 steps 数据，优先级 大于 行参里的 steps
 
@@ -187,7 +178,7 @@ const logPrefix = path.join(__dirname, "logs");
 
 ## 启动 engine
 
-engine.start(), 返回值为 Promise<[Context](#context)/>
+engine.start(), 返回值为 Promise<[Context](#context)>
 
 ## 取消 engine
 
