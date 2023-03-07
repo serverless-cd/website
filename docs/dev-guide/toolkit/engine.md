@@ -299,15 +299,15 @@ Eg:
 ```ts
 import Engine from "@serverless-cd/engine";
 (async () => {
- const engine = new Engine({
-  steps: [
-    {
-      run: "echo ${{toJSON(env)}}",
-      env: [name: 'xiaoming', age: 20]
-    },
-  ],
-});
-await engine.start();
+  const engine = new Engine({
+    steps: [
+      {
+        run: "echo ${{toJSON(env)}}",
+        env: [{ name: "xiaoming", age: 20 }],
+      },
+    ],
+  });
+  await engine.start();
 })();
 ```
 
