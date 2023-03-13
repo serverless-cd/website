@@ -14,6 +14,7 @@ import CreatingTasks from "@site/src/components/Creating/CreatingTasks";
 import CreatingSuccess from "@site/src/components/Creating/CreatingSuccess";
 import CreatingError from "@site/src/components/Creating/CreatingError";
 import CreatingError2 from "@site/src/components/Creating/CreatingError2";
+import CreatingError3 from "@site/src/components/Creating/CreatingError3";
 import CreatingDown from "@site/src/components/Creating/CreatingDown";
 
 import CodeBase from "@site/src/components/CodeBase";
@@ -40,5 +41,6 @@ export default {
   CreatingSuccess,
   CreatingError,
   CreatingError2,
+  CreatingError3,
   CreatingDown,
 };
