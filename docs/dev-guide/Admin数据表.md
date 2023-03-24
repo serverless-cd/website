@@ -3,92 +3,203 @@ sidebar_position: 1
 title: Admin表设计
 ---
 
-
 # 核心数据表
-- user:  登录用户
+
+- user: 登录用户
+- org: 团队信息
 - application: 应用
 - task: 部署执行的任务
-- session: session状态信息
-- token: 访问令牌，用户访问Serverless-cd的API
+  <!-- - session: session 状态信息 -->
+  <!-- - token: 访问令牌，用户访问 Serverless-cd 的 API -->
 
 ## 详细表字段
+
+<!--
 ```
-Table team {
-    id string [pk]
-    secrets string  // 密钥
-    name string // 团队名称
-    owner string  [ref: > user.id] // 团队负责人
-    member string
-    created_time timestamp
-    updated_time timestamp
+Table User {
+  id string [pk]
+  username String
+  email String
+  avatar String
+  password String
+  github_unionid String
+  gitee_unionid String
 }
 
-Table user {
-    id string [pk]
-    avatar string
-    username string // 名称
-    secrets string  // 密钥
-    password string // 登录密码(加密)
-    third_part string // 三方绑定(github等)登录的信息
-    github_unionid string  // github授权的唯一标识ID
-    created_time timestamp
-    updated_time timestamp
+Table Org {
+  id    String [pk]
+  third_part String
+  user_id String
+  secrets String
+  name String
+  role String
+  description String
+  alias String
+  logo String
 }
 
-Table application {
-    id string [pk, increment]
-    user_id string  [ref: > user.id]
-    owner string // github仓库登录的owner
-    provider string // git代码托管厂商：github,gitee,gitlab,codeup
-    provider_repo_id string // git代码repo唯一ID
-    repo_name string // git代码repo 名称
-    repo_url string // git代码repo url链接
-    secrets string // 应用密钥secrets
-    latest_task string // 最近生效的task信息
-    trigger_spec string // trigger相关信息 
-    description string
-    created_time timestamp
-    updated_time timestamp
+Ref: User.id <> Org.user_id
+
+Table Application {
+  id String [pk]
+  org_id String
+  owner_org_id String
+  description String
+  owner String
+  provider String
+  environment String
+  provider_repo_id String
+  repo_name String
+  repo_url String
+  webhook_secret String
+  created_time timestamp
+  updated_time timestamp
 }
 
+Ref: Application.org_id > Org.id
+Ref: Application.owner_org_id > Org.id
 
-Table task {
-    id string [pk, increment]
-    user_id string  [ref: > user.id]
-    app_id string [ref: > application.id]
-    status string // 任务执行状态
-    steps string // 执行steps的详细信息
-    trigger_payload string // webhook触发相关的信息
-    created_time timestamp
-    updated_time timestamp
+Table Task {
+  id String [pk]
+  env_name String
+  app_id String
+  trigger_payload  String
+  status String
+  steps String
+  dispatch_org_id String
+  created_time timestamp
+  updated_time timestamp
 }
 
-Table token {
-    id string [pk, increment]
-    team_id string  [ref: > team.id]
-    user_id string  [ref: > user.id]
-    description string
-    cd_token string
-    active_time string
-    expire_time string
-    created_time timestamp
-    updated_time timestamp
+Ref: Task.app_id > Application.id
+Ref: Task.dispatch_org_id > Org.id
+```
+-->
+
+User 和 Org 的关系：  
+一个用户可以用多个团队，一个团队也可以包含很多用户。  
+一个用户和一个团队名称最多只能对映一条团队数据。  
+一个团队只能拥有一个最高管理员（即 Org.role 值为 OWNER）
+
+Application 和 Org 的关系：  
+一个团队下面可以拥有多个应用。
+
+```
+model User {
+  id string @id             // 用户 ID，随机生成
+  username String  @unique  // 用户名称
+  email String?  @unique    // 用户邮箱
+  avatar String?            // 用户头像
+  password String?          // 登录密码(加密)
+  github_unionid String? @unique   // github 登陆授权的唯一标识ID
+  gitee_unionid String?  @unique      // gitee 登陆授权的唯一标识ID
 }
 
-Table session {
-    id string [pk, increment]
-    session_data string
-    expire_time string
-    created_time timestamp
-    updated_time timestamp
+model Org {
+  id    String     @id    // 团队ID，生成格式变更为：user_id:name
+  third_part String?  @db.Text  // 三方绑定(github等)登录的信息（内容下方有示例）
+  user_id String      	// 关联的用户ID
+  secrets String?       // 配置的密钥信息，标准JSON格式：在 mysql 下应该是 @db.Text
+  name String           // 团队名称
+  role String           // 用户在团队中的角色
+  description String?   // 团队描述信息
+  alias String?   		  // 团队别名
+  logo String?          // 团队logo
+}
+
+model Application {
+  id String @id     // 应用ID，随机生成
+  org_id String     // 创建应用的人关联的团队ID
+  owner_org_id String  // 应用属于某个团队最高管理员的关联团队ID
+  description String?  // 应用描述
+  environment String @db.Text  // 应用的环境配置（内容下方有示例）
+  owner String         // 代码托管仓库的拥有者名称：有点难理解，建议换掉
+  provider String      // 代码托管仓库的平台
+  provider_repo_id String  // 代码在托管平台的仓库ID，provider 和 provider_repo_id 可以组成唯一的数据
+  repo_name String  // 代码在托管平台的仓库名称
+  repo_url String   // 代码在托管平台的仓库地址
+  webhook_secret String?  // 托管平台仓库的 webhook 验证密钥
+  created_time DateTime  @default(now())
+  updated_time DateTime  @updatedAt
+}
+
+model Task {
+  id String @id     // 任务ID，随机生成 如果是CD关联函数计算的异步任务ID
+  env_name String   // 被触发的环境名称
+  app_id String     // 被触发的应用ID
+  trigger_payload  String? @db.Text     // 被触发的请求信息（内容待补充）
+  status String?		    // 运行状态
+  steps String?   @db.Text    // 运行步骤 （内容待补充）
+  dispatch_org_id String?       // 记录谁操作的
+  created_time DateTime  @default(now())
+  updated_time DateTime  @updatedAt
 }
 ```
 
-## ![image.png](https://cdn.nlark.com/yuque/0/2022/png/22111491/1667178736594-94a34c3b-4bed-4e6a-b1d5-6b7da035c844.png#averageHue=%23f3f3f3&clientId=u4dc25c22-35c9-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=634&id=u25eee4fd&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1268&originWidth=2204&originalType=binary&ratio=1&rotation=0&showTitle=false&size=193585&status=done&style=none&taskId=ubca54273-f096-4f97-a1d1-c0be121f355&title=&width=1102)
+## ![image.png](https://img.alicdn.com/imgextra/i3/O1CN010CFse61mTtj2d89HC_!!6000000004956-0-tps-2140-1352.jpg)
 
+## 表中 JSON 内容
+
+third_part:
+
+```json
+{
+  "github": {
+    "access_token": "xxx",
+    "owner": "xxxxx",
+    "id": 0000000,
+    "avatar": "https://avatars.xxxx.com/u/56686088?v=4"
+  }
+}
+```
+
+environmen：
+
+```
+{
+    "default": {
+        "type": "testing",
+        "trigger_spec": {
+            "github": {
+                "push": {
+                    "branches": {
+                        "precise": [
+                            "serverless-cd-project-setup"
+                        ]
+                    }
+                }
+            }
+        },
+        "secrets": {},
+        "cd_pipeline_yaml": "serverless-pipeline.yaml",
+        "resource": {
+            "aliyun.fc": {
+                "uid": "1920014488718015",
+                "region": "cn-hangzhou",
+                "functions": [
+                    {
+                        "name": "start-egg",
+                        "service": "web-framework"
+                    },
+                    {
+                        "name": "start-egg1",
+                        "service": "web-framework2"
+                    }
+                ]
+            }
+        },
+        "latest_task": {
+            "taskId": "FwmglJmdaBv4rPGt",
+            "status": "success",
+            "completed": true
+        }
+    }
+}
+```
 
 ## 资料
-ER画图工具
+
+ER 画图工具
 
 1. [https://dbdiagram.io/d](https://dbdiagram.io/d)
 2. [https://app.sqldbm.com/](https://app.sqldbm.com/)
