@@ -95,13 +95,13 @@ const engine = new Engine(options);
 
 | 参数        | 说明                    | 类型                                                                                                                | 必填 | 默认值 |
 | ----------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------- | ---- | ------ |
-| onInit      | engine 初始化的执行事件 | (context: [Context](#context), logger: [Logger](https://github.com/eggjs/egg-logger)) => Promise<any>               | 否   |        |
-| onPreRun    | 每个步骤执行之前的事件  | (data: object, context:[Context](#context), logger: [Logger](https://github.com/eggjs/egg-logger)) => Promise<void> | 否   |        |
-| onPostRun   | 每个步骤执行之后的事件  | (data: object, context:[Context](#context), logger: [Logger](https://github.com/eggjs/egg-logger)) => Promise<void> | 否   |        |
-| onSuccess   | engine 执行成功的事件   | (context:[Context](#context), logger: [Logger](https://github.com/eggjs/egg-logger)) => Promise<void>               | 否   |        |
-| onFailure   | engine 执行失败的事件   | (context:[Context](#context), logger: [Logger](https://github.com/eggjs/egg-logger)) => Promise<void>               | 否   |        |
-| onCompleted | engine 执行完成的事件   | (context:[Context](#context), logger: [Logger](https://github.com/eggjs/egg-logger)) => Promise<void>               | 否   |        |
-| onCancelled | engine 取消执行的事件   | (context:[Context](#context), logger: [Logger](https://github.com/eggjs/egg-logger)) => Promise<void>               | 否   |        |
+| onInit      | engine 初始化的执行事件 | (context: [Context](#context), logger: [Logger](https://github.com/eggjs/egg-logger)) => Promise<any/>               | 否   |        |
+| onPreRun    | 每个步骤执行之前的事件  | (data: object, context:[Context](#context), logger: [Logger](https://github.com/eggjs/egg-logger)) => Promise<void/> | 否   |        |
+| onPostRun   | 每个步骤执行之后的事件  | (data: object, context:[Context](#context), logger: [Logger](https://github.com/eggjs/egg-logger)) => Promise<void/> | 否   |        |
+| onSuccess   | engine 执行成功的事件   | (context:[Context](#context), logger: [Logger](https://github.com/eggjs/egg-logger)) => Promise<void/>               | 否   |        |
+| onFailure   | engine 执行失败的事件   | (context:[Context](#context), logger: [Logger](https://github.com/eggjs/egg-logger)) => Promise<void/>               | 否   |        |
+| onCompleted | engine 执行完成的事件   | (context:[Context](#context), logger: [Logger](https://github.com/eggjs/egg-logger)) => Promise<void/>               | 否   |        |
+| onCancelled | engine 取消执行的事件   | (context:[Context](#context), logger: [Logger](https://github.com/eggjs/egg-logger)) => Promise<void/>               | 否   |        |
 
 > 注意：onInit 可以返回 steps 数据，优先级 大于 行参里的 steps
 
