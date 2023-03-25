@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Admin表设计
+title: 数据库设计
 ---
 
 # 核心数据表
