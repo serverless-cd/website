@@ -45,13 +45,13 @@ Table Application {
   org_id String
   owner_org_id String
   description String
-  owner String
+  repo_owner String
   provider String
   environment String
-  provider_repo_id String
+  repo_id String
   repo_name String
   repo_url String
-  webhook_secret String
+  repo_webhook_secret String
   created_time timestamp
   updated_time timestamp
 }
@@ -99,7 +99,7 @@ model Org {
   id    String     @id    // 团队ID，生成格式变更为：user_id:name
   third_part String?  @db.Text  // 三方绑定(github等)登录的信息（内容下方有示例）
   user_id String      	// 关联的用户ID
-  secrets String?       // 配置的密钥信息，标准JSON格式：在 mysql 下应该是 @db.Text
+  secrets String?   @db.Text    // 配置的密钥信息，标准JSON格式
   name String           // 团队名称
   role String           // 用户在团队中的角色
   description String?   // 团队描述信息
@@ -113,12 +113,12 @@ model Application {
   owner_org_id String  // 应用属于某个团队最高管理员的关联团队ID
   description String?  // 应用描述
   environment String @db.Text  // 应用的环境配置（内容下方有示例）
-  owner String         // 代码托管仓库的拥有者名称：有点难理解，建议换掉
+  repo_owner String         // 代码托管仓库的拥有者名称：有点难理解，建议换掉
   provider String      // 代码托管仓库的平台
-  provider_repo_id String  // 代码在托管平台的仓库ID，provider 和 provider_repo_id 可以组成唯一的数据
+  repo_id String  // 代码在托管平台的仓库ID，provider 和 repo_id 可以组成唯一的数据
   repo_name String  // 代码在托管平台的仓库名称
   repo_url String   // 代码在托管平台的仓库地址
-  webhook_secret String?  // 托管平台仓库的 webhook 验证密钥
+  repo_webhook_secret String?  // 托管平台仓库的 webhook 验证密钥
   created_time DateTime  @default(now())
   updated_time DateTime  @updatedAt
 }
