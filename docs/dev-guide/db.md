@@ -109,12 +109,13 @@ model Org {
 
 model Application {
   id String @id     // 应用ID，随机生成
+  name String     // 应用名称，在组织下唯一
   org_id String     // 创建应用的人关联的团队ID
-  owner_org_id String  // 应用属于某个团队最高管理员的关联团队ID
+  owner_org_id String  // 应用属于某个团队最高管理员的关联团队ID，一个组织仅能一个 ownerId 
   description String?  // 应用描述
   environment String @db.Text  // 应用的环境配置（内容下方有示例）
-  repo_owner String         // 代码托管仓库的拥有者名称：有点难理解，建议换掉
   provider String      // 代码托管仓库的平台
+  repo_owner String         // 代码托管仓库的拥有者名称
   repo_id String  // 代码在托管平台的仓库ID，provider 和 repo_id 可以组成唯一的数据
   repo_name String  // 代码在托管平台的仓库名称
   repo_url String   // 代码在托管平台的仓库地址
@@ -131,6 +132,7 @@ model Task {
   status String?		    // 运行状态
   steps String?   @db.Text    // 运行步骤 （内容待补充）
   dispatch_org_id String?       // 记录谁操作的
+  trigger_type   String? // 记录怎么触发的 (下方有具体描述)
   created_time DateTime  @default(now())
   updated_time DateTime  @updatedAt
 }
@@ -138,7 +140,7 @@ model Task {
 
 ## ![image.png](https://img.alicdn.com/imgextra/i3/O1CN010CFse61mTtj2d89HC_!!6000000004956-0-tps-2140-1352.jpg)
 
-## 表中 JSON 内容
+## 表中字段描述
 
 third_part:
 
@@ -196,6 +198,12 @@ environmen：
     }
 }
 ```
+
+trigger_type 取值如下:  
+`manual`、`redeploy`、`rollback` 表示控制台发出的动作   
+`github`、`gitee`、`codeup`、`gitlab` 表示通过Webhook触发的动作   
+以 `tracker:` 开头表示是通过其他手段上报上来的
+
 
 ## 资料
 
