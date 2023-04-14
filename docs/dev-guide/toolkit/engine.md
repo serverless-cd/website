@@ -165,7 +165,7 @@ const logPrefix = path.join(__dirname, "logs");
 | failure             | 执行失败                                                                             |
 | skipped             | 忽略执行                                                                             |
 | cancelled           | 取消执行                                                                             |
-| error-with-continue | 步骤执行失败了，但是当前步骤标记了 continue-on-error 为 true，允许步骤执行失败时通过 |
+| error-with-continue | 值为true时，允许步骤执行失败时通过 |
 
 ### 步骤执行完成的状态
 

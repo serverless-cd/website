@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: 5分钟体验
+title: 快速入门
 ---
 
 # 部署到阿里云
