@@ -30,17 +30,17 @@ title: 缓存组件
 | -------- | -------------------------------------------------------------------------------------------- | ----------------------------------- | ---- | -------- |
 | key      | 用于其他任务的条件引用，比如：stepId1                     | string      | 是   |    -     |
 | path      | 缓存的目录，比如：/root/.npm                   | string      | 是   |    -     |·
-| region      | 阿里云地域，比如：cn-hongkong                   | string      | 是   |    -     |
-| ossConfig      | 阿里云Bucket配置，用于存储缓存文件                 | [ossConfig](#ossConfig)      | 是   |    -     |
-| credentials      | 阿里云密钥配置，用于上传下载缓存文件                | [credentials](#credentials)      | 是   |    -     |
+| region      | 阿里云地域，比如：cn-hongkong                   | string      | 否   |    默认使用流水线运行的地区     |
+| ossConfig      | 阿里云Bucket配置，用于存储缓存文件                 | [ossConfig](#ossConfig)      | 否   |    -     |
+| credentials      | 阿里云密钥配置，用于上传下载缓存文件                | [credentials](#credentials)      | 否   |  如果没有配置从应用关联的密钥获取，获取不到会异常     |
 
 
 ### ossConfig
 
 | 参数     | 说明                                                                                         | 类型                                | 必填 | 默认值   |
 | -------- | -------------------------------------------------------------------------------------------- | ----------------------------------- | ---- | -------- |
-| bucket      | 阿里云OSS的Bucket名称，需要 region 配置下                 | string      | 是   |    -     |
-| internal      | 是否走内网               | boolean      | 否   |    false      |
+| bucket      | 阿里云OSS的Bucket名称，需要 region 配置下                 | string      | 否   |    如果为空则使用此规则 `serverless-cd-${region}-cache-${accuountId}`尝试创建     |
+| internal      | 是否走内网               | boolean      | 否   |    如果和流水线运行的地区一致则为 `true`, 否则默认为 `false`      |
 
 ### credentials
 
@@ -68,9 +68,7 @@ title: 缓存组件
 }
 ```
 
-如果此时需要使用缓存，使用缓存有两种方式。
-
-1. 存在缓存直接放到代码目录中，不用在此执行 npm install 安装依赖，写法如下：
+如果此时需要使用缓存，写法如下：
 
 ```yaml
 name: "On Push masters"
@@ -91,24 +89,4 @@ steps:
     if: ${{ steps['my-cache'].outputs['cache-hit'] != 'true' }} # 判断是否有命中缓存，没有命中缓存将不在运行此步骤
 ```
 
-2. 使用 npm 缓存目录
-
-> 提示：可以通过运行 `npm config get cache` 命令查找 npm 缓存地址
-
-```yaml
-name: "On Push masters"
-
-steps:
-  - plugin: "@serverless-cd/cache"
-    id: my-cache
-    inputs:
-      key: ${{hashFile('./package.json')}}
-      path: /root/.npm # 由于流水线运行在函数计算中，而函数计算配置的 npm 缓存是 /root/.npm
-      region: cn-hongkong
-      ossConfig:
-        bucket: xxxx-cn-hongkong-serverless-cd
-      credentials:
-        accessKeyID: ${{cloudSecrets.AccessKeyID}}
-        accessKeySecret: ${{cloudSecrets.AccessKeySecret}}
-  - run: npm install --production
-```
+[Nodejs 最佳实践](https://github.com/serverless-cd-demo/serverless-devs-deploy)
