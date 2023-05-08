@@ -49,6 +49,18 @@ title: 缓存插件
 | accessKeySecret      | 阿里云密钥 SK       | string      | 是   |    -     |
 | securityToken      | -               | string      | 否   |    false      |
 
+## 实现逻辑
+
+如果插件入参没有填写buckct，则首先需要确保 bucket 存在，每次运行时都会**尝试直接创建**bucket。
+
+验证缓存是否命中，是根据 `oss://${bucket}/${key}` 的远端文件数量，如果文件数量大于0，则认为命中。PS：缓存如何失效，目前还没有支持，用户可以手动配置 oss 的生命周期来实现失效。
+
+如果命中则将文件远端下载到指定目录，结束后不回重新上传文件；如果没有命中则跳过文件下载，结束后会将指定目录的文件上传到远端。
+
+## 权限
+
+AliyunOSSFullAccess
+
 
 ## 实践：Nodejs
 
