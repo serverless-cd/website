@@ -3,11 +3,14 @@ title: Engine插件系统开发与设计
 sidebar_position: 1
 ---
 
-## 简单示例
+## 插件开发
+
+### 入口文件示例
 
 ```ts
 import { lodash as _, Logger, getInputs, getStepContext, getCredentials } from '@serverless-cd/core'; // core 支持方法: https://github.com/serverless-cd/toolkit/blob/master/packages/core/src/index.ts
 
+// 插件加载时调用此方法
 export const run = async (inputs: Record<string, any>, context: Record<string, any>, logger: Logger) => {
   logger.info('start plugin run');
   // 获取 Steps 真实的值
@@ -18,6 +21,7 @@ export const run = async (inputs: Record<string, any>, context: Record<string, a
   return { result: 'xxx' };
 };
 
+// 流水线的步骤运行完成之后，会调用此方法
 export const postRun = async (inputs: Record<string, any>, context: Record<string, any>, logger: Logger) => {
   logger.info('start plugin postRun');
   // 获取对映 run 数据
